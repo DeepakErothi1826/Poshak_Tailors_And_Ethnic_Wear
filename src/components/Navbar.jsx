@@ -35,7 +35,7 @@ export default function Navbar() {
             <NavLink to="/" className="block">
               <img src={poshakLogo} alt="Poshak" className="h-10 w-auto" />
             </NavLink>
-            <div className="hidden lg:block">
+            <div className="hidden sm:block">
               <p className="text-xs font-bold uppercase tracking-wider leading-tight">Poshak Tailors</p>
               <p className="text-[10px] uppercase tracking-widest text-gray-500">And Ethnic Wear</p>
             </div>
