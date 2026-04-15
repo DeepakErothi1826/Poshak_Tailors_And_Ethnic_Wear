@@ -10,7 +10,7 @@ export default function Contact() {
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${blazerHero})` }} />
         <div className="absolute inset-0 bg-black/60" />
         <div className="text-center z-10 px-4">
-          <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-4">Contact Us</h1>
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-black uppercase tracking-tighter mb-4">Contact Us</h1>
           <p className="text-sm uppercase tracking-[0.3em] text-gray-300">Get in Touch</p>
         </div>
       </section>

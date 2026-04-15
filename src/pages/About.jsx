@@ -15,7 +15,7 @@ export default function About() {
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${hero1Img})` }} />
         <div className="absolute inset-0 bg-black/60" />
         <div className="text-center z-10 px-4">
-          <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-4 text-balance">The Heritage</h1>
+          <h1 className="text-3xl md:text-5xl lg:text-7xl font-black uppercase tracking-tighter mb-4 text-balance">The Heritage</h1>
           <p className="text-sm uppercase tracking-[0.3em] text-gray-300">EST. 1993</p>
         </div>
       </section>

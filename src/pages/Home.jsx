@@ -11,9 +11,9 @@ import collection1 from '../Image/download (12).jpg';
 import collection2 from '../Image/download (11).jpg';
 import collection3 from '../Image/download (10).jpg';
 
-import product1 from '../Image/Traditional Wear Sherwani Ethnic Wear Groom Sherwani Achkan Kurta Angrakha Groom Outfit Designer Wear Designer Mens Wear Designer Made Indo Western Dapper Indian Wear Indian Wedding Groom Royal Wedding Wear B.jpg';
+import product1 from '../Image/sherwani_hero.jpg';
 import product2 from '../Image/Suit Inspiration for Styled Shoot.jpg';
-import product3 from '../Image/men\'s wine chanderi kurta set with cream pant - premium wedding wear - Kurta-pajama.jpg';
+import product3 from '../Image/kurta_wine.jpg';
 import product4 from '../Image/download (20).jpg';
 import craftImg from '../Image/download (9).jpg';
 import heritageImg from '../Image/download (8).jpg';
@@ -24,7 +24,7 @@ import serviceImg3 from '../Image/download (5).jpg';
 import serviceImg4 from '../Image/download (4).jpg';
 import ctaImg from '../Image/download (3).jpg';
 import gallery1 from '../Image/Indian Royal Jhodhpuri Wedding Outfit for Mens.jpg';
-import gallery2 from '../Image/✨ White Pearl Bandhgala Tuxedo _ Sherwani Ivory Elegance.jpg';
+import gallery2 from '../Image/white_bandhgala.jpg';
 import gallery3 from '../Image/Udaipur Elegance.jpg';
 import gallery4 from '../Image/hand painted indowestan set.jpg';
 import gallery5 from '../Image/Lutwyche jacket.jpg';
@@ -100,10 +100,10 @@ export default function Home() {
               className="mt-20"
             >
               <h2 className="text-white text-sm md:text-md uppercase tracking-[0.5em] mb-4">{HERO_SLIDES[currentSlide].subtitle}</h2>
-              <h1 className="text-white text-5xl md:text-8xl font-black uppercase tracking-tighter leading-none mb-8">
+              <h1 className="text-white text-4xl md:text-6xl lg:text-8xl font-black uppercase tracking-tighter leading-none mb-6 md:mb-8">
                 {HERO_SLIDES[currentSlide].title}
               </h1>
-              <button className="bg-white text-black px-8 py-4 uppercase text-sm font-bold tracking-widest hover:bg-gray-200 transition-colors inline-flex items-center gap-2 group">
+              <button className="bg-white text-black px-6 md:px-8 py-3 md:py-4 uppercase text-xs md:text-sm font-bold tracking-widest hover:bg-gray-200 transition-colors inline-flex items-center gap-2 group">
                 Explore Collection
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </button>

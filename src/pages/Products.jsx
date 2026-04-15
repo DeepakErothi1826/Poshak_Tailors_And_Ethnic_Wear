@@ -8,8 +8,8 @@ import sherwani1 from '../Image/sherwani_hero.jpg';
 import sherwani2 from '../Image/white_bandhgala.jpg';
 import sherwani3 from '../Image/Indian Royal Jhodhpuri Wedding Outfit for Mens.jpg';
 import sherwani4 from '../Image/Indian Royal Jhodhpuri Wedding Outfit for Mens (1).jpg';
-import kurta1 from '../Image/men\'s wine chanderi kurta set with cream pant - premium wedding wear - Kurta-pajama.jpg';
-import kurta2 from '../Image/the white is looking so pretty 🤍.jpg';
+import kurta1 from '../Image/kurta_wine.jpg';
+import kurta2 from '../Image/kurta_white.jpg';
 import kurta3 from '../Image/download (23).jpg';
 import kurta4 from '../Image/download (22).jpg';
 import suit1 from '../Image/Suit Inspiration for Styled Shoot.jpg';
@@ -94,7 +94,7 @@ export default function Products() {
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${kurtaHero})` }} />
         <div className="absolute inset-0 bg-black/60" />
         <div className="text-center z-10 px-4">
-          <h1 className="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-4">Our Collection</h1>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter mb-4">Our Collection</h1>
           <p className="text-sm uppercase tracking-[0.3em] text-gray-300">Explore Now</p>
         </div>
       </section>
