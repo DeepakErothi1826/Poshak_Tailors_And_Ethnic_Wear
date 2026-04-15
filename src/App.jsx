@@ -8,7 +8,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Poshak_Tailors_And_Ethnic_Wear">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
