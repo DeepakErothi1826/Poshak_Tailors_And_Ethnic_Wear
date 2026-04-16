@@ -33,18 +33,18 @@ import gallery6 from '../Image/Suit Inspiration for Styled Shoot.jpg';
 const HERO_SLIDES = [
   {
     image: kurtaHero,
-    title: 'Premium Ethnic Wear',
-    subtitle: 'Elegance Redefined'
+    title: 'Ethnic Wear',
+    subtitle: 'Traditional Elegance'
   },
   {
     image: blazerHero,
     title: 'Designer Blazers',
-    subtitle: 'Tailored to Perfection'
+    subtitle: 'Modern Sophistication'
   },
   {
     image: hero1Img,
-    title: 'Bespoke Suiting',
-    subtitle: 'Your Perfect Fit'
+    title: 'Bespoke Suits',
+    subtitle: 'Perfect Fit'
   }
 ];
 
@@ -88,6 +88,9 @@ export default function Home() {
             />
           ))}
         </div>
+        
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/40 z-0" />
 
         <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
           <AnimatePresence mode="wait">
@@ -99,8 +102,8 @@ export default function Home() {
               transition={{ duration: 0.8 }}
               className="mt-20"
             >
-              <h2 className="text-white text-sm md:text-md uppercase tracking-[0.5em] mb-4">{HERO_SLIDES[currentSlide].subtitle}</h2>
-              <h1 className="text-white text-4xl md:text-6xl lg:text-8xl font-black uppercase tracking-tighter leading-none mb-6 md:mb-8">
+              <h2 className="text-white/90 text-sm md:text-md uppercase tracking-[0.5em] mb-4 drop-shadow-lg">{HERO_SLIDES[currentSlide].subtitle}</h2>
+              <h1 className="text-white text-4xl md:text-6xl lg:text-8xl font-black uppercase tracking-tighter leading-none mb-6 md:mb-8 drop-shadow-xl">
                 {HERO_SLIDES[currentSlide].title}
               </h1>
               <button className="bg-white text-black px-6 md:px-8 py-3 md:py-4 uppercase text-xs md:text-sm font-bold tracking-widest hover:bg-gray-200 transition-colors inline-flex items-center gap-2 group">
