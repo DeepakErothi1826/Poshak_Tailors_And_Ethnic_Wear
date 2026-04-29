@@ -10,7 +10,7 @@ import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Poshak_Tailors_And_Ethnic_Wear">
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
