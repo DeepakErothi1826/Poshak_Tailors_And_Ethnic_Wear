@@ -42,23 +42,23 @@ import shirt4 from '../Image/download (82).jpg';
 
 import jacket1 from '../Image/download (81).jpg';
 import jacket2 from '../Image/download (80).jpg';
-import jacket3 from '../Image/download (79).jpg';
+import jacket3 from '../Image/download (73).jpg';
 import jacket4 from '../Image/download (84).jpg';
 
 import payjama1 from '../Image/download (51).jpg';
 import payjama2 from '../Image/download (50).jpg';
 import payjama3 from '../Image/download (49).jpg';
-import payjama4 from '../Image/download (48).jpg';
+import payjama4 from '../Image/download (52).jpg';
 
 import safari1 from '../Image/download (86).jpg';
 import safari2 from '../Image/download (85).jpg';
-import safari3 from '../Image/download (84).jpg';
-import safari4 from '../Image/download (83).jpg';
+import safari3 from '../Image/download (77).jpg';
+import safari4 from '../Image/download (76).jpg';
 
 import uniform1 from '../Image/download (6).jpg';
-import uniform2 from '../Image/download (70).jpg';
-import uniform3 from '../Image/download (71).jpg';
-import uniform4 from '../Image/download (72).jpg';
+import uniform2 from '../Image/download (69).jpg';
+import uniform3 from '../Image/download (68).jpg';
+import uniform4 from '../Image/download (67).jpg';
 
 import jeans1 from '../Image/jeans1.jpg';
 import jeans2 from '../Image/jeans2.jpg';
