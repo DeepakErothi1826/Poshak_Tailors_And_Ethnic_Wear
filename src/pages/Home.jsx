@@ -231,7 +231,7 @@ export default function Home() {
                   <Link to={`/product/${product.id}`}>
                     <h3 className="font-bold text-sm uppercase tracking-wide leading-tight max-w-[70%] hover:text-gray-500 transition-colors">{product.name}</h3>
                   </Link>
-                  <span className="font-black text-lg">₹{product.price.toLocaleString('en-IN')}</span>
+                  <span className="font-black text-sm">Contact to Owner</span>
                 </div>
               </div>
             ))}
