@@ -10,27 +10,67 @@ import sherwani1 from '../Image/sherwani_hero.jpg';
 import sherwani2 from '../Image/white_bandhgala.jpg';
 import sherwani3 from '../Image/Indian Royal Jhodhpuri Wedding Outfit for Mens.jpg';
 import sherwani4 from '../Image/Indian Royal Jhodhpuri Wedding Outfit for Mens (1).jpg';
+
 import kurta1 from '../Image/kurta_wine.jpg';
 import kurta2 from '../Image/kurta_white.jpg';
 import kurta3 from '../Image/download (23).jpg';
 import kurta4 from '../Image/download (22).jpg';
+
 import suit1 from '../Image/Suit Inspiration for Styled Shoot.jpg';
-import suit2 from '../Image/Lutwyche jacket.jpg';
-import suit3 from '../Image/The anatomy of the suit jacket.jpg';
-import suit4 from '../Image/Men\'s outfit videos 《Formal Suits 》.jpg';
+import suit2 from '../Image/Grey Slim-Fit Suit 3-Piece - VIOSSI.jpg';
+import suit3 from '../Image/Black Slim-Fit Suit 3-Piece - VIOSSI.jpg';
+import suit4 from '../Image/Grey Slim-Fit Suit 3-Piece - VIOSSI (1).jpg';
+
 import blazer1 from '../Image/download (20).jpg';
 import blazer2 from '../Image/download (21).jpg';
 import blazer3 from '../Image/download (16).jpg';
 import blazer4 from '../Image/download (15).jpg';
+
 import pathani1 from '../Image/download (17).jpg';
 import pathani2 from '../Image/download (18).jpg';
 import pathani3 from '../Image/download (19).jpg';
 import pathani4 from '../Image/download (14).jpg';
+
 import indowestern1 from '../Image/hand painted indowestan set.jpg';
 import indowestern2 from '../Image/Udaipur Elegance.jpg';
 import indowestern3 from '../Image/download (13).jpg';
 
-const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Indo-Western', 'Shirt', 'Jacket', 'Payjama', 'Safari', 'Uniform', 'Jeans', 'Paint', 'Accessories'];
+import shirt1 from '../Image/100% Cotton Slim Fit Shirt.jpg';
+import shirt2 from '../Image/Double Cuff Light Green Plain Shirt.jpg';
+import shirt3 from '../Image/Autumn New Italian Collar Young Men's Shirt - Dark Blue _ XXXL.jpg';
+import shirt4 from '../Image/download (82).jpg';
+
+import jacket1 from '../Image/Casual Denim Hunting Style Shacket for Men.jpg';
+import jacket2 from '../Image/Casual White Hunting Shacket for Men.jpg';
+import jacket3 from '../Image/Estilo elegante y sport.jpg';
+import jacket4 from '../Image/download (84).jpg';
+
+import payjama1 from '../Image/download (51).jpg';
+import payjama2 from '../Image/download (50).jpg';
+import payjama3 from '../Image/download (49).jpg';
+import payjama4 from '../Image/Buy Black Georgette Short Kurta for Men And Wide Pants at Aza Fashions.jpg';
+
+import safari1 from '../Image/Find statement summer suiting in our tailoring collection__.jpg';
+import safari2 from '../Image/download (86).jpg';
+import safari3 from '../Image/download (87).jpg';
+import safari4 from '../Image/download (88).jpg';
+
+import uniform1 from '../Image/American school uniform.jpg';
+import uniform2 from '../Image/British college style Spring autumn children clothes school uniform suit,kids school clothing.jpg';
+import uniform3 from '../Image/download (71).jpg';
+import uniform4 from '../Image/download (72).jpg';
+
+import jeans1 from '../Image/download (74).jpg';
+import jeans2 from '../Image/download (75).jpg';
+import jeans3 from '../Image/download (76).jpg';
+import jeans4 from '../Image/4 Colors Autumn Vintage Distressed Men's Baggy Straight Jeans Fashion Korean High Street Denim Pants Streetwear Male Trousers - Vintage Blue _ M.jpg';
+
+import accessories1 from '../Image/Adam_Boyfriend - Vest.jpg';
+import accessories2 from '../Image/fancy waistcoats_ definitely!.jpg';
+import accessories3 from '../Image/COOFANDY Mens Plaid Slim Fit Double Breasted Dress Suit Button Down Vest.jpg';
+import accessories4 from '../Image/download (85).jpg';
+
+const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Indo-Western', 'Shirt', 'Jacket', 'Payjama', 'Safari', 'Uniform', 'Jeans', 'Accessories'];
 
 const IMAGES = {
   Sherwani: [sherwani1, sherwani2, sherwani3, sherwani4],
@@ -39,14 +79,13 @@ const IMAGES = {
   Blazer: [blazer1, blazer2, blazer3, blazer4],
   Pathani: [pathani1, pathani2, pathani3, pathani4],
   'Indo-Western': [indowestern1, indowestern2, indowestern3],
-  Shirt: [suit1, suit2, suit3, suit4],
-  Jacket: [blazer1, blazer2, blazer3, blazer4],
-  Payjama: [kurta1, kurta2, kurta3, kurta4],
-  Safari: [indowestern1, indowestern2, indowestern3],
-  Uniform: [suit1, suit2, suit3, suit4],
-  Jeans: [suit1, suit2, suit3, suit4],
-  Paint: [suit1, suit2, suit3, suit4],
-  Accessories: [indowestern1, indowestern2, indowestern3]
+  Shirt: [shirt1, shirt2, shirt3, shirt4],
+  Jacket: [jacket1, jacket2, jacket3, jacket4],
+  Payjama: [payjama1, payjama2, payjama3, payjama4],
+  Safari: [safari1, safari2, safari3, safari4],
+  Uniform: [uniform1, uniform2, uniform3, uniform4],
+  Jeans: [jeans1, jeans2, jeans3, jeans4],
+  Accessories: [accessories1, accessories2, accessories3, accessories4]
 };
 
 const getRandomImage = (category) => {
@@ -56,23 +95,30 @@ const getRandomImage = (category) => {
 };
 
 const MANDATORY_PRODUCTS = [
-  { id: 1, name: 'Zardosi Embroidered Raw Silk Wedding Sherwani', category: 'Sherwani', price: 45000, image: getRandomImage('Sherwani') },
-  { id: 2, name: 'Italian Viscose Velvet Zari Bandhgala Suit', category: 'Suit', price: 28500, image: getRandomImage('Suit') },
-  { id: 3, name: 'Handwoven Benarasi Silk Kurta Pajama Set', category: 'Kurta', price: 18000, image: getRandomImage('Kurta') },
-  { id: 4, name: 'Classic Black Tuxedo Suit with Satin Lapel', category: 'Suit', price: 22000, image: getRandomImage('Suit') },
-  { id: 5, name: 'Midnight Blue Embroidered Indo-Western Sherwani', category: 'Sherwani', price: 32000, image: getRandomImage('Sherwani') },
-  { id: 6, name: 'Lucknowi Chikankari Festive Kurta', category: 'Kurta', price: 12500, image: getRandomImage('Kurta') },
-  { id: 7, name: 'Charcoal Grey Premium Linen Blazer', category: 'Blazer', price: 15000, image: getRandomImage('Blazer') },
-  { id: 8, name: 'Emerald Green Silk Pathani Suit', category: 'Pathani', price: 14500, image: getRandomImage('Pathani') },
-  { id: 9, name: 'Bespoke Three-Piece Jodhpuri Suit', category: 'Suit', price: 35000, image: getRandomImage('Suit') },
-  { id: 10, name: 'Ivory Threadwork Georgette Groom Sherwani', category: 'Sherwani', price: 48000, image: getRandomImage('Sherwani') }
+  { id: 1, name: 'Zardosi Embroidered Raw Silk Wedding Sherwani', category: 'Sherwani', price: 45000, image: sherwani1 },
+  { id: 2, name: 'Italian Viscose Velvet Zari Bandhgala Suit', category: 'Suit', price: 28500, image: suit1 },
+  { id: 3, name: 'Handwoven Benarasi Silk Kurta Pajama Set', category: 'Kurta', price: 18000, image: kurta1 },
+  { id: 4, name: 'Classic Black Tuxedo Suit with Satin Lapel', category: 'Suit', price: 22000, image: suit3 },
+  { id: 5, name: 'Midnight Blue Embroidered Indo-Western Sherwani', category: 'Sherwani', price: 32000, image: sherwani3 },
+  { id: 6, name: 'Lucknowi Chikankari Festive Kurta', category: 'Kurta', price: 12500, image: kurta3 },
+  { id: 7, name: 'Charcoal Grey Premium Linen Blazer', category: 'Blazer', price: 15000, image: blazer1 },
+  { id: 8, name: 'Emerald Green Silk Pathani Suit', category: 'Pathani', price: 14500, image: pathani1 },
+  { id: 9, name: 'Bespoke Three-Piece Jodhpuri Suit', category: 'Suit', price: 35000, image: suit2 },
+  { id: 10, name: 'Ivory Threadwork Georgette Groom Sherwani', category: 'Sherwani', price: 48000, image: sherwani4 },
+  { id: 11, name: 'Classic Navy Blue Indo-Western Set', category: 'Indo-Western', price: 28000, image: indowestern1 },
+  { id: 12, name: 'Premium Cotton Formal Shirt', category: 'Shirt', price: 4500, image: shirt1 },
+  { id: 13, name: 'Leather Biker Jacket', category: 'Jacket', price: 18000, image: jacket1 },
+  { id: 14, name: 'Silk Blend Payjama Set', category: 'Payjama', price: 8500, image: payjama1 },
+  { id: 15, name: 'Safari Summer Suit', category: 'Safari', price: 15000, image: safari1 },
+  { id: 16, name: 'School Uniform Blazer', category: 'Uniform', price: 6500, image: uniform1 },
+  { id: 17, name: 'Slim Fit Designer Jeans', category: 'Jeans', price: 5500, image: jeans1 },
+  { id: 18, name: 'Designer Waistcoat', category: 'Accessories', price: 3500, image: accessories1 }
 ];
 
-// Generate exactly 40 more products to reach 50
 const ADJECTIVES = ['Royal', 'Classic', 'Premium', 'Bespoke', 'Tailored', 'Elegant', 'Regal', 'Signature', 'Vibrant', 'Majestic'];
 const MATERIALS = ['Silk', 'Linen', 'Velvet', 'Cotton', 'Brocade', 'Georgette', 'Viscose', 'Jacquard', 'Wool', 'Cashmere'];
 
-const GENERATED_PRODUCTS = Array.from({ length: 40 }).map((_, i) => {
+const GENERATED_PRODUCTS = Array.from({ length: 32 }).map((_, i) => {
   const categories = CATEGORIES.slice(1);
   const category = categories[Math.floor(Math.random() * categories.length)];
   const adjective = ADJECTIVES[Math.floor(Math.random() * ADJECTIVES.length)];
@@ -81,7 +127,7 @@ const GENERATED_PRODUCTS = Array.from({ length: 40 }).map((_, i) => {
   const price = Math.floor(Math.random() * 40000) + 10000;
   
   return {
-    id: i + 11,
+    id: i + 19,
     name,
     category,
     price,
@@ -105,7 +151,6 @@ export default function Products() {
       keywords="groom wear, menswear collection, bespoke suits, sherwani, kurta, blazer, pathani suit, Indo-Western, wedding collection, groom outfit, Raipur"
     />
     <div className="w-full bg-white">
-      {/* Hero */}
       <section className="relative h-[50vh] sm:h-[60vh] w-full flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${kurtaHero})` }} />
         <div className="absolute inset-0 bg-black/60" />
@@ -169,7 +214,7 @@ export default function Products() {
                 <span className="font-black text-lg">Contact to Owner</span>
               </div>
               </motion.div>
-            ))}
+          ))}
         </AnimatePresence>
 </motion.div>
       </div>
