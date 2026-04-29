@@ -8,9 +8,11 @@ import Contact from './pages/Contact';
 import Fabrics from './pages/Fabrics';
 import ScrollToTop from './components/ScrollToTop';
 
+const basename = window.location.hostname === 'localhost' ? '/' : '/Poshak_Tailors_And_Ethnic_Wear';
+
 function App() {
   return (
-    <Router basename="/Poshak_Tailors_And_Ethnic_Wear">
+    <Router basename={basename}>
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Layout />}>
