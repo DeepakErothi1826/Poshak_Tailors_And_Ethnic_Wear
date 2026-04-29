@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useCartStore } from '../store/useCartStore';
 import { ArrowRight } from 'lucide-react';
 import SEO from '../components/SEO';
-import kurtaHero from '../Image/download (1).jpg';
+import kurtaHero from '../Image/Kurta_Hero.jpg';
 
 import sherwani1 from '../Image/sherwani_hero.jpg';
 import sherwani2 from '../Image/download (3).jpg';
