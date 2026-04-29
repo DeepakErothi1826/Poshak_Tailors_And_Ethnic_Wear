@@ -4,22 +4,22 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useCartStore } from '../store/useCartStore';
 import { ArrowRight } from 'lucide-react';
 import SEO from '../components/SEO';
-import kurtaHero from '../Image/Kurta_Hero.jpg';
+import kurtaHero from '../Image/download (1).jpg';
 
-import sherwani1 from '../Image/sherwani_hero.jpg';
-import sherwani2 from '../Image/white_bandhgala.jpg';
-import sherwani3 from '../Image/Indian Royal Jhodhpuri Wedding Outfit for Mens.jpg';
-import sherwani4 from '../Image/Indian Royal Jhodhpuri Wedding Outfit for Mens (1).jpg';
+import sherwani1 from '../Image/download (2).jpg';
+import sherwani2 from '../Image/download (3).jpg';
+import sherwani3 from '../Image/download (11).jpg';
+import sherwani4 from '../Image/download (12).jpg';
 
-import kurta1 from '../Image/kurta_wine.jpg';
-import kurta2 from '../Image/kurta_white.jpg';
+import kurta1 from '../Image/download (4).jpg';
+import kurta2 from '../Image/download (5).jpg';
 import kurta3 from '../Image/download (23).jpg';
 import kurta4 from '../Image/download (22).jpg';
 
-import suit1 from '../Image/Suit Inspiration for Styled Shoot.jpg';
-import suit2 from '../Image/Grey Slim-Fit Suit 3-Piece - VIOSSI.jpg';
-import suit3 from '../Image/Black Slim-Fit Suit 3-Piece - VIOSSI.jpg';
-import suit4 from '../Image/Grey Slim-Fit Suit 3-Piece - VIOSSI (1).jpg';
+import suit1 from '../Image/download (10).jpg';
+import suit2 from '../Image/download (9).jpg';
+import suit3 from '../Image/download (8).jpg';
+import suit4 from '../Image/download (7).jpg';
 
 import blazer1 from '../Image/download (20).jpg';
 import blazer2 from '../Image/download (21).jpg';
@@ -31,44 +31,44 @@ import pathani2 from '../Image/download (18).jpg';
 import pathani3 from '../Image/download (19).jpg';
 import pathani4 from '../Image/download (14).jpg';
 
-import indowestern1 from '../Image/hand painted indowestan set.jpg';
-import indowestern2 from '../Image/Udaipur Elegance.jpg';
-import indowestern3 from '../Image/download (13).jpg';
+import indowestern1 from '../Image/download (13).jpg';
+import indowestern2 from '../Image/download (14).jpg';
+import indowestern3 from '../Image/download (15).jpg';
 
-import shirt1 from '../Image/100% Cotton Slim Fit Shirt.jpg';
-import shirt2 from '../Image/Double Cuff Light Green Plain Shirt.jpg';
-import shirt3 from "../Image/Autumn New Italian Collar Young Men's Shirt - Dark Blue _ XXXL.jpg";
+import shirt1 from '../Image/download (90).jpg';
+import shirt2 from '../Image/download (89).jpg';
+import shirt3 from '../Image/download (88).jpg';
 import shirt4 from '../Image/download (82).jpg';
 
-import jacket1 from '../Image/Casual Denim Hunting Style Shacket for Men.jpg';
-import jacket2 from '../Image/Casual White Hunting Shacket for Men.jpg';
-import jacket3 from '../Image/Estilo elegante y sport.jpg';
+import jacket1 from '../Image/download (81).jpg';
+import jacket2 from '../Image/download (80).jpg';
+import jacket3 from '../Image/download (79).jpg';
 import jacket4 from '../Image/download (84).jpg';
 
 import payjama1 from '../Image/download (51).jpg';
 import payjama2 from '../Image/download (50).jpg';
 import payjama3 from '../Image/download (49).jpg';
-import payjama4 from '../Image/Buy Black Georgette Short Kurta for Men And Wide Pants at Aza Fashions.jpg';
+import payjama4 from '../Image/download (48).jpg';
 
-import safari1 from '../Image/Find statement summer suiting in our tailoring collection__.jpg';
-import safari2 from '../Image/download (86).jpg';
-import safari3 from '../Image/download (87).jpg';
-import safari4 from '../Image/download (88).jpg';
+import safari1 from '../Image/download (86).jpg';
+import safari2 from '../Image/download (85).jpg';
+import safari3 from '../Image/download (84).jpg';
+import safari4 from '../Image/download (83).jpg';
 
-import uniform1 from '../Image/American school uniform.jpg';
-import uniform2 from '../Image/British college style Spring autumn children clothes school uniform suit,kids school clothing.jpg';
+import uniform1 from '../Image/download (6).jpg';
+import uniform2 from '../Image/download (70).jpg';
 import uniform3 from '../Image/download (71).jpg';
 import uniform4 from '../Image/download (72).jpg';
 
 import jeans1 from '../Image/download (74).jpg';
 import jeans2 from '../Image/download (75).jpg';
 import jeans3 from '../Image/download (76).jpg';
-import jeans4 from "../Image/4 Colors Autumn Vintage Distressed Men's Baggy Straight Jeans Fashion Korean High Street Denim Pants Streetwear Male Trousers - Vintage Blue _ M.jpg";
+import jeans4 from '../Image/download (77).jpg';
 
-import accessories1 from '../Image/Adam_Boyfriend - Vest.jpg';
-import accessories2 from '../Image/fancy waistcoats_ definitely!.jpg';
-import accessories3 from '../Image/COOFANDY Mens Plaid Slim Fit Double Breasted Dress Suit Button Down Vest.jpg';
-import accessories4 from '../Image/download (85).jpg';
+import accessories1 from '../Image/download (85).jpg';
+import accessories2 from '../Image/download (87).jpg';
+import accessories3 from '../Image/download (86).jpg';
+import accessories4 from '../Image/download (84).jpg';
 
 const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Indo-Western', 'Shirt', 'Jacket', 'Payjama', 'Safari', 'Uniform', 'Jeans', 'Accessories'];
 
