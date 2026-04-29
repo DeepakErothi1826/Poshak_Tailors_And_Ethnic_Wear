@@ -6,13 +6,13 @@ import { ArrowRight } from 'lucide-react';
 import SEO from '../components/SEO';
 import kurtaHero from '../Image/download (1).jpg';
 
-import sherwani1 from '../Image/download (2).jpg';
+import sherwani1 from '../Image/sherwani_hero.jpg';
 import sherwani2 from '../Image/download (3).jpg';
 import sherwani3 from '../Image/download (11).jpg';
 import sherwani4 from '../Image/download (12).jpg';
 
-import kurta1 from '../Image/download (4).jpg';
-import kurta2 from '../Image/download (5).jpg';
+import kurta1 from '../Image/kurta_wine.jpg';
+import kurta2 from '../Image/kurta_white.jpg';
 import kurta3 from '../Image/download (23).jpg';
 import kurta4 from '../Image/download (22).jpg';
 
@@ -26,7 +26,7 @@ import blazer2 from '../Image/download (21).jpg';
 import blazer3 from '../Image/download (16).jpg';
 import blazer4 from '../Image/download (15).jpg';
 
-import pathani1 from '../Image/download (17).jpg';
+import pathani1 from '../Image/pathani_style.jpg';
 import pathani2 from '../Image/download (18).jpg';
 import pathani3 from '../Image/download (19).jpg';
 import pathani4 from '../Image/download (14).jpg';
@@ -60,10 +60,15 @@ import uniform2 from '../Image/download (70).jpg';
 import uniform3 from '../Image/download (71).jpg';
 import uniform4 from '../Image/download (72).jpg';
 
-import jeans1 from '../Image/download (74).jpg';
-import jeans2 from '../Image/download (75).jpg';
-import jeans3 from '../Image/download (76).jpg';
-import jeans4 from '../Image/download (77).jpg';
+import jeans1 from '../Image/jeans1.jpg';
+import jeans2 from '../Image/jeans2.jpg';
+import jeans3 from '../Image/jeans3.jpg';
+import jeans4 from '../Image/jeans4.jpg';
+import jeans5 from '../Image/jeans5.jpg';
+import jeans6 from '../Image/jeans6.jpg';
+import jeans7 from '../Image/jeans7.jpg';
+import jeans8 from '../Image/jeans8.jpg';
+import jeans9 from '../Image/jeans9.jpg';
 
 import accessories1 from '../Image/download (85).jpg';
 import accessories2 from '../Image/download (87).jpg';
@@ -84,7 +89,7 @@ const IMAGES = {
   Payjama: [payjama1, payjama2, payjama3, payjama4],
   Safari: [safari1, safari2, safari3, safari4],
   Uniform: [uniform1, uniform2, uniform3, uniform4],
-  Jeans: [jeans1, jeans2, jeans3, jeans4],
+  Jeans: [jeans1, jeans2, jeans3, jeans4, jeans5, jeans6, jeans7, jeans8, jeans9],
   Accessories: [accessories1, accessories2, accessories3, accessories4]
 };
 
@@ -112,7 +117,11 @@ const MANDATORY_PRODUCTS = [
   { id: 15, name: 'Safari Summer Suit', category: 'Safari', price: 15000, image: safari1 },
   { id: 16, name: 'School Uniform Blazer', category: 'Uniform', price: 6500, image: uniform1 },
   { id: 17, name: 'Slim Fit Designer Jeans', category: 'Jeans', price: 5500, image: jeans1 },
-  { id: 18, name: 'Designer Waistcoat', category: 'Accessories', price: 3500, image: accessories1 }
+  { id: 18, name: 'Vintage Wash Straight Fit Jeans', category: 'Jeans', price: 6200, image: jeans2 },
+  { id: 19, name: 'Premium Denim Casual Jeans', category: 'Jeans', price: 4800, image: jeans3 },
+  { id: 20, name: 'Classic Blue Slim Jeans', category: 'Jeans', price: 5500, image: jeans4 },
+  { id: 21, name: 'Black Stretch Skinny Jeans', category: 'Jeans', price: 4500, image: jeans5 },
+  { id: 22, name: 'Designer Waistcoat', category: 'Accessories', price: 3500, image: accessories1 }
 ];
 
 const ADJECTIVES = ['Royal', 'Classic', 'Premium', 'Bespoke', 'Tailored', 'Elegant', 'Regal', 'Signature', 'Vibrant', 'Majestic'];
