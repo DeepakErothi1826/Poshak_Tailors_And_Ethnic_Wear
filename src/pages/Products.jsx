@@ -37,7 +37,7 @@ import indowestern3 from '../Image/download (13).jpg';
 
 import shirt1 from '../Image/100% Cotton Slim Fit Shirt.jpg';
 import shirt2 from '../Image/Double Cuff Light Green Plain Shirt.jpg';
-import shirt3 from '../Image/Autumn New Italian Collar Young Men's Shirt - Dark Blue _ XXXL.jpg';
+import shirt3 from "../Image/Autumn New Italian Collar Young Men's Shirt - Dark Blue _ XXXL.jpg";
 import shirt4 from '../Image/download (82).jpg';
 
 import jacket1 from '../Image/Casual Denim Hunting Style Shacket for Men.jpg';
@@ -63,7 +63,7 @@ import uniform4 from '../Image/download (72).jpg';
 import jeans1 from '../Image/download (74).jpg';
 import jeans2 from '../Image/download (75).jpg';
 import jeans3 from '../Image/download (76).jpg';
-import jeans4 from '../Image/4 Colors Autumn Vintage Distressed Men's Baggy Straight Jeans Fashion Korean High Street Denim Pants Streetwear Male Trousers - Vintage Blue _ M.jpg';
+import jeans4 from "../Image/4 Colors Autumn Vintage Distressed Men's Baggy Straight Jeans Fashion Korean High Street Denim Pants Streetwear Male Trousers - Vintage Blue _ M.jpg";
 
 import accessories1 from '../Image/Adam_Boyfriend - Vest.jpg';
 import accessories2 from '../Image/fancy waistcoats_ definitely!.jpg';
