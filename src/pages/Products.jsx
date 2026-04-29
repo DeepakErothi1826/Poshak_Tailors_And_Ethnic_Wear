@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCartStore } from '../store/useCartStore';
+import { ArrowRight } from 'lucide-react';
+import SEO from '../components/SEO';
 import kurtaHero from '../Image/Kurta_Hero.jpg';
 
 import sherwani1 from '../Image/sherwani_hero.jpg';
@@ -28,7 +30,7 @@ import indowestern1 from '../Image/hand painted indowestan set.jpg';
 import indowestern2 from '../Image/Udaipur Elegance.jpg';
 import indowestern3 from '../Image/download (13).jpg';
 
-const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Indo-Western'];
+const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Indo-Western', 'Shirt', 'Jacket', 'Payjama', 'Safari', 'Uniform', 'Jeans', 'Paint', 'Accessories'];
 
 const IMAGES = {
   Sherwani: [sherwani1, sherwani2, sherwani3, sherwani4],
@@ -36,7 +38,15 @@ const IMAGES = {
   Kurta: [kurta1, kurta2, kurta3, kurta4],
   Blazer: [blazer1, blazer2, blazer3, blazer4],
   Pathani: [pathani1, pathani2, pathani3, pathani4],
-  'Indo-Western': [indowestern1, indowestern2, indowestern3]
+  'Indo-Western': [indowestern1, indowestern2, indowestern3],
+  Shirt: [suit1, suit2, suit3, suit4],
+  Jacket: [blazer1, blazer2, blazer3, blazer4],
+  Payjama: [kurta1, kurta2, kurta3, kurta4],
+  Safari: [indowestern1, indowestern2, indowestern3],
+  Uniform: [suit1, suit2, suit3, suit4],
+  Jeans: [suit1, suit2, suit3, suit4],
+  Paint: [suit1, suit2, suit3, suit4],
+  Accessories: [indowestern1, indowestern2, indowestern3]
 };
 
 const getRandomImage = (category) => {
@@ -88,32 +98,46 @@ export default function Products() {
   const filteredProducts = filter === 'All' ? ALL_PRODUCTS : ALL_PRODUCTS.filter(p => p.category === filter);
 
   return (
+    <>
+    <SEO 
+      title="Premium Groom & Menswear Collection | Bespoke Suits, Sherwani, Kurta"
+      description="Explore our premium collection of bespoke suits, sherwanis, kurtas, blazers, pathani suits, and Indo-Western wear. Handcrafted wedding groom wear in Raipur, Chhattisgarh."
+      keywords="groom wear, menswear collection, bespoke suits, sherwani, kurta, blazer, pathani suit, Indo-Western, wedding collection, groom outfit, Raipur"
+    />
     <div className="w-full bg-white">
       {/* Hero */}
-      <section className="relative h-[40vh] w-full pt-24 bg-black text-white flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] sm:h-[60vh] w-full flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${kurtaHero})` }} />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="text-center z-10 px-4">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter mb-4">Our Collection</h1>
-          <p className="text-sm uppercase tracking-[0.3em] text-gray-300">Explore Now</p>
-        </div>
+        <motion.div 
+          initial={{ y: 30, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="text-center z-10 px-3 sm:px-4"
+        >
+          <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-tighter mb-3 sm:mb-4 text-white">Our Collection</h1>
+          <p className="text-xs sm:text-sm uppercase tracking-[0.3em] text-white mb-4 sm:mb-6">Explore Now</p>
+          <Link to="/products" className="inline-flex items-center gap-2 bg-white text-black px-4 sm:px-6 py-2.5 sm:py-3 uppercase text-xs font-bold tracking-widest hover:bg-gray-200 transition-colors">
+            View All <ArrowRight className="w-4 h-4" />
+          </Link>
+        </motion.div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-8 sm:py-12">
 
-      <div className="flex flex-wrap justify-center gap-4 md:gap-8 mb-12 border-b border-gray-200 pb-4">
+      <div className="flex flex-wrap justify-center gap-2 sm:gap-4 md:gap-8 mb-8 sm:mb-12 border-b border-gray-200 pb-4 overflow-x-auto">
         {CATEGORIES.map((cat) => (
           <button 
             key={cat}
             onClick={() => setFilter(cat)}
-            className={`text-sm font-bold uppercase tracking-widest px-2 py-2 transition-colors ${filter === cat ? 'text-black border-b-2 border-black' : 'text-gray-400 hover:text-black'}`}
+            className={`text-xs sm:text-sm font-bold uppercase tracking-widest px-2 py-2 transition-colors whitespace-nowrap ${filter === cat ? 'text-black border-b-2 border-black' : 'text-gray-400 hover:text-black'}`}
           >
             {cat}
           </button>
         ))}
       </div>
 
-      <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+      <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 gap-y-10 sm:gap-y-16">
         <AnimatePresence>
           {filteredProducts.map((product) => (
             <motion.div 
@@ -142,13 +166,14 @@ export default function Products() {
                   <h3 className="font-bold text-sm uppercase tracking-wide mb-2 leading-snug h-10 flex items-center justify-center hover:text-gray-500 transition-colors">{product.name}</h3>
                 </Link>
                 <p className="text-gray-400 text-xs uppercase tracking-widest mb-2">{product.category}</p>
-                <span className="font-black text-lg">₹{product.price.toLocaleString('en-IN')}</span>
+                <span className="font-black text-lg">Contact to Owner</span>
               </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            ))}
         </AnimatePresence>
-      </motion.div>
+</motion.div>
       </div>
     </div>
+    </>
   );
 }

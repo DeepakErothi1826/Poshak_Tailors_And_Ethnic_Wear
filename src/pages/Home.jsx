@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCartStore } from '../store/useCartStore';
-import { ArrowRight, Star, Award, Clock, Truck, Shield, Phone, Mail, MapPin } from 'lucide-react';
+import { ArrowRight, Star, Award, Clock, Truck, Shield, Phone } from 'lucide-react';
+import SEO from '../components/SEO';
 import kurtaHero from '../Image/Kurta_Hero.jpg';
 import blazerHero from '../Image/Blazer_Hero.jpg';
 import hero1Img from '../Image/hero1.png';
@@ -73,51 +74,43 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="w-full bg-white -mt-20">
+    <>
+    <SEO 
+      title="Poshak Tailors And Ethnic Wear | Best Bespoke Suits & Sherwani in Raipur"
+      description="Premier bespoke tailoring and ethnic wear in Raipur, Chhattisgarh. Expert crafting of sherwanis, suits, kurtas, and wedding wear since 1995. Free shipping across India."
+      keywords="Poshak Tailors, ethnic wear, bespoke tailoring, sherwani, suit, kurta, wedding wear, Raipur, Chhattisgarh, menswear, party wear, formal suits, Indo-Western, Jodhpuri suit, Bandhgala"
+    />
+    <div className="w-full bg-white">
       {/* Hero Section */}
-      <section className="relative h-screen w-full overflow-hidden bg-black pt-24">
-        <div className="absolute inset-0 w-full h-full">
-          {HERO_SLIDES.map((slide, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: currentSlide === index ? 1 : 0 }}
-              transition={{ duration: 1.5, ease: "easeInOut" }}
-              className="absolute inset-0 w-full h-full bg-cover bg-center"
-              style={{ backgroundImage: `url(${slide.image})` }}
-            />
-          ))}
-        </div>
+      <section className="relative h-[50vh] sm:h-[60vh] w-full flex items-center justify-center overflow-hidden bg-black">
+        <div 
+          className="absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000"
+          style={{ backgroundImage: `url(${HERO_SLIDES[currentSlide].image})` }}
+        />
         
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/40 z-0" />
 
-        <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-4">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={currentSlide}
-              initial={{ y: 30, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              exit={{ y: -30, opacity: 0 }}
-              transition={{ duration: 0.8 }}
-              className="mt-20"
-            >
-              <h2 className="text-white/90 text-sm md:text-md uppercase tracking-[0.5em] mb-4 drop-shadow-lg">{HERO_SLIDES[currentSlide].subtitle}</h2>
-              <h1 className="text-white text-4xl md:text-6xl lg:text-8xl font-black uppercase tracking-tighter leading-none mb-6 md:mb-8 drop-shadow-xl">
+        <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-3 sm:px-4">
+          <div key={currentSlide} className="animate-fade-in">
+              <h2 className="text-white/90 text-xs sm:text-sm md:text-md uppercase tracking-[0.3em] sm:tracking-[0.5em] mb-3 sm:mb-4">{HERO_SLIDES[currentSlide].subtitle}</h2>
+              <h1 className="text-white text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-black uppercase tracking-tighter leading-none mb-4 sm:mb-6 md:mb-8">
                 {HERO_SLIDES[currentSlide].title}
               </h1>
-              <button className="bg-white text-black px-6 md:px-8 py-3 md:py-4 uppercase text-xs md:text-sm font-bold tracking-widest hover:bg-gray-200 transition-colors inline-flex items-center gap-2 group">
+              <div className="mb-4 sm:mb-6">
+                <span className="text-white/80 text-sm sm:text-lg md:text-xl font-bold uppercase tracking-wider">POSHAK TAILOR & ETHNIC WEAR</span>
+              </div>
+              <Link to="/products" className="bg-white text-black px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 uppercase text-xs sm:text-xs md:text-sm font-bold tracking-widest hover:bg-gray-200 transition-colors inline-flex items-center gap-2 group">
                 Explore Collection
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </button>
-            </motion.div>
-          </AnimatePresence>
+              </Link>
+          </div>
         </div>
 
         {/* Sliding Progress Bars */}
-        <div className="absolute bottom-10 left-0 w-full flex justify-center gap-4 z-20">
+        <div className="absolute bottom-6 sm:bottom-10 left-0 w-full flex justify-center gap-2 sm:gap-4 z-20 px-4">
           {HERO_SLIDES.map((_, idx) => (
-            <div key={idx} className="h-1 w-16 md:w-24 bg-gray-600 overflow-hidden cursor-pointer" onClick={() => setCurrentSlide(idx)}>
+            <div key={idx} className="h-1 w-12 sm:w-16 md:w-24 bg-gray-600 overflow-hidden cursor-pointer" onClick={() => setCurrentSlide(idx)}>
               <div
                 className={`h-full bg-white transition-all duration-[5000ms] ease-linear origin-left ${currentSlide === idx ? 'w-full' : currentSlide > idx ? 'w-full !duration-0' : 'w-0 !duration-0'}`}
               />
@@ -128,15 +121,18 @@ export default function Home() {
 
       {/* Marquee Banner */}
       <div className="w-full overflow-hidden bg-black text-white py-4 border-y border-gray-800">
-        <motion.div
-          animate={{ x: [0, -1000] }}
-          transition={{ repeat: Infinity, duration: 15, ease: "linear" }}
-          className="flex whitespace-nowrap text-xs font-bold uppercase tracking-[0.3em]"
-        >
-          {Array(10).fill("POSHAK TAILORS ✦ ETHNIC WEAR ✦ BESPOKE DESIGN ✦ ").map((text, i) => (
-            <span key={i} className="mx-4">{text}</span>
-          ))}
-        </motion.div>
+        <div className="marquee-container flex whitespace-nowrap text-xs font-bold uppercase tracking-[0.3em]">
+          <span className="marquee-content">
+            {Array(4).fill("POSHAK TAILORS ✦ ETHNIC WEAR ✦ BESPOKE DESIGN ✦ ").map((text, i) => (
+              <span key={i} className="mx-4">{text}</span>
+            ))}
+          </span>
+          <span className="marquee-content">
+            {Array(4).fill("POSHAK TAILORS ✦ ETHNIC WEAR ✦ BESPOKE DESIGN ✦ ").map((text, i) => (
+              <span key={i} className="mx-4">{text}</span>
+            ))}
+          </span>
+        </div>
       </div>
 
       {/* Top Collections (Wireframe Match) */}
@@ -146,26 +142,27 @@ export default function Home() {
             <h2 className="text-3xl font-black uppercase tracking-tighter mb-2">Top Collections</h2>
             <p className="text-gray-500 max-w-md text-sm">Discover our carefully curated selections of ethnic wear and bespoke tailoring for every occasion.</p>
           </div>
-          <button className="hidden md:inline-flex items-center gap-2 uppercase tracking-widest text-xs font-bold border-b-2 border-black pb-1 hover:text-gray-600 hover:border-gray-600 transition-colors">
+          <Link to="/products" className="hidden md:inline-flex items-center gap-2 uppercase tracking-widest text-xs font-bold border-b-2 border-black pb-1 hover:text-gray-600 hover:border-gray-600 transition-colors">
             View All <ArrowRight className="w-4 h-4" />
-          </button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {['Men\'s Ethnic', 'Designer Kurtas', 'Custom Tailoring'].map((category, idx) => (
-            <motion.div
-              key={idx}
-              whileHover={{ y: -10 }}
-              className="group cursor-pointer relative bg-gray-100 aspect-[3/4] overflow-hidden"
-            >
-              <img src={HERO_IMAGES[idx]} alt={category} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
-                <div>
-                  <h3 className="text-white text-xl font-bold uppercase tracking-wider">{category}</h3>
-                  <p className="text-gray-300 text-xs uppercase tracking-widest mt-1 opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">Explore Collection</p>
+            <Link to="/products" key={idx}>
+              <motion.div
+                whileHover={{ y: -10 }}
+                className="group cursor-pointer relative bg-gray-100 aspect-[3/4] overflow-hidden"
+              >
+                <img src={HERO_IMAGES[idx]} alt={category} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
+                  <div>
+                    <h3 className="text-white text-xl font-bold uppercase tracking-wider">{category}</h3>
+                    <p className="text-gray-300 text-xs uppercase tracking-widest mt-1 opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">Explore Collection</p>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
+              </motion.div>
+            </Link>
           ))}
         </div>
       </section>
@@ -240,15 +237,15 @@ export default function Home() {
             ))}
           </div>
           <div className="mt-16 text-center">
-            <button className="border-2 border-black px-10 py-4 uppercase text-sm font-bold tracking-widest hover:bg-black hover:text-white transition-colors">
+            <Link to="/products" className="border-2 border-black px-10 py-4 uppercase text-sm font-bold tracking-widest hover:bg-black hover:text-white transition-colors">
               View Full Collection
-            </button>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Brand Story / Parallax Block */}
-      <section className="relative h-[80vh] w-full flex items-center justify-center overflow-hidden bg-black">
+      <section className="relative h-[60vh] w-full flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0 w-full h-full opacity-40">
           <img src={heritageImg} alt="Tailoring Heritage" className="w-full h-full object-cover" />
         </div>
@@ -257,9 +254,9 @@ export default function Home() {
           <p className="text-2xl md:text-4xl font-light leading-relaxed mb-8 font-serif italic text-balance">
             "Reflect your unique persona with bespoke tailoring. Three decades of masterful craftsmanship, blending rich traditions with modern aesthetic."
           </p>
-          <button className="border border-white hover:bg-white hover:text-black transition-colors px-8 py-4 uppercase text-sm font-bold tracking-widest">
+          <Link to="/about" className="border border-white hover:bg-white hover:text-black transition-colors px-8 py-4 uppercase text-sm font-bold tracking-widest">
             Read Our Story
-          </button>
+          </Link>
         </div>
       </section>
 
@@ -324,9 +321,9 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tighter mb-2">Our Services</h2>
               <p className="text-gray-500 max-w-md">Comprehensive tailoring solutions for every need.</p>
             </div>
-            <button className="hidden md:inline-flex items-center gap-2 uppercase tracking-widest text-xs font-bold border-b-2 border-black pb-1 hover:text-gray-600 hover:border-gray-600 transition-colors">
+            <Link to="/products" className="hidden md:inline-flex items-center gap-2 uppercase tracking-widest text-xs font-bold border-b-2 border-black pb-1 hover:text-gray-600 hover:border-gray-600 transition-colors">
               View All <ArrowRight className="w-4 h-4" />
-            </button>
+            </Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -336,17 +333,18 @@ export default function Home() {
               { image: serviceImg3, title: "Ethnic Wear", desc: "Traditional kurtas, pathanis, and Indo-western ensembles." },
               { image: serviceImg4, title: "Alterations", desc: "Expert alterations to give your old favorites a new life." }
             ].map((service, i) => (
-              <motion.div
-                key={i}
-                whileHover={{ y: -10 }}
-                className="group cursor-pointer"
-              >
-                <div className="aspect-[4/5] overflow-hidden mb-4">
-                  <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                </div>
-                <h3 className="text-lg font-bold uppercase tracking-wider mb-2">{service.title}</h3>
-                <p className="text-gray-500 text-sm">{service.desc}</p>
-              </motion.div>
+              <Link to="/products" key={i}>
+                <motion.div
+                  whileHover={{ y: -10 }}
+                  className="group cursor-pointer"
+                >
+                  <div className="aspect-[4/5] overflow-hidden mb-4">
+                    <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                  </div>
+                  <h3 className="text-lg font-bold uppercase tracking-wider mb-2">{service.title}</h3>
+                  <p className="text-gray-500 text-sm">{service.desc}</p>
+                </motion.div>
+              </Link>
             ))}
           </div>
         </div>
@@ -458,35 +456,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Bar */}
-      <section className="py-12 bg-black text-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-            <div className="flex items-center justify-center md:justify-start gap-4">
-              <MapPin className="w-5 h-5 text-gray-400" />
-              <div>
-                <p className="text-sm font-bold uppercase tracking-wider">Visit Us</p>
-                <p className="text-gray-400 text-sm">Pandri, Raipur</p>
-              </div>
-            </div>
-            <div className="flex items-center justify-center md:justify-start gap-4">
-              <Phone className="w-5 h-5 text-gray-400" />
-              <div>
-                <p className="text-sm font-bold uppercase tracking-wider">Call Us</p>
-                <p className="text-gray-400 text-sm">098271 65995</p>
-              </div>
-            </div>
-            <div className="flex items-center justify-center md:justify-start gap-4">
-              <Mail className="w-5 h-5 text-gray-400" />
-              <div>
-                <p className="text-sm font-bold uppercase tracking-wider">Email Us</p>
-                <p className="text-gray-400 text-sm">info@poshaktailors.com</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
     </div>
+    </>
   );
 }

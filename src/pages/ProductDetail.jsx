@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Heart, Clock, Package, Truck, Minus, Plus, ChevronDown, ChevronUp, Star, ArrowRight } from 'lucide-react';
 import { useCartStore } from '../store/useCartStore';
 import { ALL_PRODUCTS } from './Products';
+import SEO from '../components/SEO';
 
 export default function ProductDetail() {
   const { id } = useParams();
@@ -43,17 +44,45 @@ export default function ProductDetail() {
 
   if (!product) return <div className="min-h-screen pt-32 text-center font-bold text-xl">Product not found.</div>;
 
+  const productSchema = {
+    "@context": "https://schema.org/",
+    "@type": "Product",
+    "name": product.name,
+    "image": product.image,
+    "description": `Premium ${product.category} - ${product.name}. Handcrafted by Poshak Tailors in Raipur, Chhattisgarh.`,
+    "brand": {
+      "@type": "Brand",
+      "name": "Poshak Tailors"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": product.price,
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock"
+    }
+  };
+
   return (
-    <div className="w-full bg-white pt-24 pb-24 font-sans text-gray-900">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <>
+    <SEO 
+      title={product.name}
+      description={`Buy premium ${product.category} - ${product.name}. Handcrafted by Poshak Tailors. Free shipping across India. Best price in Raipur.`}
+      keywords={`${product.name}, ${product.category}, Poshak Tailors, bespoke ${product.category.toLowerCase()}, wedding wear, Raipur, Chhattisgarh`}
+      url={`https://poshaktailors.com/product/${product.id}`}
+      image={product.image}
+      type="product"
+      schema={productSchema}
+    />
+    <div className="w-full bg-white pt-20 sm:pt-24 pb-12 sm:pb-24 font-sans text-gray-900">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         
         {/* Breadcrumb */}
-        <div className="text-sm text-gray-500 mb-8 flex gap-2 items-center cursor-pointer" onClick={() => navigate('/products')}>
+        <div className="text-xs sm:text-sm text-gray-500 mb-6 sm:mb-8 flex gap-2 items-center cursor-pointer" onClick={() => navigate('/products')}>
           <span>← Home • Product details</span>
         </div>
 
         {/* Main Product Layout */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-12 lg:mb-20">
           
           {/* Left: Image Gallery (identical to mockup: big rounded box, 3 smaller rounded boxes at bottom inside) */}
           <div className="flex flex-col gap-4 relative">
@@ -89,8 +118,8 @@ export default function ProductDetail() {
               <h1 className="text-3xl font-semibold mb-2 text-gray-900 tracking-tight">
                 {product.name}
               </h1>
-              <p className="text-xl font-bold mb-6 text-gray-900 flex items-center">
-                ₹{product.price.toLocaleString('en-IN')}
+              <p className="text-xl font-bold mb-6 text-gray-900">
+                Contact to Owner
               </p>
 
               {/* Delivery Timer Alert */}
@@ -286,9 +315,7 @@ export default function ProductDetail() {
                   <span className="text-[12px] text-gray-500 font-medium ml-1">4.5/5</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="font-semibold text-gray-900">₹{p.price.toLocaleString('en-IN')}</span>
-                  {p.id % 2 === 0 && <span className="text-[13px] text-gray-400 line-through">₹{(p.price * 1.2).toLocaleString('en-IN')}</span>}
-                  {p.id % 2 === 0 && <span className="text-[11px] text-red-500 bg-red-50 font-medium px-2 py-0.5 rounded-full">-20%</span>}
+                  <span className="font-semibold text-gray-900">Contact to Owner</span>
                 </div>
               </div>
             ))}
@@ -297,5 +324,6 @@ export default function ProductDetail() {
 
       </div>
     </div>
+    </>
   );
 }

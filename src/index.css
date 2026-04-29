@@ -33,4 +33,41 @@
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+
+  /* Performance animations */
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Marquee animation */
+  .marquee-container {
+    display: flex;
+    width: 200%;
+  }
+  
+  .marquee-content {
+    display: flex;
+    width: 50%;
+    animation: marquee 15s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 }

@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import SEO from '../components/SEO';
 import hero1Img from '../Image/hero1.png';
 import aboutImg1 from '../Image/download (7).jpg';
 import aboutImg2 from '../Image/download (6).jpg';
@@ -8,20 +9,42 @@ import aboutImg5 from '../Image/download (3).jpg';
 import aboutImg6 from '../Image/download (2).jpg';
 
 export default function About() {
+  const aboutSchema = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Poshak Tailors",
+    "description": "Premier bespoke tailoring and ethnic wear in Raipur, Chhattisgarh since 1995. Expert crafting of sherwanis, suits, kurtas, and wedding wear.",
+    "url": "https://poshaktailors.com/about"
+  };
+
   return (
+    <>
+    <SEO 
+      title="About Us | Poshak Tailors - Bespoke Tailoring Since 1995"
+      description="Learn about Poshak Tailors & Ethnic Wear - premier bespoke tailoring in Raipur, Chhattisgarh since 1995. Expert crafting of sherwanis, suits, kurtas, and wedding wear with 'GOD MAKES MAN WE MAKE GENTLEMAN' philosophy."
+      keywords="about Poshak Tailors, bespoke tailoring Raipur, wedding wear since 1995, ethnic wear Chhattisgarh, sherwani expert, tailor shop Raipur"
+      url="https://poshaktailors.com/about"
+      schema={aboutSchema}
+    />
     <div className="w-full bg-white">
       {/* Hero */}
-      <section className="relative h-[60vh] w-full pt-24 bg-black text-white flex items-center justify-center overflow-hidden">
+      <section className="relative h-[50vh] sm:h-[60vh] w-full flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${hero1Img})` }} />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="text-center z-10 px-4">
-          <h1 className="text-3xl md:text-5xl lg:text-7xl font-black uppercase tracking-tighter mb-4 text-balance">The Heritage</h1>
-          <p className="text-sm uppercase tracking-[0.3em] text-gray-300">EST. 1993</p>
-        </div>
+        <motion.div 
+          initial={{ y: 30, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="text-center z-10 px-3 sm:px-4"
+        >
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-black uppercase tracking-tighter mb-4 sm:mb-6 text-balance text-white">POSHAK TAILOR & ETHNIC WEAR</h1>
+          <p className="text-lg sm:text-xl md:text-2xl font-bold text-white uppercase tracking-wider mb-3 sm:mb-4">Since 1995</p>
+          <p className="text-xs sm:text-sm md:text-lg italic text-gray-300 font-light tracking-wide">"GOD MAKES MAN WE MAKE GENTLEMAN"</p>
+        </motion.div>
       </section>
 
       {/* Story Narrative */}
-      <section className="py-24 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-12 sm:py-24 max-w-4xl mx-auto px-3 sm:px-6 lg:px-8">
         <motion.div 
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -46,6 +69,30 @@ export default function About() {
           alt="Tailoring Masterclass" 
           className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
         />
+      </section>
+
+      {/* Third Generation */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div 
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8 }}
+            className="text-center space-y-8"
+          >
+            <h2 className="text-3xl font-black uppercase tracking-tighter">The Third Generation</h2>
+            <p className="text-lg font-light leading-relaxed text-gray-600 max-w-3xl mx-auto">
+              Today, Poshak Tailor & Ethnic Wear stands proud as a third-generation family business, carrying forward the legacy of our forefathers while embracing modern innovations. What began as a small tailoring shop in the heart of Raipur has transformed into a name synonymous with elegance, precision, and timeless craftsmanship.
+            </p>
+            <p className="text-lg font-light leading-relaxed text-gray-600 max-w-3xl mx-auto">
+              We have witnessed the evolution of fashion trends while staying rooted in our core values—quality, integrity, and customer satisfaction. Each generation has contributed its wisdom, refined techniques, and introduced new styles, ensuring that we remain at the forefront of the tailoring industry while honoring our heritage.
+            </p>
+            <p className="text-lg font-light leading-relaxed text-gray-600 max-w-3xl mx-auto">
+              As we step into the future, we continue to pass down the art of bespoke tailoring to the next generation, preserving the craft that has defined us for nearly three decades.
+            </p>
+          </motion.div>
+        </div>
       </section>
 
       {/* Philosophy */}
@@ -255,15 +302,16 @@ export default function About() {
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
-                allowFullScreen=""
+                allowFullScreen="allowfullscreen"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                className="grayscale invert"
+                title="Store Location"
               />
             </div>
           </div>
         </div>
       </section>
     </div>
+    </>
   );
 }

@@ -29,13 +29,13 @@ export default function CartDrawer() {
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'spring', damping: 30, stiffness: 300 }}
-            className="fixed right-0 top-0 h-full w-full max-w-lg bg-white z-[70] flex flex-col shadow-2xl"
+            className="fixed right-0 top-0 h-full w-full sm:max-w-lg bg-white z-[70] flex flex-col shadow-2xl"
           >
             {/* Header */}
-            <div className="flex justify-between items-center p-5 border-b border-gray-200">
-              <div className="flex items-center gap-3">
+            <div className="flex justify-between items-center p-4 sm:p-5 border-b border-gray-200">
+              <div className="flex items-center gap-2 sm:gap-3">
                 <ShoppingBag className="w-5 h-5" />
-                <span className="font-semibold text-lg">Shopping Bag</span>
+                <span className="font-semibold text-base sm:text-lg">Shopping Bag</span>
                 <span className="text-sm text-gray-500">({cart.length})</span>
               </div>
               <button 
@@ -60,31 +60,31 @@ export default function CartDrawer() {
                   </button>
                 </div>
               ) : (
-                <div className="p-5 space-y-6">
+                <div className="p-4 sm:p-5 space-y-4 sm:space-y-6">
                   {cart.map((item) => (
-                    <div key={`${item.id}-${item.size}`} className="flex gap-4 border-b border-gray-100 pb-6">
+                    <div key={`${item.id}-${item.size}`} className="flex gap-3 sm:gap-4 border-b border-gray-100 pb-4 sm:pb-6">
                       {/* Image */}
-                      <div className="w-28 h-40 bg-gray-100 rounded-lg overflow-hidden flex-shrink-0">
+                      <div className="w-20 sm:w-28 h-28 sm:h-40 bg-gray-100 rounded-lg overflow-hidden flex-shrink-0">
                         <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
                       </div>
 
                       {/* Details */}
-                      <div className="flex-1 flex flex-col justify-between">
+                      <div className="flex-1 flex flex-col justify-between min-w-0">
                         <div>
-                          <div className="flex justify-between items-start">
-                            <h3 className="font-medium text-sm text-gray-900 leading-snug">{item.name}</h3>
+                          <div className="flex justify-between items-start gap-2">
+                            <h3 className="font-medium text-xs sm:text-sm text-gray-900 leading-snug truncate">{item.name}</h3>
                             <button 
                               onClick={() => removeFromCart(item.id, item.size)}
-                              className="text-gray-400 hover:text-gray-600"
+                              className="text-gray-400 hover:text-gray-600 flex-shrink-0"
                             >
                               <X className="w-4 h-4" />
                             </button>
                           </div>
                           <p className="text-xs text-gray-500 mt-1">{item.category}</p>
-                          <p className="font-semibold text-gray-900 mt-2">₹{item.price.toLocaleString('en-IN')}</p>
+                          <p className="font-semibold text-gray-900 mt-2 text-sm">Contact to Owner</p>
                         </div>
 
-                        <div className="space-y-3 mt-3">
+                        <div className="space-y-2 sm:space-y-3 mt-2 sm:mt-3">
                           {/* Size */}
                           <div className="flex items-center gap-2">
                             <span className="text-xs text-gray-500">Size:</span>
@@ -93,7 +93,7 @@ export default function CartDrawer() {
                                 <button
                                   key={size}
                                   onClick={() => handleSizeChange(item, size)}
-                                  className={`px-2 py-1 text-xs rounded border transition-colors
+                                  className={`px-1.5 sm:px-2 py-0.5 sm:py-1 text-xs rounded border transition-colors
                                     ${item.size === size 
                                       ? 'bg-black text-white border-black' 
                                       : 'bg-white text-gray-600 border-gray-300 hover:border-gray-400'}`}
@@ -105,19 +105,19 @@ export default function CartDrawer() {
                           </div>
 
                           {/* Quantity */}
-                          <div className="flex items-center gap-3">
+                          <div className="flex items-center gap-2 sm:gap-3">
                             <span className="text-xs text-gray-500">Qty:</span>
                             <div className="flex items-center border border-gray-300 rounded">
                               <button 
                                 onClick={() => updateQuantity(item.id, item.size, item.quantity - 1)}
-                                className="px-2 py-1 hover:bg-gray-100"
+                                className="px-1.5 sm:px-2 py-0.5 hover:bg-gray-100"
                               >
                                 <Minus className="w-3 h-3" />
                               </button>
-                              <span className="px-3 text-sm">{item.quantity}</span>
+                              <span className="px-2 sm:px-3 text-xs sm:text-sm">{item.quantity}</span>
                               <button 
                                 onClick={() => updateQuantity(item.id, item.size, item.quantity + 1)}
-                                className="px-2 py-1 hover:bg-gray-100"
+                                className="px-1.5 sm:px-2 py-0.5 hover:bg-gray-100"
                               >
                                 <Plus className="w-3 h-3" />
                               </button>
@@ -134,24 +134,17 @@ export default function CartDrawer() {
             {/* Footer */}
             {cart.length > 0 && (
               <div className="p-5 border-t border-gray-200 bg-gray-50">
-                <div className="space-y-2 mb-4">
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-500">Subtotal</span>
-                    <span>₹{subtotal.toLocaleString('en-IN')}</span>
-                  </div>
-                  <div className="flex justify-between text-sm">
-                    <span className="text-gray-500">Shipping</span>
-                    <span>{shipping === 0 ? 'Free' : `₹${shipping}`}</span>
-                  </div>
-                  <div className="flex justify-between font-semibold text-lg pt-2 border-t border-gray-200">
-                    <span>Total</span>
-                    <span>₹{total.toLocaleString('en-IN')}</span>
-                  </div>
+                <div className="text-center mb-4">
+                  <p className="font-semibold text-lg">Contact to Owner</p>
+                  <p className="text-sm text-gray-500">For orders and inquiries</p>
                 </div>
 
-                <button className="w-full bg-black text-white py-3 text-sm font-medium tracking-wide hover:bg-gray-800 transition-colors">
-                  Checkout - ₹{total.toLocaleString('en-IN')}
-                </button>
+                <a 
+                  href="tel:+919827165995"
+                  className="w-full bg-black text-white py-3 text-sm font-medium tracking-wide hover:bg-gray-800 transition-colors block text-center"
+                >
+                  Call: +91 98271 65995
+                </a>
 
                 <button 
                   onClick={closeCartDrawer}
