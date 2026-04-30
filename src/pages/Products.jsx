@@ -95,7 +95,18 @@ import accessories2 from '../Image/PJ PAUL JONES Men\'s Western Herringbone Twee
 import accessories3 from '../Image/Waistcoats for Men.jpg';
 import accessories4 from '../Image/jacket5.jpg';
 
-const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Indo-Western', 'Shirt', 'Jacket', 'Payjama', 'Safari', 'Uniform', 'Jeans', 'Accessories'];
+import formalpaint1 from '../Image/white gurka paint for men.jpg';
+import formalpaint2 from '../Image/Tailored beige pants with a clean fit, sharp pleats for office and party wear.jpg';
+import formalpaint3 from '../Image/paint1.jpg';
+import formalpaint4 from '../Image/paint2.jpg';
+import formalpaint5 from '../Image/paint3.jpg';
+import formalpaint6 from '../Image/paint4.jpg';
+import formalpaint7 from '../Image/paint5.jpg';
+import formalpaint8 from '../Image/paint6.jpg';
+import formalpaint9 from '../Image/paint7.jpg';
+import formalpaint10 from '../Image/paint8.jpg';
+
+const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Indo-Western', 'Shirt', 'Jacket', 'Payjama', 'Formal Paint', 'Safari', 'Uniform', 'Jeans', 'Accessories'];
 
 const IMAGES = {
   Sherwani: [sherwani1, sherwani2, sherwani3, sherwani4],
@@ -107,6 +118,7 @@ const IMAGES = {
   Shirt: [shirt1, shirt2, shirt3, shirt4, shirt5, shirt6, shirt7, shirt8],
   Jacket: [jacket1, jacket2, jacket3, jacket4, jacket5, jacket6, jacket7, jacket8],
   Payjama: [payjama1, payjama2, payjama3, payjama4, payjama5, payjama6, payjama7, payjama8, payjama9, payjama10],
+  'Formal Paint': [formalpaint1, formalpaint2, formalpaint3, formalpaint4, formalpaint5, formalpaint6, formalpaint7, formalpaint8, formalpaint9, formalpaint10],
   Safari: [safari1, safari2, safari3, safari4],
   Uniform: [uniform1, uniform2, uniform3, uniform4],
   Jeans: [jeans1, jeans2, jeans3, jeans4, jeans5, jeans6, jeans7, jeans8, jeans9],
@@ -141,6 +153,15 @@ const MANDATORY_PRODUCTS = [
   { id: 27, name: 'Formal Black Payjama', category: 'Payjama', price: 5500, image: payjama6 },
   { id: 28, name: 'Handwoven Cotton Pajama', category: 'Payjama', price: 3800, image: payjama7 },
   { id: 29, name: 'Bespoke Silk Payjama', category: 'Payjama', price: 7500, image: payjama8 },
+  { id: 30, name: 'Classic Black Formal Paint', category: 'Formal Paint', price: 4500, image: formalpaint1 },
+  { id: 31, name: 'Navy Blue Formal Trouser', category: 'Formal Paint', price: 4800, image: formalpaint2 },
+  { id: 32, name: 'Grey Wool Formal Paint', category: 'Formal Paint', price: 5500, image: formalpaint3 },
+  { id: 33, name: 'Beige Linen Formal Paint', category: 'Formal Paint', price: 4200, image: formalpaint4 },
+  { id: 34, name: 'Tailored Black Trouser', category: 'Formal Paint', price: 5000, image: formalpaint5 },
+  { id: 35, name: 'Premium Cotton Formal Paint', category: 'Formal Paint', price: 3800, image: formalpaint6 },
+  { id: 36, name: 'Slim Fit Formal Trouser', category: 'Formal Paint', price: 4500, image: formalpaint7 },
+  { id: 37, name: 'Classic Tan Formal Paint', category: 'Formal Paint', price: 4200, image: formalpaint8 },
+  { id: 38, name: 'Bespoke Formal Trouser', category: 'Formal Paint', price: 5500, image: formalpaint9 },
   { id: 15, name: 'Safari Summer Suit', category: 'Safari', price: 15000, image: safari1 },
   { id: 16, name: 'School Uniform Blazer', category: 'Uniform', price: 6500, image: uniform1 },
   { id: 17, name: 'Slim Fit Designer Jeans', category: 'Jeans', price: 5500, image: jeans1 },
