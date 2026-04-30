@@ -33,6 +33,18 @@ import blazer1 from '../Image/jacket1.jpg';
 import blazer2 from '../Image/jacket2.jpg';
 import blazer3 from '../Image/jacket3.jpg';
 import blazer4 from '../Image/jacket4.jpg';
+import blazer5 from '../Image/jacket5.jpg';
+import blazer6 from '../Image/jacket6.jpg';
+import blazer7 from '../Image/jacket7.jpg';
+import blazer8 from '../Image/jacket8.jpg';
+import blazer9 from '../Image/jacket9.jpg';
+import blazer10 from '../Image/jacket10.jpg';
+import blazer11 from '../Image/jacket11.jpg';
+import blazer12 from '../Image/jacket12.jpg';
+import blazer13 from '../Image/jacket13.jpg';
+import blazer14 from '../Image/jacket14.jpg';
+import blazer15 from '../Image/jacket15.jpg';
+import blazer16 from '../Image/jacket16.jpg';
 
 import pathani1 from '../Image/pathani_style.jpg';
 import pathani2 from '../Image/kurta7.jpg';
@@ -114,7 +126,7 @@ const IMAGES = {
   Sherwani: [sherwani1, sherwani2, sherwani3, sherwani4],
   Suit: [suit1, suit2, suit3, suit4],
   Kurta: [kurta1, kurta2, kurta3, kurta4, kurta5, kurta6, kurta7, kurta8, kurta9, kurta10, kurta11, kurta12],
-  Blazer: [blazer1, blazer2, blazer3, blazer4],
+  Blazer: [blazer1, blazer2, blazer3, blazer4, blazer5, blazer6, blazer7, blazer8, blazer9, blazer10, blazer11, blazer12, blazer13, blazer14, blazer15, blazer16],
   Pathani: [pathani1, pathani2, pathani3, pathani4],
   'Indo-Western': [indowestern1, indowestern2, indowestern3],
   Shirt: [shirt1, shirt2, shirt3, shirt4, shirt5, shirt6, shirt7, shirt8],
@@ -152,6 +164,21 @@ const MANDATORY_PRODUCTS = [
   { id: 48, name: 'Handloom Cotton Kurta', category: 'Kurta', price: 4500, image: kurta1 },
   { id: 49, name: 'Banarasi Silk Kurta', category: 'Kurta', price: 14000, image: kurta2 },
   { id: 7, name: 'Charcoal Grey Premium Linen Blazer', category: 'Blazer', price: 15000, image: blazer1 },
+  { id: 50, name: 'Classic Navy Blazer', category: 'Blazer', price: 18000, image: blazer2 },
+  { id: 51, name: 'Black Tuxedo Blazer', category: 'Blazer', price: 22000, image: blazer3 },
+  { id: 52, name: 'Grey Wool Blazer', category: 'Blazer', price: 16000, image: blazer4 },
+  { id: 53, name: 'Casual Blue Blazer', category: 'Blazer', price: 12000, image: blazer5 },
+  { id: 54, name: 'Tan Leather Blazer', category: 'Blazer', price: 25000, image: blazer6 },
+  { id: 55, name: 'Modern Fit Blazer', category: 'Blazer', price: 14000, image: blazer7 },
+  { id: 56, name: 'Slim Fit Formal Blazer', category: 'Blazer', price: 17000, image: blazer8 },
+  { id: 57, name: 'Wedding Guest Blazer', category: 'Blazer', price: 19500, image: blazer9 },
+  { id: 58, name: 'Bespoke Designer Blazer', category: 'Blazer', price: 28000, image: blazer10 },
+  { id: 59, name: 'Premium Italian Blazer', category: 'Blazer', price: 32000, image: blazer11 },
+  { id: 60, name: 'Velvet Evening Blazer', category: 'Blazer', price: 24000, image: blazer12 },
+  { id: 61, name: 'Linen Summer Blazer', category: 'Blazer', price: 11000, image: blazer13 },
+  { id: 62, name: 'Double Breasted Blazer', category: 'Blazer', price: 21000, image: blazer14 },
+  { id: 63, name: 'Tweed Classic Blazer', category: 'Blazer', price: 18500, image: blazer15 },
+  { id: 64, name: 'Modern Party Blazer', category: 'Blazer', price: 16500, image: blazer16 },
   { id: 8, name: 'Emerald Green Silk Pathani Suit', category: 'Pathani', price: 14500, image: pathani1 },
   { id: 9, name: 'Bespoke Three-Piece Jodhpuri Suit', category: 'Suit', price: 35000, image: suit2 },
   { id: 10, name: 'Ivory Threadwork Georgette Groom Sherwani', category: 'Sherwani', price: 48000, image: sherwani4 },
