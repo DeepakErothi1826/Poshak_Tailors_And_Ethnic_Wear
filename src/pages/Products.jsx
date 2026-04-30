@@ -27,19 +27,19 @@ import suit2 from '../Image/Luxury Wedding Dresses and Fashion Suits for Men.jpg
 import suit3 from '../Image/Men\'s Classic Pinstripe Blazer & Tailored Trouser2 Piece  Set - Refined Formal Wear.jpg';
 import suit4 from '../Image/Navy Blue color Suiting fabric Mens kurta set with waistcoat, Nehru Jacket, Modi Jacket, Designer Half Jodhpuri Jacket with Kurta Pajama.jpg';
 
-import blazer1 from '../Image/download (20).jpg';
-import blazer2 from '../Image/download (21).jpg';
-import blazer3 from '../Image/download (16).jpg';
-import blazer4 from '../Image/download (15).jpg';
+import blazer1 from '../Image/jacket1.jpg';
+import blazer2 from '../Image/jacket2.jpg';
+import blazer3 from '../Image/jacket3.jpg';
+import blazer4 from '../Image/jacket4.jpg';
 
 import pathani1 from '../Image/pathani_style.jpg';
-import pathani2 from '../Image/Men\'s Navy Blue Cotton Pathani Suit Set _ Traditional Pakistani Kurta Shalwar Wear - Etsy.jpg';
-import pathani3 from '../Image/Midnight Black Pathani Suit _ Royal Ethnic Wear for Men.jpg';
-import pathani4 from '../Image/Mustard Cotton Blend Kurta Shalwar_ Men\'s Pakistani Suit.jpg';
+import pathani2 from '../Image/kurta7.jpg';
+import pathani3 from '../Image/kurta8.jpg';
+import pathani4 from '../Image/kurta9.jpg';
 
 import indowestern1 from '../Image/hand painted indowestan set.jpg';
-import indowestern2 from '../Image/download (14).jpg';
-import indowestern3 from '../Image/download (15).jpg';
+import indowestern2 from '../Image/kurta10.jpg';
+import indowestern3 from '../Image/suit4.jpg';
 
 import shirt1 from '../Image/shirt1.jpg';
 import shirt2 from '../Image/shirt2.jpg';
@@ -72,7 +72,7 @@ import safari4 from '../Image/New Summer Fit.jpg';
 import uniform1 from '../Image/American school uniform.jpg';
 import uniform2 from '../Image/British college style Spring autumn children clothes school uniform suit,kids school clothing.jpg';
 import uniform3 from "../Image/High-quality children's school uniforms.jpg";
-import uniform4 from '../Image/download (67).jpg';
+import uniform4 from '../Image/suit5.jpg';
 
 import jeans1 from '../Image/jeans1.jpg';
 import jeans2 from '../Image/jeans2.jpg';
@@ -87,7 +87,7 @@ import jeans9 from '../Image/jeans9.jpg';
 import accessories1 from '../Image/New Men\'s Herringbone Woolen Tweed Vest, Retro Lapel, Horse Chain Decoration.jpg';
 import accessories2 from '../Image/PJ PAUL JONES Men\'s Western Herringbone Tweed Suit Vest Wool Blend V Neck Slim Fit Waistcoat.jpg';
 import accessories3 from '../Image/Waistcoats for Men.jpg';
-import accessories4 from '../Image/download (84).jpg';
+import accessories4 from '../Image/jacket5.jpg';
 
 const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Indo-Western', 'Shirt', 'Jacket', 'Payjama', 'Safari', 'Uniform', 'Jeans', 'Accessories'];
 
