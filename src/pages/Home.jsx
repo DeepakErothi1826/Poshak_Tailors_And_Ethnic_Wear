@@ -21,7 +21,7 @@ import heritageImg from '../Image/suit8.jpg';
 
 import serviceImg1 from '../Image/kurta2.jpg';
 import serviceImg2 from '../Image/kurta3.jpg';
-import serviceImg3 from '../Image/kurta4.jpg';
+import serviceImg3 from '../Image/kusta4.jpg';
 import serviceImg4 from '../Image/kurta5.jpg';
 import ctaImg from '../Image/kurta6.jpg';
 import gallery1 from '../Image/Indian Royal Jhodhpuri Wedding Outfit for Mens.jpg';
