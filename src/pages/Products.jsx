@@ -71,7 +71,7 @@ import safari4 from '../Image/New Summer Fit.jpg';
 
 import uniform1 from '../Image/American school uniform.jpg';
 import uniform2 from '../Image/British college style Spring autumn children clothes school uniform suit,kids school clothing.jpg';
-import uniform3 from '../Image/High-quality children's school uniforms.jpg';
+import uniform3 from "../Image/High-quality children's school uniforms.jpg";
 import uniform4 from '../Image/download (67).jpg';
 
 import jeans1 from '../Image/jeans1.jpg';
