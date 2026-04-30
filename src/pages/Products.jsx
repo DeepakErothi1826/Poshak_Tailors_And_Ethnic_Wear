@@ -109,16 +109,16 @@ import accessories2 from '../Image/PJ PAUL JONES Men\'s Western Herringbone Twee
 import accessories3 from '../Image/Waistcoats for Men.jpg';
 import accessories4 from '../Image/jacket5.jpg';
 
-import formalpaint1 from '../Image/white gurka paint for men.jpg';
-import formalpaint2 from '../Image/Tailored beige pants with a clean fit, sharp pleats for office and party wear.jpg';
-import formalpaint3 from '../Image/paint1.jpg';
-import formalpaint4 from '../Image/paint2.jpg';
-import formalpaint5 from '../Image/paint3.jpg';
-import formalpaint6 from '../Image/paint4.jpg';
-import formalpaint7 from '../Image/paint5.jpg';
-import formalpaint8 from '../Image/paint6.jpg';
-import formalpaint9 from '../Image/paint7.jpg';
-import formalpaint10 from '../Image/paint8.jpg';
+import formalpaint1 from '../Image/paint1.jpg';
+import formalpaint2 from '../Image/paint2.jpg';
+import formalpaint3 from '../Image/paint3.jpg';
+import formalpaint4 from '../Image/paint4.jpg';
+import formalpaint5 from '../Image/paint5.jpg';
+import formalpaint6 from '../Image/paint6.jpg';
+import formalpaint7 from '../Image/paint7.jpg';
+import formalpaint8 from '../Image/paint8.jpg';
+import formalpaint9 from '../Image/paint9.jpg';
+import formalpaint10 from '../Image/paint10.jpg';
 
 const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Indo-Western', 'Shirt', 'Jacket', 'Payjama', 'Formal Paint', 'Safari', 'Uniform', 'Jeans', 'Accessories'];
 
