@@ -21,6 +21,8 @@ import kurta7 from '../Image/kurta7.jpg';
 import kurta8 from '../Image/kurta8.jpg';
 import kurta9 from '../Image/kurta9.jpg';
 import kurta10 from '../Image/kurta10.jpg';
+import kurta11 from '../Image/kurta_white.jpg';
+import kurta12 from '../Image/kurta_wine.jpg';
 
 import suit1 from '../Image/Men\'s Two-Piece Suits at M&S.jpg';
 import suit2 from '../Image/Luxury Wedding Dresses and Fashion Suits for Men.jpg';
@@ -111,7 +113,7 @@ const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'In
 const IMAGES = {
   Sherwani: [sherwani1, sherwani2, sherwani3, sherwani4],
   Suit: [suit1, suit2, suit3, suit4],
-  Kurta: [kurta1, kurta2, kurta3, kurta4, kurta5, kurta6, kurta7, kurta8, kurta9, kurta10],
+  Kurta: [kurta1, kurta2, kurta3, kurta4, kurta5, kurta6, kurta7, kurta8, kurta9, kurta10, kurta11, kurta12],
   Blazer: [blazer1, blazer2, blazer3, blazer4],
   Pathani: [pathani1, pathani2, pathani3, pathani4],
   'Indo-Western': [indowestern1, indowestern2, indowestern3],
@@ -138,6 +140,17 @@ const MANDATORY_PRODUCTS = [
   { id: 4, name: 'Classic Black Tuxedo Suit with Satin Lapel', category: 'Suit', price: 22000, image: suit3 },
   { id: 5, name: 'Midnight Blue Embroidered Indo-Western Sherwani', category: 'Sherwani', price: 32000, image: sherwani3 },
   { id: 6, name: 'Lucknowi Chikankari Festive Kurta', category: 'Kurta', price: 12500, image: kurta3 },
+  { id: 39, name: 'Classic White Kurta Set', category: 'Kurta', price: 8500, image: kurta11 },
+  { id: 40, name: 'Wine Red Silk Kurta', category: 'Kurta', price: 12000, image: kurta12 },
+  { id: 41, name: 'Royal Silk Kurta Pajama', category: 'Kurta', price: 15000, image: kurta4 },
+  { id: 42, name: 'Cotton Summer Kurta', category: 'Kurta', price: 5500, image: kurta5 },
+  { id: 43, name: 'Embroidered Festival Kurta', category: 'Kurta', price: 9800, image: kurta6 },
+  { id: 44, name: 'Bespoke Wedding Kurta', category: 'Kurta', price: 18000, image: kurta7 },
+  { id: 45, name: 'Traditional Kurta Set', category: 'Kurta', price: 7500, image: kurta8 },
+  { id: 46, name: 'Modern Designer Kurta', category: 'Kurta', price: 11000, image: kurta9 },
+  { id: 47, name: 'Premium Wedding Kurta', category: 'Kurta', price: 22000, image: kurta10 },
+  { id: 48, name: 'Handloom Cotton Kurta', category: 'Kurta', price: 4500, image: kurta1 },
+  { id: 49, name: 'Banarasi Silk Kurta', category: 'Kurta', price: 14000, image: kurta2 },
   { id: 7, name: 'Charcoal Grey Premium Linen Blazer', category: 'Blazer', price: 15000, image: blazer1 },
   { id: 8, name: 'Emerald Green Silk Pathani Suit', category: 'Pathani', price: 14500, image: pathani1 },
   { id: 9, name: 'Bespoke Three-Piece Jodhpuri Suit', category: 'Suit', price: 35000, image: suit2 },
