@@ -69,9 +69,9 @@ import safari2 from '../Image/Effortless Men\'s Street Style with Earth Tones_.j
 import safari3 from '../Image/Men Office Wear Outfit Idea _ Beige Shirt with Brown Formal Pants.jpg';
 import safari4 from '../Image/New Summer Fit.jpg';
 
-import uniform1 from '../Image/American school uniform.jpg';
-import uniform2 from '../Image/British college style Spring autumn children clothes school uniform suit,kids school clothing.jpg';
-import uniform3 from "../Image/High-quality children's school uniforms.jpg";
+import uniform1 from '../Image/suit6.jpg';
+import uniform2 from '../Image/suit7.jpg';
+import uniform3 from '../Image/suit8.jpg';
 import uniform4 from '../Image/suit5.jpg';
 
 import jeans1 from '../Image/jeans1.jpg';
