@@ -80,7 +80,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-white text-black absolute top-full left-0 w-full shadow-lg border-t border-gray-100">
+        <div className="lg:hidden bg-white text-black fixed top-full left-0 w-full shadow-lg border-t border-gray-100 z-[99]">
           <div className="px-4 pt-2 pb-6 space-y-1">
             {navLinks.map((link) => (
               <NavLink
