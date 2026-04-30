@@ -7,19 +7,25 @@ import SEO from '../components/SEO';
 import kurtaHero from '../Image/Kurta_Hero.jpg';
 
 import sherwani1 from '../Image/sherwani_hero.jpg';
-import sherwani2 from '../Image/download (3).jpg';
-import sherwani3 from '../Image/download (11).jpg';
-import sherwani4 from '../Image/download (12).jpg';
+import sherwani2 from '../Image/Indian Royal Jhodhpuri Wedding Outfit for Mens.jpg';
+import sherwani3 from '../Image/Indian Royal Jhodhpuri Wedding Outfit for Mens (1).jpg';
+import sherwani4 from '../Image/amrit_design.jpg';
 
-import kurta1 from '../Image/kurta_wine.jpg';
-import kurta2 from '../Image/kurta_white.jpg';
-import kurta3 from '../Image/download (23).jpg';
-import kurta4 from '../Image/download (22).jpg';
+import kurta1 from '../Image/kurta1.jpg';
+import kurta2 from '../Image/kurta2.jpg';
+import kurta3 from '../Image/kurta3.jpg';
+import kurta4 from '../Image/kusta4.jpg';
+import kurta5 from '../Image/kurta5.jpg';
+import kurta6 from '../Image/kurta6.jpg';
+import kurta7 from '../Image/kurta7.jpg';
+import kurta8 from '../Image/kurta8.jpg';
+import kurta9 from '../Image/kurta9.jpg';
+import kurta10 from '../Image/kurta10.jpg';
 
-import suit1 from '../Image/download (10).jpg';
-import suit2 from '../Image/download (9).jpg';
-import suit3 from '../Image/download (8).jpg';
-import suit4 from '../Image/download (7).jpg';
+import suit1 from '../Image/Men\'s Two-Piece Suits at M&S.jpg';
+import suit2 from '../Image/Luxury Wedding Dresses and Fashion Suits for Men.jpg';
+import suit3 from '../Image/Men\'s Classic Pinstripe Blazer & Tailored Trouser2 Piece  Set - Refined Formal Wear.jpg';
+import suit4 from '../Image/Navy Blue color Suiting fabric Mens kurta set with waistcoat, Nehru Jacket, Modi Jacket, Designer Half Jodhpuri Jacket with Kurta Pajama.jpg';
 
 import blazer1 from '../Image/download (20).jpg';
 import blazer2 from '../Image/download (21).jpg';
@@ -27,37 +33,45 @@ import blazer3 from '../Image/download (16).jpg';
 import blazer4 from '../Image/download (15).jpg';
 
 import pathani1 from '../Image/pathani_style.jpg';
-import pathani2 from '../Image/download (18).jpg';
-import pathani3 from '../Image/download (19).jpg';
-import pathani4 from '../Image/download (14).jpg';
+import pathani2 from '../Image/Men\'s Navy Blue Cotton Pathani Suit Set _ Traditional Pakistani Kurta Shalwar Wear - Etsy.jpg';
+import pathani3 from '../Image/Midnight Black Pathani Suit _ Royal Ethnic Wear for Men.jpg';
+import pathani4 from '../Image/Mustard Cotton Blend Kurta Shalwar_ Men\'s Pakistani Suit.jpg';
 
-import indowestern1 from '../Image/download (13).jpg';
+import indowestern1 from '../Image/hand painted indowestan set.jpg';
 import indowestern2 from '../Image/download (14).jpg';
 import indowestern3 from '../Image/download (15).jpg';
 
-import shirt1 from '../Image/download (90).jpg';
-import shirt2 from '../Image/download (89).jpg';
-import shirt3 from '../Image/download (88).jpg';
-import shirt4 from '../Image/download (82).jpg';
+import shirt1 from '../Image/shirt1.jpg';
+import shirt2 from '../Image/shirt2.jpg';
+import shirt3 from '../Image/shirt3.jpg';
+import shirt4 from '../Image/shirt4.jpg';
+import shirt5 from '../Image/shirt5.jpg';
+import shirt6 from '../Image/shirt6.jpg';
+import shirt7 from '../Image/shirt7.jpg';
+import shirt8 from '../Image/shirt8.jpg';
 
-import jacket1 from '../Image/download (81).jpg';
-import jacket2 from '../Image/download (80).jpg';
-import jacket3 from '../Image/download (73).jpg';
-import jacket4 from '../Image/download (84).jpg';
+import jacket1 from '../Image/jacket1.jpg';
+import jacket2 from '../Image/jacket2.jpg';
+import jacket3 from '../Image/jacket3.jpg';
+import jacket4 from '../Image/jacket4.jpg';
+import jacket5 from '../Image/jacket5.jpg';
+import jacket6 from '../Image/jacket6.jpg';
+import jacket7 from '../Image/jacket7.jpg';
+import jacket8 from '../Image/jacket8.jpg';
 
-import payjama1 from '../Image/download (51).jpg';
-import payjama2 from '../Image/download (50).jpg';
-import payjama3 from '../Image/download (49).jpg';
-import payjama4 from '../Image/download (52).jpg';
+import payjama1 from '../Image/kurta for Man 😎.jpg';
+import payjama2 from '../Image/Buy Black Georgette Short Kurta for Men And Wide Pants at Aza Fashions.jpg';
+import payjama3 from '../Image/New Barbie Bootcut Kurta Set ⚜️.jpg';
+import payjama4 from '../Image/Navy Blue color Suiting fabric Mens kurta set with waistcoat, Nehru Jacket, Modi Jacket, Designer Half Jodhpuri Jacket with Kurta Pajama.jpg';
 
-import safari1 from '../Image/download (86).jpg';
-import safari2 from '../Image/download (85).jpg';
-import safari3 from '../Image/download (77).jpg';
-import safari4 from '../Image/download (76).jpg';
+import safari1 from '../Image/Men\'s Linen Safari Suit _ Beige Utility Outfit _ Lightweight Summer Co-ord Set.jpg';
+import safari2 from '../Image/Effortless Men\'s Street Style with Earth Tones_.jpg';
+import safari3 from '../Image/Men Office Wear Outfit Idea _ Beige Shirt with Brown Formal Pants.jpg';
+import safari4 from '../Image/New Summer Fit.jpg';
 
-import uniform1 from '../Image/download (6).jpg';
-import uniform2 from '../Image/download (69).jpg';
-import uniform3 from '../Image/download (68).jpg';
+import uniform1 from '../Image/American school uniform.jpg';
+import uniform2 from '../Image/British college style Spring autumn children clothes school uniform suit,kids school clothing.jpg';
+import uniform3 from '../Image/High-quality children's school uniforms.jpg';
 import uniform4 from '../Image/download (67).jpg';
 
 import jeans1 from '../Image/jeans1.jpg';
@@ -70,9 +84,9 @@ import jeans7 from '../Image/jeans7.jpg';
 import jeans8 from '../Image/jeans8.jpg';
 import jeans9 from '../Image/jeans9.jpg';
 
-import accessories1 from '../Image/download (85).jpg';
-import accessories2 from '../Image/download (87).jpg';
-import accessories3 from '../Image/download (86).jpg';
+import accessories1 from '../Image/New Men\'s Herringbone Woolen Tweed Vest, Retro Lapel, Horse Chain Decoration.jpg';
+import accessories2 from '../Image/PJ PAUL JONES Men\'s Western Herringbone Tweed Suit Vest Wool Blend V Neck Slim Fit Waistcoat.jpg';
+import accessories3 from '../Image/Waistcoats for Men.jpg';
 import accessories4 from '../Image/download (84).jpg';
 
 const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Indo-Western', 'Shirt', 'Jacket', 'Payjama', 'Safari', 'Uniform', 'Jeans', 'Accessories'];
@@ -80,12 +94,12 @@ const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'In
 const IMAGES = {
   Sherwani: [sherwani1, sherwani2, sherwani3, sherwani4],
   Suit: [suit1, suit2, suit3, suit4],
-  Kurta: [kurta1, kurta2, kurta3, kurta4],
+  Kurta: [kurta1, kurta2, kurta3, kurta4, kurta5, kurta6, kurta7, kurta8, kurta9, kurta10],
   Blazer: [blazer1, blazer2, blazer3, blazer4],
   Pathani: [pathani1, pathani2, pathani3, pathani4],
   'Indo-Western': [indowestern1, indowestern2, indowestern3],
-  Shirt: [shirt1, shirt2, shirt3, shirt4],
-  Jacket: [jacket1, jacket2, jacket3, jacket4],
+  Shirt: [shirt1, shirt2, shirt3, shirt4, shirt5, shirt6, shirt7, shirt8],
+  Jacket: [jacket1, jacket2, jacket3, jacket4, jacket5, jacket6, jacket7, jacket8],
   Payjama: [payjama1, payjama2, payjama3, payjama4],
   Safari: [safari1, safari2, safari3, safari4],
   Uniform: [uniform1, uniform2, uniform3, uniform4],
@@ -127,7 +141,7 @@ const MANDATORY_PRODUCTS = [
 const ADJECTIVES = ['Royal', 'Classic', 'Premium', 'Bespoke', 'Tailored', 'Elegant', 'Regal', 'Signature', 'Vibrant', 'Majestic'];
 const MATERIALS = ['Silk', 'Linen', 'Velvet', 'Cotton', 'Brocade', 'Georgette', 'Viscose', 'Jacquard', 'Wool', 'Cashmere'];
 
-const GENERATED_PRODUCTS = Array.from({ length: 32 }).map((_, i) => {
+const GENERATED_PRODUCTS = Array.from({ length: 28 }).map((_, i) => {
   const categories = CATEGORIES.slice(1);
   const category = categories[Math.floor(Math.random() * categories.length)];
   const adjective = ADJECTIVES[Math.floor(Math.random() * ADJECTIVES.length)];
@@ -136,7 +150,7 @@ const GENERATED_PRODUCTS = Array.from({ length: 32 }).map((_, i) => {
   const price = Math.floor(Math.random() * 40000) + 10000;
   
   return {
-    id: i + 19,
+    id: i + 23,
     name,
     category,
     price,
