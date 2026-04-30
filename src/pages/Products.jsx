@@ -224,7 +224,7 @@ const GENERATED_PRODUCTS = Array.from({ length: 28 }).map((_, i) => {
   const price = Math.floor(Math.random() * 40000) + 10000;
   
   return {
-    id: i + 23,
+    id: i + 100,
     name,
     category,
     price,
