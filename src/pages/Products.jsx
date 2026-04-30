@@ -59,10 +59,16 @@ import jacket6 from '../Image/jacket6.jpg';
 import jacket7 from '../Image/jacket7.jpg';
 import jacket8 from '../Image/jacket8.jpg';
 
-import payjama1 from '../Image/kurta for Man 😎.jpg';
-import payjama2 from '../Image/Buy Black Georgette Short Kurta for Men And Wide Pants at Aza Fashions.jpg';
-import payjama3 from '../Image/New Barbie Bootcut Kurta Set ⚜️.jpg';
-import payjama4 from '../Image/Navy Blue color Suiting fabric Mens kurta set with waistcoat, Nehru Jacket, Modi Jacket, Designer Half Jodhpuri Jacket with Kurta Pajama.jpg';
+import payjama1 from '../Image/paint1.jpg';
+import payjama2 from '../Image/paint2.jpg';
+import payjama3 from '../Image/paint3.jpg';
+import payjama4 from '../Image/paint4.jpg';
+import payjama5 from '../Image/paint5.jpg';
+import payjama6 from '../Image/paint6.jpg';
+import payjama7 from '../Image/paint7.jpg';
+import payjama8 from '../Image/paint8.jpg';
+import payjama9 from '../Image/paint9.jpg';
+import payjama10 from '../Image/paint10.jpg';
 
 import safari1 from '../Image/Men\'s Linen Safari Suit _ Beige Utility Outfit _ Lightweight Summer Co-ord Set.jpg';
 import safari2 from '../Image/Effortless Men\'s Street Style with Earth Tones_.jpg';
@@ -100,7 +106,7 @@ const IMAGES = {
   'Indo-Western': [indowestern1, indowestern2, indowestern3],
   Shirt: [shirt1, shirt2, shirt3, shirt4, shirt5, shirt6, shirt7, shirt8],
   Jacket: [jacket1, jacket2, jacket3, jacket4, jacket5, jacket6, jacket7, jacket8],
-  Payjama: [payjama1, payjama2, payjama3, payjama4],
+  Payjama: [payjama1, payjama2, payjama3, payjama4, payjama5, payjama6, payjama7, payjama8, payjama9, payjama10],
   Safari: [safari1, safari2, safari3, safari4],
   Uniform: [uniform1, uniform2, uniform3, uniform4],
   Jeans: [jeans1, jeans2, jeans3, jeans4, jeans5, jeans6, jeans7, jeans8, jeans9],
@@ -128,6 +134,13 @@ const MANDATORY_PRODUCTS = [
   { id: 12, name: 'Premium Cotton Formal Shirt', category: 'Shirt', price: 4500, image: shirt1 },
   { id: 13, name: 'Leather Biker Jacket', category: 'Jacket', price: 18000, image: jacket1 },
   { id: 14, name: 'Silk Blend Payjama Set', category: 'Payjama', price: 8500, image: payjama1 },
+  { id: 23, name: 'Premium Cotton Pajama', category: 'Payjama', price: 5500, image: payjama2 },
+  { id: 24, name: 'Linen Casual Payjama', category: 'Payjama', price: 4800, image: payjama3 },
+  { id: 25, name: 'Silk Designer Pajama', category: 'Payjama', price: 6500, image: payjama4 },
+  { id: 26, name: 'Classic White Payjama', category: 'Payjama', price: 4200, image: payjama5 },
+  { id: 27, name: 'Formal Black Payjama', category: 'Payjama', price: 5500, image: payjama6 },
+  { id: 28, name: 'Handwoven Cotton Pajama', category: 'Payjama', price: 3800, image: payjama7 },
+  { id: 29, name: 'Bespoke Silk Payjama', category: 'Payjama', price: 7500, image: payjama8 },
   { id: 15, name: 'Safari Summer Suit', category: 'Safari', price: 15000, image: safari1 },
   { id: 16, name: 'School Uniform Blazer', category: 'Uniform', price: 6500, image: uniform1 },
   { id: 17, name: 'Slim Fit Designer Jeans', category: 'Jeans', price: 5500, image: jeans1 },
