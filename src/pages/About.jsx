@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import hero1Img from '../Image/hero1.png';
-import aboutImg1 from '../Image/download (7).jpg';
-import aboutImg2 from '../Image/download (6).jpg';
-import aboutImg3 from '../Image/download (5).jpg';
-import aboutImg4 from '../Image/download (4).jpg';
-import aboutImg5 from '../Image/download (3).jpg';
-import aboutImg6 from '../Image/download (2).jpg';
+import aboutImg1 from '../Image/suit7.jpg';
+import aboutImg2 from '../Image/suit8.jpg';
+import aboutImg3 from '../Image/suit9.jpg';
+import aboutImg4 from '../Image/suit10.jpg';
+import aboutImg5 from '../Image/suit11.jpg';
+import aboutImg6 from '../Image/suit12.jpg';
 
 export default function About() {
   const aboutSchema = {
