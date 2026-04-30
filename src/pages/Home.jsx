@@ -8,28 +8,28 @@ import kurtaHero from '../Image/Kurta_Hero.jpg';
 import blazerHero from '../Image/Blazer_Hero.jpg';
 import hero1Img from '../Image/hero1.png';
 
-import collection1 from '../Image/download (12).jpg';
-import collection2 from '../Image/download (11).jpg';
-import collection3 from '../Image/download (10).jpg';
+import collection1 from '../Image/suit12.jpg';
+import collection2 from '../Image/suit11.jpg';
+import collection3 from '../Image/suit10.jpg';
 
 import product1 from '../Image/sherwani_hero.jpg';
-import product2 from '../Image/Suit Inspiration for Styled Shoot.jpg';
+import product2 from '../Image/suit1.jpg';
 import product3 from '../Image/kurta_wine.jpg';
-import product4 from '../Image/download (20).jpg';
-import craftImg from '../Image/download (9).jpg';
-import heritageImg from '../Image/download (8).jpg';
+import product4 from '../Image/kurta1.jpg';
+import craftImg from '../Image/suit9.jpg';
+import heritageImg from '../Image/suit8.jpg';
 
-import serviceImg1 from '../Image/download (7).jpg';
-import serviceImg2 from '../Image/download (6).jpg';
-import serviceImg3 from '../Image/download (5).jpg';
-import serviceImg4 from '../Image/download (4).jpg';
-import ctaImg from '../Image/download (3).jpg';
+import serviceImg1 from '../Image/kurta2.jpg';
+import serviceImg2 from '../Image/kurta3.jpg';
+import serviceImg3 from '../Image/kurta4.jpg';
+import serviceImg4 from '../Image/kurta5.jpg';
+import ctaImg from '../Image/kurta6.jpg';
 import gallery1 from '../Image/Indian Royal Jhodhpuri Wedding Outfit for Mens.jpg';
 import gallery2 from '../Image/white_bandhgala.jpg';
-import gallery3 from '../Image/Udaipur Elegance.jpg';
-import gallery4 from '../Image/hand painted indowestan set.jpg';
-import gallery5 from '../Image/Lutwyche jacket.jpg';
-import gallery6 from '../Image/Suit Inspiration for Styled Shoot.jpg';
+import gallery3 from '../Image/kurta7.jpg';
+import gallery4 from '../Image/kurta8.jpg';
+import gallery5 from '../Image/kurta9.jpg';
+import gallery6 from '../Image/kurta10.jpg';
 
 const HERO_SLIDES = [
   {
