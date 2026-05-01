@@ -30,7 +30,7 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed w-full z-[100] transition-all duration-300 ${scrolled ? 'bg-white text-black shadow-md py-2 sm:py-3' : 'bg-white text-black py-2 sm:py-4'}`}>
-      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 relative">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-2">
@@ -80,21 +80,21 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white text-black fixed top-full left-0 w-full shadow-lg border-t border-gray-100 z-[999]">
-          <div className="px-4 pt-2 pb-6 space-y-1">
+        <div className="md:hidden absolute top-full left-0 w-screen bg-white text-black shadow-lg border-t border-gray-100 z-[999] -ml-3">
+          <div className="px-6 py-4 space-y-0">
             {navLinks.map((link) => (
               <NavLink
                 key={link.name}
                 to={link.path}
                 onClick={() => setMobileMenuOpen(false)}
                 className={({ isActive }) => 
-                  `block px-3 py-3 text-sm font-bold tracking-widest uppercase ${isActive ? 'bg-gray-100' : ''}`
+                  `block py-4 text-base font-semibold uppercase border-b border-gray-100 ${isActive ? 'text-black' : 'text-gray-700'}`
                 }
               >
                 {link.name}
               </NavLink>
             ))}
-            <button className="block w-full text-left px-3 py-3 text-sm font-bold tracking-widest uppercase hover:bg-gray-50" onClick={() => { navigate('/products'); setMobileMenuOpen(false); }}>
+            <button className="block w-full text-left py-4 text-base font-semibold uppercase border-b border-gray-100 text-gray-700" onClick={() => { navigate('/products'); setMobileMenuOpen(false); }}>
               Search
             </button>
           </div>
