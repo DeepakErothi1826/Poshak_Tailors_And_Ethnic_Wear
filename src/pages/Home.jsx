@@ -110,13 +110,13 @@ export default function Home() {
         >
           {HERO_SLIDES[currentSlide].isBrandSlide ? (
             <>
-              <h1 className="text-white text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-black uppercase tracking-tighter mb-4 sm:mb-6 text-balance">
+              <h1 className="text-white text-xl sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tighter mb-3 sm:mb-4 text-balance">
                 {HERO_SLIDES[currentSlide].title}
               </h1>
-              <p className="text-lg sm:text-xl md:text-2xl font-bold text-white uppercase tracking-wider mb-3 sm:mb-4">
+              <p className="text-sm sm:text-lg md:text-xl font-bold text-white uppercase tracking-wider mb-2 sm:mb-3">
                 {HERO_SLIDES[currentSlide].subtitle}
               </p>
-              <p className="text-xs sm:text-sm md:text-lg italic text-gray-300 font-light tracking-wide mb-6 sm:mb-8">
+              <p className="text-[10px] sm:text-xs md:text-sm italic text-gray-300 font-light tracking-wide mb-4 sm:mb-6">
                 {HERO_SLIDES[currentSlide].tagline}
               </p>
             </>
