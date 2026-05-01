@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useCartStore } from '../store/useCartStore';
 import { ArrowRight } from 'lucide-react';
+import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import kurtaHero from '../Image/hero_kurta.jpg';
 
