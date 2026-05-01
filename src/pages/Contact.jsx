@@ -25,7 +25,7 @@ export default function Contact() {
   };
 
   const contactInfo = [
-    { icon: MapPin, title: 'Visit Our Store', details: ['Poshak Tailor & Ethnic Wear', 'Shop No.9, Surana Market', <a href="https://maps.google.com/?q=Shop+No.9,+Surana+Market,+Pandri,+Raipur,+Chhattisgarh+492001" target="_blank" rel="noopener noreferrer" className="underline hover:text-black">Pandri, Raipur, C.G. - 492001</a>] },
+    { icon: MapPin, title: 'Visit Our Store', details: ['Poshak Tailor & Ethnic Wear', 'Shop No.9, Surana Market', <a href="https://www.google.com/maps/place/Poshak+Tailor/@21.2554006,81.641478,17z/data=!3m1!4b1!4m6!3m5!1s0x3a28ddedcf3a4583:0x6fad31cd11e6e0d2!8m2!3d21.2554007!4d81.6463489!16s%2Fg%2F11tc128_jz?hl=en&entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="underline hover:text-black">Pandri, Raipur, C.G. - 492001</a>] },
     { icon: Phone, title: 'Call Us', details: ['+91 98271 65995', '+91 98930 00970', '+91 95892 81400', '+91 70006 59096'] },
     { icon: Mail, title: 'Email Us', details: ['poshaktailor1995@gmail.com'] },
     { icon: Clock, title: 'Store Hours', details: ['Mon - Sat: 12:00 PM - 9:45 PM', 'Sunday: 12:00 PM - 4:00 PM'] },
@@ -198,7 +198,7 @@ export default function Contact() {
                 We invite you to experience the art of bespoke tailoring at our showroom.
               </p>
               <a 
-                href="https://maps.google.com/?q=Shop+No.9,+Surana+Market,+Pandri,+Raipur,+Chhattisgarh+492001" 
+                href="https://www.google.com/maps/place/Poshak+Tailor/@21.2554006,81.641478,17z/data=!3m1!4b1!4m6!3m5!1s0x3a28ddedcf3a4583:0x6fad31cd11e6e0d2!8m2!3d21.2554007!4d81.6463489!16s%2Fg%2F11tc128_jz?hl=en&entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block mt-4 bg-black text-white px-6 py-3 uppercase text-sm font-bold tracking-widest hover:bg-gray-800 transition-colors"

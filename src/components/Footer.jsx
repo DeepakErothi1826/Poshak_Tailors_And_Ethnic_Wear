@@ -47,7 +47,7 @@ export default function Footer() {
             <ul className="space-y-3 text-gray-400 text-sm">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <a href="https://maps.google.com/?q=Shop+No.9,+Surana+Market,+Pandri,+Raipur,+Chhattisgarh+492001" target="_blank" rel="noopener noreferrer" className="text-xs md:text-sm hover:text-white underline">Shop No.9, Surana Market, Pandri, Raipur, C.G. - 492001</a>
+                <a href="https://www.google.com/maps/place/Poshak+Tailor/@21.2554006,81.641478,17z/data=!3m1!4b1!4m6!3m5!1s0x3a28ddedcf3a4583:0x6fad31cd11e6e0d2!8m2!3d21.2554007!4d81.6463489!16s%2Fg%2F11tc128_jz?hl=en&entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="text-xs md:text-sm hover:text-white underline">Shop No.9, Surana Market, Pandri, Raipur, C.G. - 492001</a>
               </li>
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
