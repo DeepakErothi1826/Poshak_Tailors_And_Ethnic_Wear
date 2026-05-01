@@ -97,12 +97,6 @@ export default function Navbar() {
                 </span>
               </NavLink>
             ))}
-            <button className="block w-full text-left py-4 text-sm font-bold uppercase tracking-wider border-b border-gray-200 text-gray-700 hover:bg-gray-50 transition-colors" onClick={() => { navigate('/products'); setMobileMenuOpen(false); }}>
-              <span className="flex items-center justify-between">
-                Search Products
-                <Search className="w-4 h-4" />
-              </span>
-            </button>
           </div>
           <div className="bg-gray-100 px-6 py-4">
             <p className="text-xs text-gray-500 font-medium text-center uppercase tracking-wider">Follow Us</p>
