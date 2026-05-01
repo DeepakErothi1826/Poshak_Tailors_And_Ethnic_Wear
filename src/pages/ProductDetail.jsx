@@ -307,7 +307,7 @@ export default function ProductDetail() {
                 window.scrollTo(0, 0);
               }}>
                 <div className="relative aspect-[3/5] sm:aspect-[3/4] overflow-hidden bg-gray-100 rounded-[16px] sm:rounded-[24px] mb-3 sm:mb-4">
-                  <img src={p.image} alt={p.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                  <img src={p.image} alt={p.name} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 </div>
                 <h3 className="font-semibold text-xs sm:text-[15px] text-gray-900 leading-tight mb-1 truncate">{p.name}</h3>
                 <div className="flex gap-[2px] mb-1 sm:mb-2 items-center">

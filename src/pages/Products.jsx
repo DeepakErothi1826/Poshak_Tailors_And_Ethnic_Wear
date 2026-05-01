@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
 import { useCartStore } from '../store/useCartStore';
 import { ArrowRight } from 'lucide-react';
 import SEO from '../components/SEO';
@@ -406,20 +405,14 @@ export default function Products() {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-6">
-          <AnimatePresence>
             {filteredProducts.map((product) => (
-              <motion.div 
-                layout
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.9 }}
-                transition={{ duration: 0.3 }}
+              <div 
                 key={product.id} 
                 className="group flex flex-col"
               >
                 <div className="relative aspect-[3/5] sm:aspect-[3/4] overflow-hidden bg-gray-100 mb-3 sm:mb-4 cursor-pointer">
                   <Link to={`/product/${product.id}`} className="block w-full h-full">
-                    <img src={product.image} alt={product.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                    <img src={product.image} alt={product.name} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   </Link>
                   <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                   <button 
@@ -436,9 +429,8 @@ export default function Products() {
                   <p className="text-gray-400 text-[10px] sm:text-xs uppercase tracking-widest mb-1">{product.category}</p>
                   <span className="font-black text-sm sm:text-lg">Contact to Owner</span>
                 </div>
-              </motion.div>
+              </div>
             ))}
-          </AnimatePresence>
         </div>
       </div>
     </div>
