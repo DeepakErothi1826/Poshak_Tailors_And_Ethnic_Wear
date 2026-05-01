@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { MapPin, Phone, Mail, Clock, Send, CheckCircle, Star } from 'lucide-react';
 import SEO from '../components/SEO';
-import blazerHero from '../Image/Blazer_Hero.jpg';
-import poshakLogo from '../Image/Poshak logo.png';
+import blazerHero from '../Image/hero_blazer.jpg';
+import poshakLogo from '../Image/logo.png';
 
 export default function Contact() {
   const [formData, setFormData] = useState({ name: '', email: '', phone: '', message: '' });

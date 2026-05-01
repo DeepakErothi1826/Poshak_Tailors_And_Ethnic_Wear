@@ -73,7 +73,7 @@ export default function ProductDetail() {
       type="product"
       schema={productSchema}
     />
-    <div className="w-full bg-white pt-20 sm:pt-24 pb-12 sm:pb-24 font-sans text-gray-900">
+    <div className="w-full bg-white pb-8 sm:pb-16 font-sans text-gray-900">
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         
         {/* Breadcrumb */}
@@ -90,14 +90,14 @@ export default function ProductDetail() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
-              className="aspect-[4/5] bg-[#e6e4e3] rounded-[32px] overflow-hidden w-full relative sm:h-[600px] md:h-[700px] h-[500px]"
+              className="aspect-[4/5] bg-[#e6e4e3] rounded-[20px] sm:rounded-[32px] overflow-hidden w-full relative h-[300px] sm:h-[450px] md:h-[550px] lg:h-[600px] max-sm:mt-4"
             >
               <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
               
               {/* Overlay Thumbnails inside the main div at the bottom, matching mockup */}
-              <div className="absolute bottom-6 left-6 right-6 flex gap-4">
+              <div className="absolute bottom-3 sm:bottom-6 left-3 sm:left-6 right-3 sm:right-6 flex gap-2 sm:gap-4">
                 {[1, 2, 3].map((num) => (
-                  <div key={num} className="w-24 h-24 rounded-2xl bg-white/20 backdrop-blur-md overflow-hidden border border-white/40 cursor-pointer shadow-sm hover:border-white transition-colors">
+                  <div key={num} className="w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 rounded-xl sm:rounded-2xl bg-white/20 backdrop-blur-md overflow-hidden border border-white/40 cursor-pointer shadow-sm hover:border-white transition-colors">
                     <img src={product.image} alt="Thumbnail view" className="w-full h-full object-cover" style={{ objectPosition: `50% ${num * 20}%` }} />
                   </div>
                 ))}
@@ -115,17 +115,17 @@ export default function ProductDetail() {
               <span className="text-gray-500 text-xs font-medium border border-gray-200 rounded-full px-4 py-1.5 inline-block mb-4">
                 {product.category} Fashion
               </span>
-              <h1 className="text-3xl font-semibold mb-2 text-gray-900 tracking-tight">
+              <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-2 text-gray-900 tracking-tight">
                 {product.name}
               </h1>
-              <p className="text-xl font-bold mb-6 text-gray-900">
+              <p className="text-lg sm:text-xl font-bold mb-4 sm:mb-6 text-gray-900">
                 Contact to Owner
               </p>
 
               {/* Delivery Timer Alert */}
-              <div className="border border-gray-200 px-5 py-3 flex items-center gap-2 text-sm mb-8 w-max max-w-full rounded-full bg-white shadow-sm">
-                <Clock className="w-4 h-4 text-gray-400" />
-                <span className="text-gray-600">Order in <span className="font-bold text-gray-900 border-b border-gray-300 mx-1">{timeLeft}</span> to get next day delivery</span>
+              <div className="border border-gray-200 px-3 sm:px-5 py-2 sm:py-3 flex items-center gap-2 text-xs sm:text-sm mb-6 sm:mb-8 w-full max-w-full rounded-full bg-white shadow-sm">
+                <Clock className="w-4 h-4 text-gray-400 flex-shrink-0" />
+                <span className="text-gray-600 whitespace-nowrap">Order in <span className="font-bold text-gray-900 border-b border-gray-300 mx-1">{timeLeft}</span> to get next day delivery</span>
               </div>
 
               {/* Size Selector */}

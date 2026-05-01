@@ -4,32 +4,32 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useCartStore } from '../store/useCartStore';
 import { ArrowRight, Star, Award, Clock, Truck, Shield, Phone } from 'lucide-react';
 import SEO from '../components/SEO';
-import kurtaHero from '../Image/Kurta_Hero.jpg';
-import blazerHero from '../Image/Blazer_Hero.jpg';
-import hero1Img from '../Image/hero1.png';
+import kurtaHero from '../Image/hero_kurta.jpg';
+import blazerHero from '../Image/hero_blazer.jpg';
+import hero1Img from '../Image/hero_main.png';
 
-import collection1 from '../Image/suit12.jpg';
-import collection2 from '../Image/suit11.jpg';
-import collection3 from '../Image/suit10.jpg';
+import collection1 from '../Image/suit_17.jpg';
+import collection2 from '../Image/suit_16.jpg';
+import collection3 from '../Image/suit_15.jpg';
 
-import product1 from '../Image/sherwani_hero.jpg';
-import product2 from '../Image/suit1.jpg';
-import product3 from '../Image/kurta_wine.jpg';
-import product4 from '../Image/kurta1.jpg';
-import craftImg from '../Image/suit9.jpg';
-import heritageImg from '../Image/suit8.jpg';
+import product1 from '../Image/sherwani_1.jpg';
+import product2 from '../Image/suit_1.jpg';
+import product3 from '../Image/kurta_4.jpg';
+import product4 from '../Image/kurta_1.jpg';
+import craftImg from '../Image/suit_12.jpg';
+import heritageImg from '../Image/suit_11.jpg';
 
-import serviceImg1 from '../Image/kurta2.jpg';
-import serviceImg2 from '../Image/kurta3.jpg';
-import serviceImg3 from '../Image/kusta4.jpg';
-import serviceImg4 from '../Image/kurta5.jpg';
-import ctaImg from '../Image/kurta6.jpg';
-import gallery1 from '../Image/Indian Royal Jhodhpuri Wedding Outfit for Mens.jpg';
-import gallery2 from '../Image/white_bandhgala.jpg';
-import gallery3 from '../Image/kurta7.jpg';
-import gallery4 from '../Image/kurta8.jpg';
-import gallery5 from '../Image/kurta9.jpg';
-import gallery6 from '../Image/kurta10.jpg';
+import serviceImg1 from '../Image/kurta_2.jpg';
+import serviceImg2 from '../Image/kurta_3.jpg';
+import serviceImg3 from '../Image/kurta_4.jpg';
+import serviceImg4 from '../Image/kurta_5.jpg';
+import ctaImg from '../Image/kurta_6.jpg';
+import gallery1 from '../Image/sherwani_2.jpg';
+import gallery2 from '../Image/sherwani_3.jpg';
+import gallery3 from '../Image/sherwani_4.jpg';
+import gallery4 from '../Image/sherwani_5.jpg';
+import gallery5 from '../Image/kurta_7.jpg';
+import gallery6 from '../Image/kurta_8.jpg';
 
 const HERO_SLIDES = [
   {
@@ -82,7 +82,7 @@ export default function Home() {
     />
     <div className="w-full bg-white">
       {/* Hero Section */}
-      <section className="relative h-[50vh] sm:h-[60vh] w-full flex items-center justify-center overflow-hidden bg-black">
+      <section className="relative h-[65vh] sm:h-[80vh] w-full flex items-center justify-center overflow-hidden bg-black">
         <div 
           className="absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000"
           style={{ backgroundImage: `url(${HERO_SLIDES[currentSlide].image})` }}
