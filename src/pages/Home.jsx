@@ -49,6 +49,14 @@ const HERO_SLIDES = [
   }
 ];
 
+const HERO_CONTENT = [
+  {
+    title: 'POSHAK TAILOR & ETHNIC WEAR',
+    subtitle: 'Since 1995',
+    tagline: '"GOD MAKES MAN WE MAKE GENTLEMAN"'
+  }
+];
+
 const HERO_IMAGES = [
   collection1,
   collection2,
@@ -89,23 +97,29 @@ export default function Home() {
         />
         
         {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/40 z-0" />
+        <div className="absolute inset-0 bg-black/60 z-0" />
 
-        <div className="relative z-10 h-full flex flex-col justify-center items-center text-center px-3 sm:px-4">
-          <div key={currentSlide} className="animate-fade-in">
-              <h2 className="text-white/90 text-xs sm:text-sm md:text-md uppercase tracking-[0.3em] sm:tracking-[0.5em] mb-3 sm:mb-4">{HERO_SLIDES[currentSlide].subtitle}</h2>
-              <h1 className="text-white text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-black uppercase tracking-tighter leading-none mb-4 sm:mb-6 md:mb-8">
-                {HERO_SLIDES[currentSlide].title}
-              </h1>
-              <div className="mb-4 sm:mb-6">
-                <span className="text-white/80 text-sm sm:text-lg md:text-xl font-bold uppercase tracking-wider">POSHAK TAILOR & ETHNIC WEAR</span>
-              </div>
-              <Link to="/products" className="bg-white text-black px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 uppercase text-xs sm:text-xs md:text-sm font-bold tracking-widest hover:bg-gray-200 transition-colors inline-flex items-center gap-2 group">
-                Explore Collection
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </Link>
-          </div>
-        </div>
+        <motion.div 
+          key={currentSlide}
+          initial={{ y: 30, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="relative z-10 h-full flex flex-col justify-center items-center text-center px-3 sm:px-4"
+        >
+          <h1 className="text-white text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-black uppercase tracking-tighter mb-4 sm:mb-6 text-balance">
+            {HERO_CONTENT[0].title}
+          </h1>
+          <p className="text-lg sm:text-xl md:text-2xl font-bold text-white uppercase tracking-wider mb-3 sm:mb-4">
+            {HERO_CONTENT[0].subtitle}
+          </p>
+          <p className="text-xs sm:text-sm md:text-lg italic text-gray-300 font-light tracking-wide mb-6 sm:mb-8">
+            {HERO_CONTENT[0].tagline}
+          </p>
+          <Link to="/products" className="bg-white text-black px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 uppercase text-xs sm:text-xs md:text-sm font-bold tracking-widest hover:bg-gray-200 transition-colors inline-flex items-center gap-2 group">
+            Explore Collection
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </motion.div>
 
         {/* Sliding Progress Bars */}
         <div className="absolute bottom-6 sm:bottom-10 left-0 w-full flex justify-center gap-2 sm:gap-4 z-20 px-4">
