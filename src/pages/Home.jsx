@@ -111,7 +111,7 @@ export default function Home() {
         >
           {HERO_SLIDES[currentSlide].isBrandSlide === true ? (
             <>
-              <img src={poshakLogo} alt="Poshak" className="h-20 sm:h-24 md:h-32 lg:h-40 w-auto mb-4 sm:mb-6 bg-black/60 p-3 rounded-xl" />
+              <img src={poshakLogo} alt="Poshak" className="h-20 sm:h-24 md:h-32 lg:h-40 w-auto mb-4 sm:mb-6 rounded-full" />
               <h1 className="text-white text-xl sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tighter mb-3 sm:mb-4 text-balance">
                 {HERO_SLIDES[currentSlide].title}
               </h1>
