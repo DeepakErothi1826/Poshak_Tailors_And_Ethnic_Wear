@@ -80,23 +80,36 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-screen bg-white text-black shadow-lg border-t border-gray-100 z-[999] -ml-3">
-          <div className="px-6 py-4 space-y-0">
-            {navLinks.map((link) => (
+        <div className="md:hidden absolute top-full left-0 right-0 bg-white text-black shadow-xl z-[999] border-t-4 border-black">
+          <div className="px-6 py-2">
+            {navLinks.map((link, index) => (
               <NavLink
                 key={link.name}
                 to={link.path}
                 onClick={() => setMobileMenuOpen(false)}
                 className={({ isActive }) => 
-                  `block py-4 text-base font-semibold uppercase border-b border-gray-100 ${isActive ? 'text-black' : 'text-gray-700'}`
+                  `block py-4 text-sm font-bold uppercase tracking-wider border-b border-gray-200 hover:bg-gray-50 transition-colors ${isActive ? 'text-black bg-gray-50' : 'text-gray-700'}`
                 }
               >
-                {link.name}
+                <span className="flex items-center justify-between">
+                  {link.name}
+                  <span className="text-xs text-gray-400">→</span>
+                </span>
               </NavLink>
             ))}
-            <button className="block w-full text-left py-4 text-base font-semibold uppercase border-b border-gray-100 text-gray-700" onClick={() => { navigate('/products'); setMobileMenuOpen(false); }}>
-              Search
+            <button className="block w-full text-left py-4 text-sm font-bold uppercase tracking-wider border-b border-gray-200 text-gray-700 hover:bg-gray-50 transition-colors" onClick={() => { navigate('/products'); setMobileMenuOpen(false); }}>
+              <span className="flex items-center justify-between">
+                Search Products
+                <Search className="w-4 h-4" />
+              </span>
             </button>
+          </div>
+          <div className="bg-gray-100 px-6 py-4">
+            <p className="text-xs text-gray-500 font-medium text-center uppercase tracking-wider">Follow Us</p>
+            <div className="flex justify-center gap-4 mt-3">
+              <a href="https://instagram.com/poshak_tailor" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">Instagram</a>
+              <a href="https://www.facebook.com/people/Poshak-tailor/100064060421507/?locale=az_AZ" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-black">Facebook</a>
+            </div>
           </div>
         </div>
       )}
