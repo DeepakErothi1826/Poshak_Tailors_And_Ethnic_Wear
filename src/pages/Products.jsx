@@ -392,7 +392,7 @@ export default function Products() {
         </motion.div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-6 sm:py-8">
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-4 sm:py-8">
         <div className="flex flex-wrap justify-center gap-3 md:gap-6 mb-6 md:mb-8 border-b border-gray-200 pb-4">
           {CATEGORIES.map((cat) => (
             <button 
@@ -417,24 +417,24 @@ export default function Products() {
                 key={product.id} 
                 className="group flex flex-col"
               >
-                <div className="relative aspect-[3/4] overflow-hidden bg-gray-100 mb-4 cursor-pointer">
+                <div className="relative aspect-[3/5] sm:aspect-[3/4] overflow-hidden bg-gray-100 mb-3 sm:mb-4 cursor-pointer">
                   <Link to={`/product/${product.id}`} className="block w-full h-full">
                     <img src={product.image} alt={product.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   </Link>
                   <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                   <button 
                     onClick={(e) => { e.preventDefault(); addToCart(product); }}
-                    className="absolute bottom-4 left-1/2 -translate-x-1/2 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-white text-black px-6 py-3 w-5/6 uppercase text-xs font-black tracking-widest hover:bg-black hover:text-white shadow-lg z-10"
+                    className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-white text-black px-4 sm:px-6 py-2 sm:py-3 w-5/6 uppercase text-xs font-black tracking-widest hover:bg-black hover:text-white shadow-lg z-10"
                   >
                     Add to Cart
                   </button>
                 </div>
-                <div className="flex flex-col items-center text-center px-2">
+                <div className="flex flex-col items-center text-center px-1 sm:px-2">
                   <Link to={`/product/${product.id}`}>
-                    <h3 className="font-bold text-sm uppercase tracking-wide mb-1 hover:text-gray-500 transition-colors">{product.name}</h3>
+                    <h3 className="font-bold text-xs sm:text-sm uppercase tracking-wide mb-1 hover:text-gray-500 transition-colors line-clamp-2">{product.name}</h3>
                   </Link>
-                  <p className="text-gray-400 text-xs uppercase tracking-widest mb-1">{product.category}</p>
-                  <span className="font-black text-lg">Contact to Owner</span>
+                  <p className="text-gray-400 text-[10px] sm:text-xs uppercase tracking-widest mb-1">{product.category}</p>
+                  <span className="font-black text-sm sm:text-lg">Contact to Owner</span>
                 </div>
               </motion.div>
             ))}
