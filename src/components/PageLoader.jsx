@@ -25,7 +25,7 @@ export default function PageLoader({ children }) {
             transition={{ duration: 0.3 }}
             className="fixed inset-0 bg-white z-[9999] flex items-center justify-center"
           >
-            <div className="flex flex-col items-center gap-6">
+            <div className="flex flex-col items-center gap-8 sm:gap-10">
               <motion.div
                 initial={{ scale: 0.5, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
@@ -34,7 +34,7 @@ export default function PageLoader({ children }) {
                 <img 
                   src={poshakLogo} 
                   alt="Poshak" 
-                  className="h-20 sm:h-24 w-auto"
+                  className="h-32 sm:h-40 w-auto"
                 />
               </motion.div>
               <motion.div
