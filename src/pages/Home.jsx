@@ -130,10 +130,17 @@ export default function Home() {
               </h1>
             </>
           )}
-          <Link to="/products" className="bg-white text-black px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 uppercase text-xs sm:text-xs md:text-sm font-bold tracking-widest hover:bg-gray-200 transition-colors inline-flex items-center gap-2 group">
-            Explore Collection
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </Link>
+          {HERO_SLIDES[currentSlide].isBrandSlide === true ? (
+            <Link to="/products" className="mt-8 sm:mt-12 bg-white text-black px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 uppercase text-xs sm:text-xs md:text-sm font-bold tracking-widest hover:bg-gray-200 transition-colors inline-flex items-center gap-2 group">
+              Explore Collection
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          ) : (
+            <Link to="/products" className="bg-white text-black px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 uppercase text-xs sm:text-xs md:text-sm font-bold tracking-widest hover:bg-gray-200 transition-colors inline-flex items-center gap-2 group">
+              Explore Collection
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          )}
         </motion.div>
 
         {/* Sliding Progress Bars */}
