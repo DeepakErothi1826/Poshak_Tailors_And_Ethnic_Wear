@@ -299,23 +299,23 @@ export default function ProductDetail() {
 
         {/* You Might Also Like */}
         <div className="pt-20 text-center">
-          <h2 className="text-3xl tracking-tight text-gray-900 font-medium mb-12">You might also like</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+          <h2 className="text-xl sm:text-3xl tracking-tight text-gray-900 font-medium mb-8 sm:mb-12">You might also like</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 text-left">
             {suggestedProducts.map((p) => (
               <div key={p.id} className="group flex flex-col cursor-pointer" onClick={() => {
                 navigate(`/product/${p.id}`);
                 window.scrollTo(0, 0);
               }}>
-                <div className="relative aspect-[3/4] overflow-hidden bg-gray-100 rounded-[24px] mb-4">
+                <div className="relative aspect-[3/5] sm:aspect-[3/4] overflow-hidden bg-gray-100 rounded-[16px] sm:rounded-[24px] mb-3 sm:mb-4">
                   <img src={p.image} alt={p.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 </div>
-                <h3 className="font-semibold text-[15px] text-gray-900 leading-tight mb-1 truncate">{p.name}</h3>
-                <div className="flex gap-[2px] mb-2 items-center">
-                  {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-[12px] h-[12px] fill-yellow-400 text-yellow-400" />)}
-                  <span className="text-[12px] text-gray-500 font-medium ml-1">4.5/5</span>
+                <h3 className="font-semibold text-xs sm:text-[15px] text-gray-900 leading-tight mb-1 truncate">{p.name}</h3>
+                <div className="flex gap-[2px] mb-1 sm:mb-2 items-center">
+                  {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-[10px] sm:w-[12px] h-[10px] sm:h-[12px] fill-yellow-400 text-yellow-400" />)}
+                  <span className="text-[10px] sm:text-[12px] text-gray-500 font-medium ml-1">4.5/5</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="font-semibold text-gray-900">Contact to Owner</span>
+                  <span className="font-semibold text-xs sm:text-sm text-gray-900">Contact to Owner</span>
                 </div>
               </div>
             ))}

@@ -151,7 +151,7 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-6">
           {['Men\'s Ethnic', 'Designer Kurtas', 'Custom Tailoring'].map((category, idx) => (
             <Link to="/products" key={idx}>
               <motion.div
@@ -159,10 +159,10 @@ export default function Home() {
                 className="group cursor-pointer relative bg-gray-100 aspect-[3/4] overflow-hidden"
               >
                 <img src={HERO_IMAGES[idx]} alt={category} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 group-hover:opacity-100" />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-6">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-3 sm:p-6">
                   <div>
-                    <h3 className="text-white text-xl font-bold uppercase tracking-wider">{category}</h3>
-                    <p className="text-gray-300 text-xs uppercase tracking-widest mt-1 opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">Explore Collection</p>
+                    <h3 className="text-white text-sm sm:text-xl font-bold uppercase tracking-wider">{category}</h3>
+                    <p className="text-gray-300 text-[10px] sm:text-xs uppercase tracking-widest mt-1 opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">Explore Collection</p>
                   </div>
                 </div>
               </motion.div>
@@ -215,27 +215,27 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-8">
             {PRODUCTS.map((product) => (
               <div key={product.id} className="group flex flex-col">
-                <div className="relative aspect-[3/4] overflow-hidden bg-gray-200 mb-4 cursor-pointer">
+                <div className="relative aspect-[3/5] sm:aspect-[3/4] overflow-hidden bg-gray-200 mb-3 sm:mb-4 cursor-pointer">
                   <Link to={`/product/${product.id}`} className="block w-full h-full">
                     <img src={product.image} alt={product.name} className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" />
                   </Link>
-                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-6 duration-300 pointer-events-none">
+                  <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-4 sm:p-6 duration-300 pointer-events-none">
                     <button
                       onClick={(e) => { e.preventDefault(); addToCart(product); }}
-                      className="translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-black px-6 py-4 uppercase text-xs font-black tracking-widest hover:bg-black hover:text-white shadow-xl pointer-events-auto"
+                      className="translate-y-4 group-hover:translate-y-0 transition-all duration-300 bg-white text-black px-4 sm:px-6 py-2 sm:py-4 uppercase text-xs font-black tracking-widest hover:bg-black hover:text-white shadow-xl pointer-events-auto"
                     >
                       Add to Cart
                     </button>
                   </div>
                 </div>
-                <div className="flex justify-between items-start mt-2">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-1 sm:gap-0 mt-2">
                   <Link to={`/product/${product.id}`}>
-                    <h3 className="font-bold text-sm uppercase tracking-wide leading-tight max-w-[70%] hover:text-gray-500 transition-colors">{product.name}</h3>
+                    <h3 className="font-bold text-xs sm:text-sm uppercase tracking-wide leading-tight hover:text-gray-500 transition-colors">{product.name}</h3>
                   </Link>
-                  <span className="font-black text-sm">Contact to Owner</span>
+                  <span className="font-black text-xs sm:text-sm">Contact to Owner</span>
                 </div>
               </div>
             ))}
@@ -330,7 +330,7 @@ export default function Home() {
             </Link>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {[
               { image: serviceImg1, title: "Bespoke Suits", desc: "Custom-tailored suits crafted to your exact measurements." },
               { image: serviceImg2, title: "Wedding Collection", desc: "Exquisite sherwanis and groom wear for your special day." },
@@ -342,11 +342,11 @@ export default function Home() {
                   whileHover={{ y: -10 }}
                   className="group cursor-pointer"
                 >
-                  <div className="aspect-[4/5] overflow-hidden mb-4">
+                  <div className="aspect-[3/4] sm:aspect-[4/5] overflow-hidden mb-3 sm:mb-4">
                     <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                   </div>
-                  <h3 className="text-lg font-bold uppercase tracking-wider mb-2">{service.title}</h3>
-                  <p className="text-gray-500 text-sm">{service.desc}</p>
+                  <h3 className="text-sm sm:text-lg font-bold uppercase tracking-wider mb-1 sm:mb-2">{service.title}</h3>
+                  <p className="text-gray-500 text-xs sm:text-sm">{service.desc}</p>
                 </motion.div>
               </Link>
             ))}
