@@ -7,6 +7,7 @@ import SEO from '../components/SEO';
 import kurtaHero from '../Image/hero_kurta.jpg';
 import blazerHero from '../Image/hero_blazer.jpg';
 import hero1Img from '../Image/hero_main.png';
+import poshakLogo from '../Image/logo.png';
 
 import collection1 from '../Image/suit_17.jpg';
 import collection2 from '../Image/suit_16.jpg';
@@ -110,6 +111,7 @@ export default function Home() {
         >
           {HERO_SLIDES[currentSlide].isBrandSlide === true ? (
             <>
+              <img src={poshakLogo} alt="Poshak" className="h-20 sm:h-24 md:h-32 lg:h-40 w-auto mb-4 sm:mb-6" />
               <h1 className="text-white text-xl sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tighter mb-3 sm:mb-4 text-balance">
                 {HERO_SLIDES[currentSlide].title}
               </h1>
