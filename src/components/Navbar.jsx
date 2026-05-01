@@ -1,13 +1,12 @@
 import { useState, useEffect } from 'react';
-import { NavLink, useNavigate } from 'react-router-dom';
-import { ShoppingBag, Search, Menu, X } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
+import { ShoppingBag, Menu, X } from 'lucide-react';
 import { useCartStore } from '../store/useCartStore';
 import poshakLogo from '../Image/logo.png';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const navigate = useNavigate();
   const { cart, toggleCartDrawer } = useCartStore();
 
   const cartItemCount = cart.reduce((total, item) => total + item.quantity, 0);
@@ -60,9 +59,6 @@ export default function Navbar() {
 
           {/* Icons */}
           <div className="flex items-center space-x-1 sm:space-x-4 md:space-x-6">
-            <button className="hover:bg-gray-100 transition-colors p-2 rounded hidden xs:block sm:block" onClick={() => navigate('/products')}>
-              <Search className="w-5 h-5" />
-            </button>
             <button className="relative hover:bg-gray-100 transition-colors p-2 rounded" onClick={toggleCartDrawer}>
               <ShoppingBag className="w-5 h-5" />
               {cartItemCount > 0 && (
