@@ -59,20 +59,20 @@ export default function Navbar() {
           </div>
 
           {/* Icons */}
-          <div className="flex items-center space-x-2 sm:space-x-4 md:space-x-6">
-            <button className="hover:opacity-70 transition-opacity hidden xs:block sm:block" onClick={() => navigate('/products')}>
-              <Search className="w-4 sm:w-5 h-4 sm:h-5" />
+          <div className="flex items-center space-x-1 sm:space-x-4 md:space-x-6">
+            <button className="hover:bg-gray-100 transition-colors p-2 rounded hidden xs:block sm:block" onClick={() => navigate('/products')}>
+              <Search className="w-5 h-5" />
             </button>
-            <button className="relative hover:opacity-70 transition-opacity" onClick={toggleCartDrawer}>
+            <button className="relative hover:bg-gray-100 transition-colors p-2 rounded" onClick={toggleCartDrawer}>
               <ShoppingBag className="w-5 h-5" />
               {cartItemCount > 0 && (
-                <span className="absolute -top-2 -right-2 bg-red-600 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
+                <span className="absolute -top-1 -right-1 bg-red-600 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
                   {cartItemCount}
                 </span>
               )}
             </button>
-            <button className="md:hidden hover:opacity-70 transition-opacity p-1" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-              {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            <button className="md:hidden hover:bg-gray-100 transition-colors p-2 rounded" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
             </button>
           </div>
         </div>
@@ -80,7 +80,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-white text-black fixed top-full left-0 w-full shadow-lg border-t border-gray-100 z-[99]">
+        <div className="md:hidden bg-white text-black fixed top-full left-0 w-full shadow-lg border-t border-gray-100 z-[999]">
           <div className="px-4 pt-2 pb-6 space-y-1">
             {navLinks.map((link) => (
               <NavLink
