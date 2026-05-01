@@ -170,6 +170,8 @@ import accessories1 from '../Image/accessories_1.jpg';
 import accessories2 from '../Image/accessories_2.jpg';
 import accessories3 from '../Image/accessories_3.jpg';
 import accessories4 from '../Image/accessories_4.jpg';
+import accessories5 from '../Image/accessories_5.jpg';
+import accessories7 from '../Image/accessories_7.jpg';
 
 const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Indo-Western', 'Shirt', 'Jacket', 'Payjama', 'Formal Paint', 'Safari', 'Uniform', 'Jeans', 'Accessories'];
 
@@ -187,7 +189,7 @@ const IMAGES = {
   Safari: [safari1, safari2, safari3, safari4],
   Uniform: [uniform1, uniform2, uniform3, uniform4, uniform5, uniform6, uniform7, uniform8],
   Jeans: [jeans1, jeans2, jeans3, jeans4, jeans5, jeans6, jeans7, jeans8, jeans9],
-  Accessories: [accessories1, accessories2, accessories3, accessories4]
+  Accessories: [accessories1, accessories2, accessories3, accessories4, accessories5, accessories7]
 };
 
 const getRandomImage = (category) => {
