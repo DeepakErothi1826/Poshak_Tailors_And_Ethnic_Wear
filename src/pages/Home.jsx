@@ -116,7 +116,7 @@ export default function Home() {
               <p className="text-sm sm:text-lg md:text-xl font-black text-white uppercase tracking-wider mb-2 sm:mb-3">
                 {HERO_SLIDES[currentSlide].subtitle}
               </p>
-              <p className="text-[10px] sm:text-xs md:text-sm italic text-gray-300 font-semibold tracking-wide mb-4 sm:mb-6">
+              <p className="text-sm sm:text-lg md:text-xl italic text-gray-300 font-bold tracking-wide mb-4 sm:mb-6">
                 {HERO_SLIDES[currentSlide].tagline}
               </p>
             </>
