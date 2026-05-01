@@ -33,27 +33,29 @@ import gallery6 from '../Image/kurta_8.jpg';
 
 const HERO_SLIDES = [
   {
+    image: hero1Img,
+    title: 'POSHAK TAILOR & ETHNIC WEAR',
+    subtitle: 'Since 1995',
+    tagline: '"GOD MAKES MAN WE MAKE GENTLEMAN"',
+    isBrandSlide: true
+  },
+  {
     image: kurtaHero,
     title: 'Ethnic Wear',
-    subtitle: 'Traditional Elegance'
+    subtitle: 'Traditional Elegance',
+    isBrandSlide: false
   },
   {
     image: blazerHero,
     title: 'Designer Blazers',
-    subtitle: 'Modern Sophistication'
+    subtitle: 'Modern Sophistication',
+    isBrandSlide: false
   },
   {
     image: hero1Img,
     title: 'Bespoke Suits',
-    subtitle: 'Perfect Fit'
-  }
-];
-
-const HERO_CONTENT = [
-  {
-    title: 'POSHAK TAILOR & ETHNIC WEAR',
-    subtitle: 'Since 1995',
-    tagline: '"GOD MAKES MAN WE MAKE GENTLEMAN"'
+    subtitle: 'Perfect Fit',
+    isBrandSlide: false
   }
 ];
 
@@ -106,15 +108,26 @@ export default function Home() {
           transition={{ duration: 0.8 }}
           className="relative z-10 h-full flex flex-col justify-center items-center text-center px-3 sm:px-4"
         >
-          <h1 className="text-white text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-black uppercase tracking-tighter mb-4 sm:mb-6 text-balance">
-            {HERO_CONTENT[0].title}
-          </h1>
-          <p className="text-lg sm:text-xl md:text-2xl font-bold text-white uppercase tracking-wider mb-3 sm:mb-4">
-            {HERO_CONTENT[0].subtitle}
-          </p>
-          <p className="text-xs sm:text-sm md:text-lg italic text-gray-300 font-light tracking-wide mb-6 sm:mb-8">
-            {HERO_CONTENT[0].tagline}
-          </p>
+          {HERO_SLIDES[currentSlide].isBrandSlide ? (
+            <>
+              <h1 className="text-white text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-black uppercase tracking-tighter mb-4 sm:mb-6 text-balance">
+                {HERO_SLIDES[currentSlide].title}
+              </h1>
+              <p className="text-lg sm:text-xl md:text-2xl font-bold text-white uppercase tracking-wider mb-3 sm:mb-4">
+                {HERO_SLIDES[currentSlide].subtitle}
+              </p>
+              <p className="text-xs sm:text-sm md:text-lg italic text-gray-300 font-light tracking-wide mb-6 sm:mb-8">
+                {HERO_SLIDES[currentSlide].tagline}
+              </p>
+            </>
+          ) : (
+            <>
+              <h2 className="text-white/90 text-xs sm:text-sm md:text-md uppercase tracking-[0.3em] sm:tracking-[0.5em] mb-3 sm:mb-4">{HERO_SLIDES[currentSlide].subtitle}</h2>
+              <h1 className="text-white text-3xl sm:text-5xl md:text-6xl lg:text-8xl font-black uppercase tracking-tighter leading-none mb-4 sm:mb-6 md:mb-8">
+                {HERO_SLIDES[currentSlide].title}
+              </h1>
+            </>
+          )}
           <Link to="/products" className="bg-white text-black px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 uppercase text-xs sm:text-xs md:text-sm font-bold tracking-widest hover:bg-gray-200 transition-colors inline-flex items-center gap-2 group">
             Explore Collection
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
