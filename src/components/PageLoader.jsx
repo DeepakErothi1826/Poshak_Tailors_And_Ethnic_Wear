@@ -1,24 +1,19 @@
 import { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 import poshakLogo from '../Image/logo.png';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function PageLoader({ children }) {
-  const [loading, setLoading] = useState(false);
-  const [showLoader, setShowLoader] = useState(false);
-  const location = useLocation();
+  const [loading, setLoading] = useState(true);
+  const [showLoader, setShowLoader] = useState(true);
 
   useEffect(() => {
-    setShowLoader(true);
-    setLoading(true);
-    
     const timer = setTimeout(() => {
       setLoading(false);
       setTimeout(() => setShowLoader(false), 500);
     }, 1500);
 
     return () => clearTimeout(timer);
-  }, [location.pathname]);
+  }, []);
 
   return (
     <>
