@@ -47,7 +47,7 @@ export default function Footer() {
             <ul className="space-y-3 text-gray-400 text-sm">
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span className="text-xs md:text-sm">Shop No.9, Surana Market, Pandri, Raipur, C.G. - 492001</span>
+                <a href="https://maps.google.com/?q=Shop+No.9,+Surana+Market,+Pandri,+Raipur,+Chhattisgarh+492001" target="_blank" rel="noopener noreferrer" className="text-xs md:text-sm hover:text-white underline">Shop No.9, Surana Market, Pandri, Raipur, C.G. - 492001</a>
               </li>
               <li className="flex items-start gap-2">
                 <Phone className="w-4 h-4 mt-0.5 flex-shrink-0" />
