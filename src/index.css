@@ -52,13 +52,13 @@
   /* Marquee animation */
   .marquee-container {
     display: flex;
-    width: 200%;
+    width: 100%;
   }
   
   .marquee-content {
-    display: flex;
-    width: 50%;
-    animation: marquee 15s linear infinite;
+    display: inline-flex;
+    white-space: nowrap;
+    animation: marquee 25s linear infinite;
   }
   
   @keyframes marquee {
@@ -66,7 +66,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-50%);
     }
   }
 }

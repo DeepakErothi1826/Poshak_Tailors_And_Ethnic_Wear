@@ -121,17 +121,21 @@ export default function Home() {
 
       {/* Marquee Banner */}
       <div className="w-full overflow-hidden bg-black text-white py-4 border-y border-gray-800">
-        <div className="marquee-container flex whitespace-nowrap text-xs font-bold uppercase tracking-[0.3em]">
-          <span className="marquee-content">
-            {Array(4).fill("POSHAK TAILORS ✦ ETHNIC WEAR ✦ BESPOKE DESIGN ✦ ").map((text, i) => (
-              <span key={i} className="mx-4">{text}</span>
-            ))}
-          </span>
-          <span className="marquee-content">
-            {Array(4).fill("POSHAK TAILORS ✦ ETHNIC WEAR ✦ BESPOKE DESIGN ✦ ").map((text, i) => (
-              <span key={i} className="mx-4">{text}</span>
-            ))}
-          </span>
+        <div className="marquee-container">
+          <div className="marquee-content text-xs font-bold uppercase tracking-[0.3em] flex gap-8">
+            <span>POSHAK TAILORS ✦ ETHNIC WEAR ✦ BESPOKE DESIGN ✦</span>
+            <span>POSHAK TAILORS ✦ ETHNIC WEAR ✦ BESPOKE DESIGN ✦</span>
+            <span>POSHAK TAILORS ✦ ETHNIC WEAR ✦ BESPOKE DESIGN ✦</span>
+            <span>POSHAK TAILORS ✦ ETHNIC WEAR ✦ BESPOKE DESIGN ✦</span>
+            <span>POSHAK TAILORS ✦ ETHNIC WEAR ✦ BESPOKE DESIGN ✦</span>
+          </div>
+          <div className="marquee-content text-xs font-bold uppercase tracking-[0.3em] flex gap-8">
+            <span>POSHAK TAILORS ✦ ETHNIC WEAR ✦ BESPOKE DESIGN ✦</span>
+            <span>POSHAK TAILORS ✦ ETHNIC WEAR ✦ BESPOKE DESIGN ✦</span>
+            <span>POSHAK TAILORS ✦ ETHNIC WEAR ✦ BESPOKE DESIGN ✦</span>
+            <span>POSHAK TAILORS ✦ ETHNIC WEAR ✦ BESPOKE DESIGN ✦</span>
+            <span>POSHAK TAILORS ✦ ETHNIC WEAR ✦ BESPOKE DESIGN ✦</span>
+          </div>
         </div>
       </div>
 
