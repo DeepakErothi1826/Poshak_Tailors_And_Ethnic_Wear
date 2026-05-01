@@ -34,7 +34,7 @@ export default function PageLoader({ children }) {
                 <img 
                   src={poshakLogo} 
                   alt="Poshak" 
-                  className="h-32 sm:h-40 w-auto"
+                  className="h-40 sm:h-40 md:h-48 w-auto"
                 />
               </motion.div>
               <motion.div
