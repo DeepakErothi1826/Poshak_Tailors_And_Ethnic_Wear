@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import kurtaHero from '../Image/hero_kurta.jpg';
-import fabric1 from '../Image/suit_2.jpg';
-import fabric2 from '../Image/suit_5.jpg';
-import fabric3 from '../Image/suit_6.jpg';
-import fabric4 from '../Image/suit_7.jpg';
-import fabric5 from '../Image/suit_8.jpg';
-import fabric6 from '../Image/suit_9.jpg';
+import fabric1 from '../Image/Suit/suit_056.jpg';
+import fabric2 from '../Image/Suit/suit_057.jpg';
+import fabric3 from '../Image/Suit/suit_058.jpg';
+import fabric4 from '../Image/Suit/suit_059.jpg';
+import fabric5 from '../Image/Suit/suit_060.jpg';
+import fabric6 from '../Image/Suit/suit_061.jpg';
 
 const FABRIC_BRANDS = [
   {

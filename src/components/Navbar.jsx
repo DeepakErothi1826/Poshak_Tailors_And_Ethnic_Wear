@@ -22,8 +22,8 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
-    { name: 'Fabrics', path: '/fabrics' },
-    { name: 'Collections', path: '/products' },
+    { name: 'Fabrics Collections', path: '/fabrics' },
+    { name: 'Stitch', path: '/products' },
     { name: 'Contact Us', path: '/contact' },
   ];
 

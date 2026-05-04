@@ -4,33 +4,34 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useCartStore } from '../store/useCartStore';
 import { ArrowRight, Star, Award, Clock, Truck, Shield, Phone } from 'lucide-react';
 import SEO from '../components/SEO';
+import StitchCategories from '../components/StitchCategories';
 import kurtaHero from '../Image/hero_kurta.jpg';
 import blazerHero from '../Image/hero_blazer.jpg';
 import hero1Img from '../Image/hero_main.png';
 import poshakLogo from '../Image/logo.png';
 
-import collection1 from '../Image/suit_17.jpg';
-import collection2 from '../Image/suit_16.jpg';
-import collection3 from '../Image/suit_15.jpg';
+import collection1 from '../Image/Suit/suit_044.jpg';
+import collection2 from '../Image/Suit/suit_045.jpg';
+import collection3 from '../Image/Suit/suit_046.jpg';
 
-import product1 from '../Image/sherwani_1.jpg';
-import product2 from '../Image/suit_1.jpg';
-import product3 from '../Image/kurta_4.jpg';
-import product4 from '../Image/kurta_1.jpg';
-import craftImg from '../Image/suit_12.jpg';
-import heritageImg from '../Image/suit_11.jpg';
+import product1 from '../Image/Sherwani/sherwani_27.jpg';
+import product2 from '../Image/Suit/suit_047.jpg';
+import product3 from '../Image/kurta/download (94).jpg';
+import product4 from '../Image/kurta/download (91).jpg';
+import craftImg from '../Image/Suit/suit_048.jpg';
+import heritageImg from '../Image/Suit/suit_049.jpg';
 
-import serviceImg1 from '../Image/kurta_2.jpg';
-import serviceImg2 from '../Image/kurta_3.jpg';
-import serviceImg3 from '../Image/kurta_4.jpg';
-import serviceImg4 from '../Image/kurta_5.jpg';
-import ctaImg from '../Image/kurta_6.jpg';
-import gallery1 from '../Image/sherwani_2.jpg';
-import gallery2 from '../Image/sherwani_3.jpg';
-import gallery3 from '../Image/sherwani_4.jpg';
-import gallery4 from '../Image/sherwani_5.jpg';
-import gallery5 from '../Image/kurta_7.jpg';
-import gallery6 from '../Image/kurta_8.jpg';
+import serviceImg1 from '../Image/kurta/download (92).jpg';
+import serviceImg2 from '../Image/kurta/download (93).jpg';
+import serviceImg3 from '../Image/kurta/download (95).jpg';
+import serviceImg4 from '../Image/kurta/download (96).jpg';
+import ctaImg from '../Image/kurta/download (97).jpg';
+import gallery1 from '../Image/Sherwani/sherwani_28.jpg';
+import gallery2 from '../Image/Sherwani/sherwani_29.jpg';
+import gallery3 from '../Image/Sherwani/sherwani_30.jpg';
+import gallery4 from '../Image/Sherwani/sherwani_31.jpg';
+import gallery5 from '../Image/Sherwani/sherwani_32.jpg';
+import gallery6 from '../Image/Sherwani/sherwani_33.jpg';
 
 const HERO_SLIDES = [
   {
@@ -75,12 +76,14 @@ const PRODUCTS = [
 
 export default function Home() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [prevSlide, setPrevSlide] = useState(0);
   const addToCart = useCartStore((state) => state.addToCart);
 
   useEffect(() => {
     const timer = setInterval(() => {
+      setPrevSlide(currentSlide);
       setCurrentSlide((prev) => (prev + 1) % HERO_SLIDES.length);
-    }, 5000);
+    }, 8000);
     return () => clearInterval(timer);
   }, []);
 
@@ -91,13 +94,19 @@ export default function Home() {
       description="Premier bespoke tailoring and ethnic wear in Raipur, Chhattisgarh. Expert crafting of sherwanis, suits, kurtas, and wedding wear since 1995. Free shipping across India."
       keywords="Poshak Tailors, ethnic wear, bespoke tailoring, sherwani, suit, kurta, wedding wear, Raipur, Chhattisgarh, menswear, party wear, formal suits, Indo-Western, Jodhpuri suit, Bandhgala"
     />
-    <div className="w-full bg-white">
-      {/* Hero Section */}
+<div className="w-full bg-white">
+{/* Hero Section */}
       <section className="relative h-[65vh] sm:h-[80vh] w-full flex items-center justify-center overflow-hidden bg-black">
-        <div 
-          className="absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000"
-          style={{ backgroundImage: `url(${HERO_SLIDES[currentSlide].image})` }}
-        />
+        {HERO_SLIDES.map((slide, idx) => (
+          <div
+            key={idx}
+            className="absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000"
+            style={{ 
+              backgroundImage: `url(${slide.image})`,
+              opacity: currentSlide === idx ? 1 : 0
+            }}
+          />
+        ))}
         
         {/* Dark overlay for better text readability */}
         <div className="absolute inset-0 bg-black/60 z-0" />
@@ -107,18 +116,18 @@ export default function Home() {
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="relative z-10 h-full flex flex-col justify-center items-center text-center px-3 sm:px-4"
+          className={`relative z-10 h-full flex flex-col items-center text-center px-3 sm:px-4 ${HERO_SLIDES[currentSlide].isBrandSlide ? 'justify-start pt-20 sm:pt-24 md:pt-28' : 'justify-center'}`}
         >
           {HERO_SLIDES[currentSlide].isBrandSlide === true ? (
             <>
-              <img src={poshakLogo} alt="Poshak" className="h-20 sm:h-24 md:h-32 lg:h-40 w-auto mb-4 sm:mb-6 rounded-full" />
-              <h1 className="text-white text-xl sm:text-3xl md:text-4xl lg:text-5xl font-black uppercase tracking-tighter mb-3 sm:mb-4 text-balance">
+              <img src={poshakLogo} alt="Poshak" className="h-24 sm:h-32 md:h-40 lg:h-48 w-auto mb-4 sm:mb-6 rounded-full bg-white p-2 sm:p-4 shadow-2xl" />
+              <h1 className="text-white text-sm sm:text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-tighter mb-1 sm:mb-2 text-balance">
                 {HERO_SLIDES[currentSlide].title}
               </h1>
-              <p className="text-sm sm:text-lg md:text-xl font-black text-white uppercase tracking-wider mb-2 sm:mb-3">
+              <p className="text-xs sm:text-sm md:text-base font-black text-white uppercase tracking-wider mb-2 sm:mb-3">
                 {HERO_SLIDES[currentSlide].subtitle}
               </p>
-              <p className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl italic text-white font-black tracking-wide mb-4 sm:mb-6">
+              <p className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl italic text-white font-black tracking-wide mb-4 sm:mb-6">
                 {HERO_SLIDES[currentSlide].tagline}
               </p>
             </>
@@ -130,25 +139,48 @@ export default function Home() {
               </h1>
             </>
           )}
-          {HERO_SLIDES[currentSlide].isBrandSlide === true ? (
-            <Link to="/products" className="mt-8 sm:mt-12 bg-white text-black px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 uppercase text-xs sm:text-xs md:text-sm font-bold tracking-widest hover:bg-gray-200 transition-colors inline-flex items-center gap-2 group">
-              Explore Collection
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          ) : (
+          <div className="flex flex-col items-center gap-3">
             <Link to="/products" className="bg-white text-black px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 uppercase text-xs sm:text-xs md:text-sm font-bold tracking-widest hover:bg-gray-200 transition-colors inline-flex items-center gap-2 group">
               Explore Collection
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
-          )}
+
+            {/* Dot Slider Animation */}
+            <div className="flex items-center gap-3 sm:gap-4">
+              {HERO_SLIDES.map((_, idx) => (
+                <motion.div
+                  key={idx}
+                  onClick={() => setCurrentSlide(idx)}
+                  className="cursor-pointer rounded-full bg-gray-600 overflow-hidden"
+                  animate={{
+                    width: currentSlide === idx ? 48 : 12,
+                    height: 12,
+                    backgroundColor: currentSlide === idx ? '#ffffff' : '#6b7280',
+                  }}
+                  transition={{ duration: 0.8, ease: 'easeInOut' }}
+                />
+              ))}
+            </div>
+          </div>
         </motion.div>
 
-        {/* Sliding Progress Bars */}
-        <div className="absolute bottom-16 sm:bottom-24 left-0 w-full flex justify-center gap-2 sm:gap-4 z-20 px-4">
+{/* Sliding Progress Bars */}
+        <div className="absolute bottom-16 sm:bottom-24 left-0 w-ful flex justify- center gap-2 sm:gap-4 z-20 px-4">
           {HERO_SLIDES.map((_, idx) => (
-            <div key={idx} className="h-1 w-12 sm:w-16 md:w-24 bg-gray-600 overflow-hidden cursor-pointer" onClick={() => setCurrentSlide(idx)}>
-              <div
-                className={`h-full bg-white transition-all duration-[5000ms] ease-linear origin-left ${currentSlide === idx ? 'w-full' : currentSlide > idx ? 'w-full !duration-0' : 'w-0 !duration-0'}`}
+            <div 
+              key={idx} 
+              className="h-1 w-12 sm:w-16 md:w-24 bg-gray-600 overflow- hidden cursor-pointer relative" 
+              onClick={() => setCurrentSlide(idx)}
+            >
+              <motion.div
+                className="absolute inset-0 bg-white origin-left"
+                initial={{ scaleX: 0 }}
+                animate={{ scaleX: currentSlide === idx ? 1 : 0 }}
+                transition={{ 
+                  duration: currentSlide === idx ? 5 : 0,
+                  ease: 'linear'
+                }}
+                style={{ transformOrigin: 'left' }}
               />
             </div>
           ))}
@@ -174,6 +206,9 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Stitch Categories Section */}
+      <StitchCategories />
 
       {/* Top Collections (Wireframe Match) */}
       <section className="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -486,9 +521,9 @@ export default function Home() {
           <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-6">Ready to Elevate Your Style?</h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Book your consultation today and experience the art of bespoke tailoring.</p>
           <div className="flex flex-col md:flex-row justify-center gap-4">
-            <a href="/contact" className="bg-white text-black px-8 py-4 uppercase text-sm font-bold tracking-widest hover:bg-gray-200 transition-colors">
+            <Link to="/contact" className="bg-white text-black px-8 py-4 uppercase text-sm font-bold tracking-widest hover:bg-gray-200 transition-colors">
               Book Appointment
-            </a>
+            </Link>
             <a href="tel:09827165995" className="border-2 border-white text-white px-8 py-4 uppercase text-sm font-bold tracking-widest hover:bg-white hover:text-black transition-colors flex items-center justify-center gap-2">
               <Phone className="w-4 h-4" /> Call Now
             </a>

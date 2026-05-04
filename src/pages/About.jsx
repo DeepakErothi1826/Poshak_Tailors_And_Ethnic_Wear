@@ -1,12 +1,13 @@
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import hero1Img from '../Image/hero_main.png';
-import aboutImg1 from '../Image/suit_10.jpg';
-import aboutImg2 from '../Image/suit_11.jpg';
-import aboutImg3 from '../Image/suit_12.jpg';
-import aboutImg4 from '../Image/suit_15.jpg';
-import aboutImg5 from '../Image/suit_16.jpg';
-import aboutImg6 from '../Image/suit_17.jpg';
+import aboutImg1 from '../Image/Suit/suit_050.jpg';
+import aboutImg2 from '../Image/Suit/suit_051.jpg';
+import aboutImg3 from '../Image/Suit/suit_052.jpg';
+import aboutImg4 from '../Image/Suit/suit_053.jpg';
+import aboutImg5 from '../Image/Suit/suit_054.jpg';
+import aboutImg6 from '../Image/Suit/suit_055.jpg';
 
 export default function About() {
   const aboutSchema = {
@@ -253,12 +254,12 @@ export default function About() {
               Experience the art of bespoke tailoring at our Raipur showroom. Book your consultation today and let us craft your perfect ensemble.
             </p>
             <div className="flex flex-col md:flex-row justify-center gap-4">
-              <a href="/contact" className="bg-black text-white px-8 py-4 uppercase text-sm font-bold tracking-widest hover:bg-gray-800 transition-colors">
+              <Link to="/contact" className="bg-black text-white px-8 py-4 uppercase text-sm font-bold tracking-widest hover:bg-gray-800 transition-colors">
                 Book Appointment
-              </a>
-              <a href="/products" className="border-2 border-black text-black px-8 py-4 uppercase text-sm font-bold tracking-widest hover:bg-black hover:text-white transition-colors">
+              </Link>
+              <Link to="/products" className="border-2 border-black text-black px-8 py-4 uppercase text-sm font-bold tracking-widest hover:bg-black hover:text-white transition-colors">
                 View Collection
-              </a>
+              </Link>
             </div>
           </motion.div>
         </div>

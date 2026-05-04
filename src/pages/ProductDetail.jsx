@@ -3,7 +3,7 @@ import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Heart, Clock, Package, Truck, Minus, Plus, ChevronDown, ChevronUp, Star, ArrowRight } from 'lucide-react';
 import { useCartStore } from '../store/useCartStore';
-import { ALL_PRODUCTS } from './Products';
+import { ALL_PRODUCTS_DATA } from './Products';
 import SEO from '../components/SEO';
 
 export default function ProductDetail() {
@@ -11,15 +11,10 @@ export default function ProductDetail() {
   const navigate = useNavigate();
   const addToCartWithQuantity = useCartStore((state) => state.addToCart);
   
-  const product = ALL_PRODUCTS.find(p => p.id === parseInt(id));
+const product = ALL_PRODUCTS_DATA.find(p => p.id === id);
   
-  const [selectedSize, setSelectedSize] = useState('M');
-  const [quantity, setQuantity] = useState(1);
-  const [activeAccordion, setActiveAccordion] = useState('desc');
-  const [timeLeft, setTimeLeft] = useState('02:30:25');
-
   // Similar products
-  const suggestedProducts = ALL_PRODUCTS.filter(p => p.id !== product?.id).slice(0, 4);
+  const suggestedProducts = ALL_PRODUCTS_DATA.filter(p => p.id !== product?.id).slice(0, 4);
 
   // Mock countdown timer
   useEffect(() => {
