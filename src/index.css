@@ -11,6 +11,11 @@
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
   body {
     background-color: white;
     color: black;
@@ -20,12 +25,25 @@
     overflow-x: hidden;
   }
 
+  /* Improve tap targets on mobile */
+  a, button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Prevent horizontal scroll */
   img {
-    will-change: transform;
+    max-width: 100%;
+    height: auto;
   }
 
   .group:hover img {
     will-change: transform;
+  }
+
+  /* Touch-friendly form inputs */
+  input, textarea, select {
+    font-size: 16px;
   }
 }
 
@@ -38,8 +56,8 @@
     display: none;
   }
   .hide-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 
   /* Performance animations */
@@ -77,5 +95,43 @@
     100% {
       transform: translateX(-50%);
     }
+  }
+
+  /* Safe area padding for mobile */
+  .safe-area-p {
+    padding-left: max(1rem, env(safe-area-inset-left));
+    padding-right: max(1rem, env(safe-area-inset-right));
+  }
+}
+
+/* Mobile-specific fixes */
+@media (max-width: 640px) {
+  /* Improve readability on small screens */
+  body {
+    font-size: 14px;
+  }
+  
+  /* Better button spacing on touch devices */
+  button {
+    touch-action: manipulation;
+  }
+  
+  /* Smooth scrolling for anchor links */
+  html {
+    scroll-padding-top: 80px;
+  }
+}
+
+/* Tablet adjustments */
+@media (min-width: 641px) and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+/* Large screen optimizations */
+@media (min-width: 1536px) {
+  body {
+    font-size: 16px;
   }
 }
