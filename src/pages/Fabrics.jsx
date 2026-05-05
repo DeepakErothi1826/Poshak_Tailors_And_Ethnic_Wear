@@ -1,12 +1,14 @@
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import kurtaHero from '../Image/hero_kurta.jpg';
-import fabric1 from '../Image/Suit/suit_056.jpg';
-import fabric2 from '../Image/Suit/suit_057.jpg';
-import fabric3 from '../Image/Suit/suit_058.jpg';
-import fabric4 from '../Image/Suit/suit_059.jpg';
-import fabric5 from '../Image/Suit/suit_060.jpg';
-import fabric6 from '../Image/Suit/suit_061.jpg';
+import fabric1 from '../Image/fabrics/download - 2026-05-05T170308.154.jpg';
+import fabric2 from '../Image/fabrics/download - 2026-05-05T170905.317.jpg';
+import fabric3 from '../Image/fabrics/download - 2026-05-05T173244.938.jpg';
+import fabric4 from '../Image/fabrics/download - 2026-05-05T173312.071.jpg';
+import fabric5 from '../Image/fabrics/Quality Wool__N5,000 per yard__Dm me to order.jpg';
+import fabric6 from '../Image/fabrics/A Journey Through Artistry and Innovation.jpg';
+import fabric7 from '../Image/fabrics/Shwe Shwe.jpg';
+import fabric8 from '../Image/fabrics/07081126266.jpg';
 
 const FABRIC_BRANDS = [
   {
@@ -107,35 +109,35 @@ const FABRIC_COLLECTIONS = [
     id: 3,
     name: "Linen Collection",
     description: "Lightweight linen fabrics ideal for summer and formal wear.",
-    images: [fabric1, fabric2, fabric3],
+    images: [fabric3, fabric4, fabric5],
     features: ["Cool & Comfortable", "Natural Fibers", "Timeless Appeal"]
   },
   {
     id: 4,
     name: "Wool & Tweed",
     description: "Premium wool fabrics for winter and formal ensembles.",
-    images: [fabric4, fabric5, fabric6],
+    images: [fabric5, fabric6, fabric7],
     features: ["Warmth", "Durability", "Classic Style"]
   },
   {
     id: 5,
     name: "Embroidery Fabrics",
     description: "Intricately embroidered fabrics for wedding and festive wear.",
-    images: [fabric1, fabric2, fabric3],
+    images: [fabric6, fabric7, fabric8],
     features: ["Handwork", "Festive Look", "Exclusive"]
   },
   {
     id: 6,
     name: "Bandhani",
     description: "Traditional Bandhani fabrics from Rajasthan with unique tie-dye patterns.",
-    images: [fabric4, fabric5, fabric6],
+    images: [fabric7, fabric8, fabric1],
     features: ["Traditional", "Handcrafted", "Vibrant Colors"]
   },
   {
     id: 7,
     name: "Chikankari",
     description: "Lucknow-style embroidered fabrics with delicate white threadwork.",
-    images: [fabric4, fabric5, fabric6],
+    images: [fabric2, fabric3, fabric4],
     features: ["Embroidery", "Elegant", "Traditional"]
   }
 ];
