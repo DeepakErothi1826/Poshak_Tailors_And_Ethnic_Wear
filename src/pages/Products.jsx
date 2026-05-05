@@ -49,7 +49,7 @@ const FOLDER_NAME_MAP = {
   'Suit': 'Suit',
   'Kurta': 'kurta',
   'Blazer': 'Blazer',
-  'Modi Jacket': 'Jacket',
+  'Modi Jacket': 'Modi jacket',
   'Pathani': 'Pathani',
   'Indo-Western': 'indo-Western',
   'Shirt': 'Shirt',
