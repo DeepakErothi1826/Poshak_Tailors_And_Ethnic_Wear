@@ -63,7 +63,7 @@ const allImageFiles = import.meta.glob('../Image/**/*.{jpg,jpeg,png,webp}', { ea
 
 const isValidImageFile = (path) => {
   const fileName = path.split('/').pop();
-  return !fileName.includes('#') && !fileName.includes('&') && !fileName.includes('%') && !fileName.includes('?') && !fileName.includes(' ');
+  return !fileName.includes('#') && !fileName.includes('&') && !fileName.includes('%') && !fileName.includes('?');
 };
 
 const getImageUrl = (path) => {
