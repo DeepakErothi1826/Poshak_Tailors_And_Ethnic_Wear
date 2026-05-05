@@ -31,7 +31,7 @@ export default function About() {
     />
     <div className="w-full bg-white">
       {/* Hero */}
-      <section className="relative h-[50vh] sm:h-[60vh] w-full flex items-center justify-center overflow-hidden bg-black">
+      <section className="relative h-[65vh] sm:h-[80vh] w-full flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${hero1Img})` }} />
         <div className="absolute inset-0 bg-black/60" />
         <motion.div 
