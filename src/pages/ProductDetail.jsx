@@ -12,6 +12,7 @@ export default function ProductDetail() {
   const addToCartWithQuantity = useCartStore((state) => state.addToCart);
   const [timeLeft, setTimeLeft] = useState("02:30:25");
   const [selectedSize, setSelectedSize] = useState('M');
+  const [activeAccordion, setActiveAccordion] = useState(null);
   
 const product = ALL_PRODUCTS_DATA.find(p => p.id === id);
   
