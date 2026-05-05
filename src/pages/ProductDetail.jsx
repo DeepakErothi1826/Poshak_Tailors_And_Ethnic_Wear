@@ -11,6 +11,7 @@ export default function ProductDetail() {
   const navigate = useNavigate();
   const addToCartWithQuantity = useCartStore((state) => state.addToCart);
   const [timeLeft, setTimeLeft] = useState("02:30:25");
+  const [selectedSize, setSelectedSize] = useState('M');
   
 const product = ALL_PRODUCTS_DATA.find(p => p.id === id);
   
