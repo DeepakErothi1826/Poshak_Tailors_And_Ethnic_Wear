@@ -63,13 +63,12 @@ const allImagePaths = Object.keys(import.meta.glob('../Image/**/*.{jpg,jpeg,png,
 
 const isValidImageFile = (path) => {
   const fileName = path.split('/').pop();
-  return !fileName.includes('#') && !fileName.includes('&') && !fileName.includes('%') && !fileName.includes('?');
+  return !fileName.includes('#') && !fileName.includes('&') && !fileName.includes('%') && !fileName.includes('?') && !fileName.includes(' ');
 };
 
 const getImageUrl = (path) => {
   if (!isValidImageFile(path)) return null;
-  const fileName = path.split('/').pop();
-  return new URL(path, import.meta.url).href;
+  return path;
 };
 
 function getImagesForCategory(category) {
@@ -79,9 +78,7 @@ function getImagesForCategory(category) {
   const folderPath = `../Image/${folderName}/`;
   
   return allImagePaths
-    .filter(path => path.startsWith(folderPath) && isValidImageFile(path))
-    .map(path => getImageUrl(path))
-    .filter(Boolean);
+    .filter(path => path.startsWith(folderPath) && isValidImageFile(path));
 }
 
 function generateProductName(category, index, imagePath) {
