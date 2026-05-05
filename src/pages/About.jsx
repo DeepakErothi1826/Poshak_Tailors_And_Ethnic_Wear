@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import hero1Img from '../Image/hero_main.png';
+import poshakLogo from '../Image/logo.png';
 import { ArrowRight } from 'lucide-react';
 import aboutImg1 from '../Image/Suit/suit_050.jpg';
 import aboutImg2 from '../Image/Suit/suit_051.jpg';
@@ -37,11 +38,12 @@ export default function About() {
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="relative z-10 h-full flex flex-col items-center text-center px-3 sm:px-4 justify-center"
+          className="relative z-10 h-full flex flex-col items-center text-center px-3 sm:px-4 justify-start pt-20 sm:pt-24 md:pt-28"
         >
-          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-black uppercase tracking-tighter mb-4 sm:mb-6 text-balance text-white">POSHAK TAILOR & ETHNIC WEAR</h1>
-          <p className="text-lg sm:text-xl md:text-2xl font-bold text-white uppercase tracking-wider mb-3 sm:mb-4">Since 1995</p>
-          <p className="text-xs sm:text-sm md:text-lg italic text-gray-300 font-light tracking-wide mb-6">"GOD MAKES MAN WE MAKE GENTLEMAN"</p>
+          <img src={poshakLogo} alt="Poshak" className="h-24 sm:h-32 md:h-40 lg:h-48 w-auto mb-4 sm:mb-6 rounded-full bg-white p-2 sm:p-4 shadow-2xl" />
+          <p className="text-xs sm:text-sm md:text-base font-black text-white uppercase tracking-wider mb-1 sm:mb-2">Since 1995</p>
+          <h1 className="text-white text-sm sm:text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-tighter mb-1 sm:mb-2 text-balance">POSHAK TAILOR & ETHNIC WEAR</h1>
+          <p className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl italic text-white font-black tracking-wide mb-4 sm:mb-6">"GOD MAKES MAN WE MAKE GENTLEMAN"</p>
           <Link to="/products" className="bg-white text-black px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 uppercase text-xs sm:text-xs md:text-sm font-bold tracking-widest hover:bg-gray-200 transition-colors inline-flex items-center gap-2 group">
             Explore Collection
             <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
