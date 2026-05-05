@@ -12,10 +12,10 @@ export default function ProductDetail() {
   const addToCartWithQuantity = useCartStore((state) => state.addToCart);
   const [timeLeft, setTimeLeft] = useState("02:30:25");
   
-const product = ALL_PRODUCTS_DATA.find(p => p.id === parseInt(id));
+const product = ALL_PRODUCTS_DATA.find(p => p.id === id);
   
   // Similar products
-  const suggestedProducts = ALL_PRODUCTS_DATA.filter(p => p.id !== product?.id).slice(0, 4);
+  const suggestedProducts = product ? ALL_PRODUCTS_DATA.filter(p => p.id !== product.id).slice(0, 4) : [];
 
   // Mock countdown timer
   useEffect(() => {
