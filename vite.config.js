@@ -7,6 +7,7 @@ export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: './',
   build: {
+    assetsDir: 'assets',
     chunkSizeWarningLimit: 1000,
     rollupOptions: {
       output: {
