@@ -206,7 +206,8 @@ export default function Products() {
                   </Link>
                   <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
                   <button 
-                    onClick={(e) => { e.preventDefault(); addToCart(product); }}
+                    type="button"
+                    onClick={(e) => { e.preventDefault(); e.stopPropagation(); addToCart(product); }}
                     className="absolute bottom-3 sm:bottom-4 left-1/2 -translate-x-1/2 translate-y-4 group-hover:translate-y-0 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-white text-black px-4 sm:px-6 py-2 sm:py-3 w-5/6 uppercase text-xs font-black tracking-widest hover:bg-black hover:text-white shadow-lg z-10"
                   >
                     Add to Cart
