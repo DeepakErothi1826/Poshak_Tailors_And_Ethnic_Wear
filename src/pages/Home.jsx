@@ -164,27 +164,7 @@ export default function Home() {
           </div>
         </motion.div>
 
-{/* Sliding Progress Bars */}
-        <div className="absolute bottom-16 sm:bottom-24 left-0 w-full flex justify-center gap-2 sm:gap-4 z-20 px-4">
-          {HERO_SLIDES.map((_, idx) => (
-            <div 
-              key={idx} 
-              className="h-1 w-12 sm:w-16 md:w-24 bg-gray-600 overflow-hidden cursor-pointer relative" 
-              onClick={() => setCurrentSlide(idx)}
-            >
-              <motion.div
-                className="absolute inset-0 bg-white origin-left"
-                initial={{ scaleX: 0 }}
-                animate={{ scaleX: currentSlide === idx ? 1 : 0 }}
-                transition={{ 
-                  duration: currentSlide === idx ? 5 : 0,
-                  ease: 'linear'
-                }}
-                style={{ transformOrigin: 'left' }}
-              />
-            </div>
-          ))}
-        </div>
+
       </section>
 
       {/* Marquee Banner */}
