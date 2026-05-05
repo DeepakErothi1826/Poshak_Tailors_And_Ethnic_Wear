@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import kurtaHero from '../Image/hero_kurta.jpg';
 
-const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Indo-Western', 'Shirt', 'Vestcoat', 'Payjama', 'Formal Paint', 'Safari', 'Uniform', 'Jeans', 'Accessories'];
+const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Modi Jacket', 'Indo-Western', 'Shirt', 'Vestcoat', 'Payjama', 'Formal Paint', 'Safari', 'Uniform', 'Jeans', 'Accessories'];
 
 const CATEGORY_MAP = {
   'suit': 'Suit',
@@ -14,6 +14,7 @@ const CATEGORY_MAP = {
   'pathani': 'Pathani',
   'kurta': 'Kurta',
   'blazer': 'Blazer',
+  'modi-jacket': 'Modi Jacket',
   'indo-western': 'Indo-Western',
   'shirt': 'Shirt',
   'jacket': 'Vestcoat',
@@ -31,6 +32,7 @@ const REVERSE_CATEGORY_MAP = {
   'Pathani': 'pathani',
   'Kurta': 'kurta',
   'Blazer': 'blazer',
+  'Modi Jacket': 'modi-jacket',
   'Indo-Western': 'indo-western',
   'Shirt': 'shirt',
   'Vestcoat': 'jacket',
@@ -47,6 +49,7 @@ const FOLDER_NAME_MAP = {
   'Suit': 'Suit',
   'Kurta': 'kurta',
   'Blazer': 'Blazer',
+  'Modi Jacket': 'Jacket',
   'Pathani': 'Pathani',
   'Indo-Western': 'indo-Western',
   'Shirt': 'Shirt',

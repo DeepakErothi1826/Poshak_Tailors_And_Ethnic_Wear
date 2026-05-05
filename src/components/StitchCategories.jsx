@@ -304,6 +304,7 @@ const CATEGORY_CONFIG = [
   { folder: 'Pathani', name: 'Pathani', route: '/products?category=pathani', images: PATHANI_IMAGES },
   { folder: 'kurta', name: 'Kurta', route: '/products?category=kurta', images: KURTA_IMAGES },
   { folder: 'Blazer', name: 'Blazer', route: '/products?category=blazer', images: BLAZER_IMAGES },
+  { folder: 'Jacket', name: 'Modi Jacket', route: '/products?category=modi-jacket', images: JACKET_IMAGES },
   { folder: 'indo-Western', name: 'Indo-Western', route: '/products?category=indo-western', images: INDO_WESTERN_IMAGES },
   { folder: 'Shirt', name: 'Shirt', route: '/products?category=shirt', images: SHIRT_IMAGES },
   { folder: 'Jacket', name: 'Vestcoat', route: '/products?category=jacket', images: JACKET_IMAGES },
