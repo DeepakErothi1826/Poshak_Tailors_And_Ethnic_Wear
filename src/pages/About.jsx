@@ -1,7 +1,10 @@
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import hero1Img from '../Image/hero_main.png';
+import kurtaHero from '../Image/hero_kurta.jpg';
+import blazerHero from '../Image/hero_blazer.jpg';
 import aboutImg1 from '../Image/Suit/suit_050.jpg';
 import aboutImg2 from '../Image/Suit/suit_051.jpg';
 import aboutImg3 from '../Image/Suit/suit_052.jpg';
@@ -9,7 +12,23 @@ import aboutImg4 from '../Image/Suit/suit_053.jpg';
 import aboutImg5 from '../Image/Suit/suit_054.jpg';
 import aboutImg6 from '../Image/Suit/suit_055.jpg';
 
+const HERO_SLIDES = [
+  { image: hero1Img, title: 'POSHAK TAILOR & ETHNIC WEAR', subtitle: 'Since 1995', tagline: '"GOD MAKES MAN WE MAKE GENTLEMAN"', isBrandSlide: true },
+  { image: kurtaHero, title: 'Ethnic Wear', subtitle: 'Traditional Elegance', isBrandSlide: false },
+  { image: blazerHero, title: 'Designer Blazers', subtitle: 'Modern Sophistication', isBrandSlide: false },
+  { image: hero1Img, title: 'Bespoke Suits', subtitle: 'Perfect Fit', isBrandSlide: false }
+];
+
 export default function About() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % HERO_SLIDES.length);
+    }, 8000);
+    return () => clearInterval(timer);
+  }, []);
+
   const aboutSchema = {
     "@context": "https://schema.org",
     "@type": "AboutPage",
@@ -29,18 +48,34 @@ export default function About() {
     />
     <div className="w-full bg-white">
       {/* Hero */}
-      <section className="relative h-[50vh] sm:h-[60vh] w-full flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: `url(${hero1Img})` }} />
-        <div className="absolute inset-0 bg-black/60" />
+      <section className="relative h-[50vh] sm:h-[60vh] w-full flex items-center justify-center overflow-hidden bg-black">
+        {HERO_SLIDES.map((slide, idx) => (
+          <div
+            key={idx}
+            className="absolute inset-0 w-full h-full bg-cover bg-center transition-opacity duration-1000"
+            style={{ 
+              backgroundImage: `url(${slide.image})`,
+              opacity: currentSlide === idx ? 1 : 0
+            }}
+          />
+        ))}
+        <div className="absolute inset-0 bg-black/60 z-0" />
         <motion.div 
+          key={currentSlide}
           initial={{ y: 30, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
-          className="text-center z-10 px-3 sm:px-4"
+          className="relative z-10 h-full flex flex-col items-center text-center px-3 sm:px-4 justify-center"
         >
-          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-black uppercase tracking-tighter mb-4 sm:mb-6 text-balance text-white">POSHAK TAILOR & ETHNIC WEAR</h1>
-          <p className="text-lg sm:text-xl md:text-2xl font-bold text-white uppercase tracking-wider mb-3 sm:mb-4">Since 1995</p>
-          <p className="text-xs sm:text-sm md:text-lg italic text-gray-300 font-light tracking-wide">"GOD MAKES MAN WE MAKE GENTLEMAN"</p>
+          <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-7xl font-black uppercase tracking-tighter mb-4 sm:mb-6 text-balance text-white">
+            {HERO_SLIDES[currentSlide].title}
+          </h1>
+          <p className="text-lg sm:text-xl md:text-2xl font-bold text-white uppercase tracking-wider mb-3 sm:mb-4">
+            {HERO_SLIDES[currentSlide].subtitle}
+          </p>
+          {HERO_SLIDES[currentSlide].isBrandSlide && (
+            <p className="text-xs sm:text-sm md:text-lg italic text-gray-300 font-light tracking-wide">"GOD MAKES MAN WE MAKE GENTLEMAN"</p>
+          )}
         </motion.div>
       </section>
 
