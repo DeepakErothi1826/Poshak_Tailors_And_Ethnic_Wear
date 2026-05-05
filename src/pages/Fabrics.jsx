@@ -85,13 +85,6 @@ const FABRIC_BRANDS = [
     description: "Quality textile brand known for reliable fabrics. Offers a wide range of blends for diverse tailoring needs.",
     image: fabric5,
     specialties: ["Versatile", "Quality Assured", "Various Blends", "Reliable"]
-  },
-  {
-    id: 12,
-    name: "Kota Doria",
-    description: "Traditional lightweight cotton-silk blend fabric from Kota, Rajasthan. Known for signature check patterns and translucent weave.",
-    image: fabric6,
-    specialties: ["Traditional", "Lightweight", "Cotton-Silk", "Handcrafted"]
   }
 ];
 
@@ -140,13 +133,6 @@ const FABRIC_COLLECTIONS = [
   },
   {
     id: 7,
-    name: "Kota Doria",
-    description: "Lightweight cotton-silk blend from Kota with distinctive checks.",
-    images: [fabric1, fabric2, fabric3],
-    features: ["Lightweight", "Translucent", "Traditional"]
-  },
-  {
-    id: 8,
     name: "Chikankari",
     description: "Lucknow-style embroidered fabrics with delicate white threadwork.",
     images: [fabric4, fabric5, fabric6],
