@@ -121,12 +121,12 @@ export default function Home() {
           {HERO_SLIDES[currentSlide].isBrandSlide === true ? (
             <>
               <img src={poshakLogo} alt="Poshak" className="h-24 sm:h-32 md:h-40 lg:h-48 w-auto mb-4 sm:mb-6 rounded-full bg-white p-2 sm:p-4 shadow-2xl" />
+              <p className="text-xs sm:text-sm md:text-base font-black text-white uppercase tracking-wider mb-1 sm:mb-2">
+                {HERO_SLIDES[currentSlide].subtitle}
+              </p>
               <h1 className="text-white text-sm sm:text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-tighter mb-1 sm:mb-2 text-balance">
                 {HERO_SLIDES[currentSlide].title}
               </h1>
-              <p className="text-xs sm:text-sm md:text-base font-black text-white uppercase tracking-wider mb-2 sm:mb-3">
-                {HERO_SLIDES[currentSlide].subtitle}
-              </p>
               <p className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl italic text-white font-black tracking-wide mb-4 sm:mb-6">
                 {HERO_SLIDES[currentSlide].tagline}
               </p>
@@ -165,11 +165,11 @@ export default function Home() {
         </motion.div>
 
 {/* Sliding Progress Bars */}
-        <div className="absolute bottom-16 sm:bottom-24 left-0 w-ful flex justify- center gap-2 sm:gap-4 z-20 px-4">
+        <div className="absolute bottom-16 sm:bottom-24 left-0 w-full flex justify-center gap-2 sm:gap-4 z-20 px-4">
           {HERO_SLIDES.map((_, idx) => (
             <div 
               key={idx} 
-              className="h-1 w-12 sm:w-16 md:w-24 bg-gray-600 overflow- hidden cursor-pointer relative" 
+              className="h-1 w-12 sm:w-16 md:w-24 bg-gray-600 overflow-hidden cursor-pointer relative" 
               onClick={() => setCurrentSlide(idx)}
             >
               <motion.div

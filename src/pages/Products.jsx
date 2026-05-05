@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import kurtaHero from '../Image/hero_kurta.jpg';
 
-const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Indo-Western', 'Shirt', 'Jacket', 'Payjama', 'Formal Paint', 'Safari', 'Uniform', 'Jeans', 'Accessories'];
+const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Indo-Western', 'Shirt', 'Vestcoat', 'Payjama', 'Formal Paint', 'Safari', 'Uniform', 'Jeans', 'Accessories'];
 
 const CATEGORY_MAP = {
   'suit': 'Suit',
@@ -16,7 +16,7 @@ const CATEGORY_MAP = {
   'blazer': 'Blazer',
   'indo-western': 'Indo-Western',
   'shirt': 'Shirt',
-  'jacket': 'Jacket',
+  'jacket': 'Vestcoat',
   'payjama': 'Payjama',
   'formal-paint': 'Formal Paint',
   'safari': 'Safari',
@@ -33,7 +33,7 @@ const REVERSE_CATEGORY_MAP = {
   'Blazer': 'blazer',
   'Indo-Western': 'indo-western',
   'Shirt': 'shirt',
-  'Jacket': 'jacket',
+  'Vestcoat': 'jacket',
   'Payjama': 'payjama',
   'Formal Paint': 'formal-paint',
   'Safari': 'safari',
@@ -50,7 +50,7 @@ const FOLDER_NAME_MAP = {
   'Pathani': 'Pathani',
   'Indo-Western': 'indo-Western',
   'Shirt': 'Shirt',
-  'Jacket': 'Jacket',
+  'Vestcoat': 'Jacket',
   'Payjama': 'Payjama',
   'Formal Paint': 'formal paint',
   'Safari': 'Safari suit',
@@ -96,7 +96,7 @@ function generateProductName(category, index, imagePath) {
     'Pathani': ['Emerald Green Silk', 'Royal Blue', 'Maroon Silk', 'Black Designer', 'Golden Embroidered', 'Wedding', 'Black Viscose', 'Festive Wear', 'Teal Blue', 'DesiWhite', 'Modern Slate Grey', 'Black Embroidered', 'Brown Cotton', 'Olive Green', 'Sage Green', 'Taupe', 'White Cotton', 'Off White Chanderi', 'Olive Cotton', 'Mustard Cotton', 'Mehul Dori', 'Cotton Blend', 'Premium', 'Classic', 'Designer'],
     'Indo-Western': ['Classic Indo-Western', 'Designer Indo-Western', 'Premium Groom', 'Embroidered', 'Silk Blend', 'Royal', 'Elegant', 'Modern', 'Wedding', 'Festive'],
     'Shirt': ['Premium Cotton Formal', 'Classic Formal', 'Premium Linen', 'Designer Print', 'Casual Cotton', 'Party Wear', 'Slim Fit', 'Classic White', 'Classic Blue', 'Designer', 'Premium', 'Formal', 'Casual', 'Party', 'Classic'],
-    'Jacket': ['Leather Biker', 'Premium', 'Designer', 'Classic', 'Modern', 'Formal', 'Casual', 'Winter'],
+    'Vestcoat': ['Leather Biker', 'Premium', 'Designer', 'Classic', 'Modern', 'Formal', 'Casual', 'Winter'],
     'Payjama': ['Silk Blend', 'Premium Cotton', 'Linen Casual', 'Silk Designer', 'Classic White', 'Formal Black', 'Handwoven Cotton', 'Bespoke Silk', 'Classic Black', 'Premium Black'],
     'Formal Paint': ['Classic Black', 'Navy Blue', 'Grey Wool', 'Beige Linen', 'Tailored Black', 'Premium Cotton', 'Slim Fit', 'Classic Tan', 'Bespoke', 'Premium'],
     'Safari': ['Safari Summer', 'Beige Safari', 'Summer Safari Coat', 'Classic Safari'],
