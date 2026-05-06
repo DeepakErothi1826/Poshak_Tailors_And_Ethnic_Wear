@@ -11,7 +11,15 @@ const About = lazy(() => import('./pages/About'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Fabrics = lazy(() => import('./pages/Fabrics'));
 
-const basename = window.location.hostname === 'localhost' ? '/' : '/Poshak_Tailors_And_Ethnic_Wear';
+const getBasename = () => {
+  const path = window.location.pathname;
+  if (path.startsWith('/Poshak_Tailors_And_Ethnic_Wear')) {
+    return '/Poshak_Tailors_And_Ethnic_Wear';
+  }
+  return '/';
+};
+
+const basename = getBasename();
 
 function App() {
   return (
