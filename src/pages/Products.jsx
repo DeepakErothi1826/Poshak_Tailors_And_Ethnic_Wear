@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import kurtaHero from '../Image/hero_kurta.jpg';
 
-const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Modi Jacket', 'Indo-Western', 'Shirt', 'Vestcoat', 'Payjama', 'Formal Paint', 'Safari', 'Uniform', 'Jeans', 'Accessories'];
+const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Modi Jacket', 'Indo-Western', 'Shirt', 'Vestcoat', 'Payjama', 'Formal Paint', 'Safari', 'Uniform', 'Accessories', 'Women Blazer', 'Women Suit', 'Women Vestcoat', 'Jodhpuri'];
 
 const CATEGORY_MAP = {
   'suit': 'Suit',
@@ -22,8 +22,11 @@ const CATEGORY_MAP = {
   'formal-paint': 'Formal Paint',
   'safari': 'Safari',
   'uniform': 'Uniform',
-  'jeans': 'Jeans',
-  'accessories': 'Accessories'
+  'accessories': 'Accessories',
+  'women-blazer': 'Women Blazer',
+  'women-suit': 'Women Suit',
+  'women-vestcoat': 'Women Vestcoat',
+  'jodhpuri': 'Jodhpuri'
 };
 
 const REVERSE_CATEGORY_MAP = {
@@ -40,8 +43,11 @@ const REVERSE_CATEGORY_MAP = {
   'Formal Paint': 'formal-paint',
   'Safari': 'safari',
   'Uniform': 'uniform',
-  'Jeans': 'jeans',
-  'Accessories': 'accessories'
+  'Accessories': 'accessories',
+  'Women Blazer': 'women-blazer',
+  'Women Suit': 'women-suit',
+  'Women Vestcoat': 'women-vestcoat',
+  'Jodhpuri': 'jodhpuri'
 };
 
 const FOLDER_NAME_MAP = {
@@ -58,8 +64,11 @@ const FOLDER_NAME_MAP = {
   'Formal Paint': 'formal paint',
   'Safari': 'Safari suit',
   'Uniform': 'uniform',
-  'Jeans': 'jeans',
-  'Accessories': 'Accessories'
+  'Accessories': 'Accessories',
+  'Women Blazer': 'Women Blazer',
+  'Women Suit': 'Women Suit',
+  'Women Vestcoat': 'Women Vestcoat',
+  'Jodhpuri': 'Jodhpuri'
 };
 
 const allImageFiles = import.meta.glob('../Image/**/*.{jpg,jpeg,png,webp}', { eager: true });
@@ -104,8 +113,11 @@ function generateProductName(category, index, imagePath) {
     'Formal Paint': ['Classic Black', 'Navy Blue', 'Grey Wool', 'Beige Linen', 'Tailored Black', 'Premium Cotton', 'Slim Fit', 'Classic Tan', 'Bespoke', 'Premium'],
     'Safari': ['Safari Summer', 'Beige Safari', 'Summer Safari Coat', 'Classic Safari'],
     'Uniform': ['School Uniform', 'School Blazer', 'Office Uniform', 'Corporate Uniform', 'Hotel Uniform', 'Chef Uniform', 'Security Uniform', 'Hospital Uniform'],
-    'Jeans': ['Slim Fit Designer', 'Vintage Wash', 'Premium Denim', 'Classic Blue Slim', 'Black Stretch', 'Blue Dark', 'Black Distressed', 'Ripped Style', 'Premium Raw Denim'],
-    'Accessories': ['Designer Waistcoat', 'Leather Belt', 'Silk Tie Set', 'Designer Pocket Square', 'Premium']
+    'Accessories': ['Designer Waistcoat', 'Leather Belt', 'Silk Tie Set', 'Designer Pocket Square', 'Premium'],
+    'Women Blazer': ['Elegant Office', 'Premium Designer', 'Classic Formal', 'Slim Fit', 'Modern Cut', 'Wedding Guest', 'Party Wear', 'Casual Blazer'],
+    'Women Suit': ['Formal Office', 'Premium Designer', 'Classic Two-Piece', 'Wedding Guest', 'Party Suit', 'Modern Cut', 'Elegant Workwear'],
+    'Women Vestcoat': ['Designer Waistcoat', 'Premium', 'Classic', 'Modern', 'Formal', 'Party Wear', 'Elegant'],
+    'Jodhpuri': ['Royal Jodhpuri', 'Wedding Groom', 'Traditional', 'Embroidered', 'Premium Silk', 'Designer', 'Classic', 'Regal']
   };
   
   const prefix = prefixes[category] ? prefixes[category][index % prefixes[category].length] : category;
@@ -181,15 +193,24 @@ export default function Products() {
         </motion.div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-4 sm:py-8">
-        <div className="flex flex-wrap justify-center gap-3 md:gap-6 mb-6 md:mb-8 border-b border-gray-200 pb-4">
-          {CATEGORIES.map((cat) => (
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <h2 className="text-center text-2xl sm:text-3xl font-black uppercase tracking-widest mb-6 sm:mb-8 text-gray-900">
+          <span className="border-b-4 border-black pb-2">Browse Collection</span>
+        </h2>
+        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 mb-8 sm:mb-12">
+          {CATEGORIES.map((cat, index) => (
             <button 
               key={cat}
               onClick={() => { setFilter(cat); setSearchParams(cat === 'All' ? {} : { category: REVERSE_CATEGORY_MAP[cat] || cat.toLowerCase() }); }}
-              className={`text-xs sm:text-sm font-bold uppercase tracking-widest px-2 py-2 transition-colors whitespace-nowrap ${filter === cat ? 'text-black border-b-2 border-black' : 'text-gray-400 hover:text-black'}`}
+              className={`relative px-5 sm:px-7 py-3 sm:py-4 text-[11px] sm:text-xs font-extrabold uppercase tracking-[0.2em] whitespace-nowrap transition-all duration-500 ease-out group ${filter === cat ? 'text-white' : 'text-gray-400 hover:text-gray-900'}`}
+              style={{ animationDelay: `${index * 50}ms` }}
             >
-              {cat}
+              <span className={`relative z-10 inline-block ${filter === cat ? 'text-white' : 'group-hover:text-gray-900'}`}>{cat}</span>
+              <span className={`absolute inset-0 transition-all duration-500 ${filter === cat ? 'bg-gradient-to-r from-gray-900 via-black to-gray-800' : 'bg-transparent group-hover:bg-gradient-to-r group-hover:from-gray-100 group-hover:to-gray-200'}`} />
+              <span className={`absolute -bottom-1 left-1/2 -translate-x-1/2 h-[3px] ${filter === cat ? 'w-full bg-white' : 'w-0 group-hover:w-full bg-gray-400'} transition-all duration-500`} />
+              <span className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-0 h-0 ${filter === cat ? 'opacity-100' : 'opacity-0'} transition-all duration-300`}>
+                <span className="absolute -top-3 -left-1 w-1 h-1 bg-white rounded-full animate-pulse" />
+              </span>
             </button>
           ))}
         </div>
