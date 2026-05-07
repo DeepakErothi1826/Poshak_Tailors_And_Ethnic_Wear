@@ -45,7 +45,7 @@ export default function Navbar() {
           <div className="flex justify-between items-center">
             <div className="flex-shrink-0 flex items-center gap-2">
               <NavLink to="/" className="block" onClick={() => setMobileMenuOpen(false)}>
-                <img src={poshakLogo} alt="Poshak" className="h-9 sm:h-12 w-auto" />
+                <img src={poshakLogo} alt="Poshak" className="h-9 sm:h-12 w-auto rounded-full" />
               </NavLink>
               <div className="hidden sm:block">
                 <p className="text-xs font-bold uppercase tracking-wider leading-tight">Poshak Tailors</p>
