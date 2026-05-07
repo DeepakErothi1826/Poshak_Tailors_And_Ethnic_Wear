@@ -78,7 +78,8 @@ const allImageFiles = import.meta.glob('../Image/**/*.{jpg,jpeg,png,webp}', { ea
 
 const isValidImageFile = (path) => {
   const fileName = path.split('/').pop();
-  return !fileName.includes('#') && !fileName.includes('&') && !fileName.includes('%') && !fileName.includes('?') && !fileName.includes("'") && !fileName.includes('emoji') && /^[a-zA-Z0-9\s\-_().]+$/.test(fileName);
+  const invalidChars = ['#', '&', '%', '?', "'", '😈', '👔', '•', '’'];
+  return !invalidChars.some(char => fileName.includes(char));
 };
 
 const getImageUrl = (path) => {
