@@ -143,8 +143,13 @@ import blazer14 from '../Image/Blazer/suit_048.jpg';
 import blazer15 from '../Image/Blazer/suit_058.jpg';
 import blazer16 from '../Image/Blazer/suit_073.jpg';
 import blazer17 from '../Image/Blazer/suit_074.jpg';
+import blazer18 from '../Image/Blazer/best look for business meeting.jpg';
+import blazer19 from '../Image/Blazer/man\'s outfit.jpg';
+import blazer20 from '../Image/Blazer/Men\'s blazer.jpg';
+import blazer21 from '../Image/Blazer/HOME.jpg';
+import blazer22 from '../Image/Blazer/stylish men outfit.jpg';
 
-const BLAZER_IMAGES = [blazer1, blazer2, blazer3, blazer4, blazer5, blazer6, blazer7, blazer8, blazer9, blazer10, blazer11, blazer12, blazer13, blazer14, blazer15, blazer16, blazer17];
+const BLAZER_IMAGES = [blazer1, blazer2, blazer3, blazer4, blazer5, blazer6, blazer7, blazer8, blazer9, blazer10, blazer11, blazer12, blazer13, blazer14, blazer15, blazer16, blazer17, blazer18, blazer19, blazer20, blazer21, blazer22];
 
 // ============================================
 // INDO-WESTERN IMAGES - All from Indo-Western folder
