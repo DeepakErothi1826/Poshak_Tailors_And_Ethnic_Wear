@@ -136,12 +136,15 @@ import blazer7 from '../Image/Blazer/download (97).jpg';
 import blazer8 from '../Image/Blazer/download (98).jpg';
 import blazer9 from '../Image/Blazer/download (99).jpg';
 import blazer10 from '../Image/Blazer/download (100).jpg';
-import blazer11 from '../Image/Blazer/Men\'s blazer.jpg';
-import blazer12 from '../Image/Blazer/mafia blazer.jpg';
-import blazer13 from '../Image/Blazer/Fashion-Moda.jpg';
-import blazer14 from '../Image/Blazer/A Classic Sport Coat.jpg';
+import blazer11 from '../Image/Blazer/mafia blazer.jpg';
+import blazer12 from '../Image/Blazer/Fashion-Moda.jpg';
+import blazer13 from '../Image/Blazer/A Classic Sport Coat.jpg';
+import blazer14 from '../Image/Blazer/suit_048.jpg';
+import blazer15 from '../Image/Blazer/suit_058.jpg';
+import blazer16 from '../Image/Blazer/suit_073.jpg';
+import blazer17 from '../Image/Blazer/suit_074.jpg';
 
-const BLAZER_IMAGES = [blazer1, blazer2, blazer3, blazer4, blazer5, blazer6, blazer7, blazer8, blazer9, blazer10, blazer11, blazer12, blazer13, blazer14];
+const BLAZER_IMAGES = [blazer1, blazer2, blazer3, blazer4, blazer5, blazer6, blazer7, blazer8, blazer9, blazer10, blazer11, blazer12, blazer13, blazer14, blazer15, blazer16, blazer17];
 
 // ============================================
 // INDO-WESTERN IMAGES - All from Indo-Western folder
