@@ -126,20 +126,20 @@ const KURTA_IMAGES = [kurta1, kurta2, kurta3, kurta4, kurta5, kurta6, kurta7, ku
 // ============================================
 // BLAZER IMAGES - All from Blazer folder
 // ============================================
-import blazer1 from '../Image/Blazer/suit_044.jpg';
-import blazer2 from '../Image/Blazer/suit_045.jpg';
-import blazer3 from '../Image/Blazer/suit_046.jpg';
-import blazer4 from '../Image/Blazer/suit_047.jpg';
-import blazer5 from '../Image/Blazer/suit_048.jpg';
-import blazer6 from '../Image/Blazer/suit_049.jpg';
-import blazer7 from '../Image/Blazer/suit_050.jpg';
-import blazer8 from '../Image/Blazer/suit_056.jpg';
-import blazer9 from '../Image/Blazer/suit_057.jpg';
-import blazer10 from '../Image/Blazer/suit_058.jpg';
-import blazer11 from '../Image/Blazer/suit_059.jpg';
-import blazer12 from '../Image/Blazer/suit_060.jpg';
-import blazer13 from '../Image/Blazer/suit_061.jpg';
-import blazer14 from '../Image/Blazer/suit_062.jpg';
+import blazer1 from '../Image/Blazer/download (91).jpg';
+import blazer2 from '../Image/Blazer/download (92).jpg';
+import blazer3 from '../Image/Blazer/download (93).jpg';
+import blazer4 from '../Image/Blazer/download (94).jpg';
+import blazer5 from '../Image/Blazer/download (95).jpg';
+import blazer6 from '../Image/Blazer/download (96).jpg';
+import blazer7 from '../Image/Blazer/download (97).jpg';
+import blazer8 from '../Image/Blazer/download (98).jpg';
+import blazer9 from '../Image/Blazer/download (99).jpg';
+import blazer10 from '../Image/Blazer/download (100).jpg';
+import blazer11 from '../Image/Blazer/Men\'s blazer.jpg';
+import blazer12 from '../Image/Blazer/mafia blazer.jpg';
+import blazer13 from '../Image/Blazer/Fashion-Moda.jpg';
+import blazer14 from '../Image/Blazer/A Classic Sport Coat.jpg';
 
 const BLAZER_IMAGES = [blazer1, blazer2, blazer3, blazer4, blazer5, blazer6, blazer7, blazer8, blazer9, blazer10, blazer11, blazer12, blazer13, blazer14];
 
@@ -246,37 +246,6 @@ import uniform10 from '../Image/uniform/download - 2026-05-04T102942.694.jpg';
 const UNIFORM_IMAGES = [uniform1, uniform2, uniform3, uniform4, uniform5, uniform6, uniform7, uniform8, uniform9, uniform10];
 
 // ============================================
-// JEANS IMAGES - All from jeans folder (25 images)
-// ============================================
-import jeans1 from '../Image/jeans/download - 2026-05-04T103305.281.jpg';
-import jeans2 from '../Image/jeans/download - 2026-05-04T103310.119.jpg';
-import jeans3 from '../Image/jeans/download - 2026-05-04T103316.842.jpg';
-import jeans4 from '../Image/jeans/download - 2026-05-04T103708.221.jpg';
-import jeans5 from '../Image/jeans/download - 2026-05-04T103729.487.jpg';
-import jeans6 from '../Image/jeans/jeans-vintage.jpg';
-import jeans7 from '../Image/jeans/jeans-lee.jpg';
-import jeans8 from '../Image/jeans/jeans-541.jpg';
-import jeans9 from '../Image/jeans/jeans-569.jpg';
-import jeans10 from '../Image/jeans/jeans-bleecker.jpg';
-import jeans11 from '../Image/jeans/jeans-baggy2026.jpg';
-import jeans12 from '../Image/jeans/jeans-vintage-faded.jpg';
-import jeans13 from '../Image/jeans/jeans-aesthetic.jpg';
-import jeans14 from '../Image/jeans/jeans-inspo.jpg';
-import jeans15 from '../Image/jeans/jeans-next-blue.jpg';
-import jeans16 from '../Image/jeans/jeans-saman.jpg';
-import jeans17 from '../Image/jeans/download - 2026-05-04T103305.281.jpg';
-import jeans18 from '../Image/jeans/download - 2026-05-04T103310.119.jpg';
-import jeans19 from '../Image/jeans/download - 2026-05-04T103316.842.jpg';
-import jeans20 from '../Image/jeans/download - 2026-05-04T103708.221.jpg';
-import jeans21 from '../Image/jeans/download - 2026-05-04T103729.487.jpg';
-import jeans22 from '../Image/jeans/jeans-vintage.jpg';
-import jeans23 from '../Image/jeans/jeans-lee.jpg';
-import jeans24 from '../Image/jeans/jeans-541.jpg';
-import jeans25 from '../Image/jeans/jeans-569.jpg';
-
-const JEANS_IMAGES = [jeans1, jeans2, jeans3, jeans4, jeans5, jeans6, jeans7, jeans8, jeans9, jeans10, jeans11, jeans12, jeans13, jeans14, jeans15, jeans16, jeans17, jeans18, jeans19, jeans20, jeans21, jeans22, jeans23, jeans24, jeans25];
-
-// ============================================
 // ACCESSORIES IMAGES - All from Accessories folder
 // ============================================
 import accessories1 from '../Image/Accessories/download (91).jpg';
@@ -312,7 +281,6 @@ const CATEGORY_CONFIG = [
   { folder: 'formal paint', name: 'Formal Paint', route: '/products?category=formal-paint', images: FORMAL_PAINT_IMAGES },
   { folder: 'Safari suit', name: 'Safari', route: '/products?category=safari', images: SAFARI_IMAGES },
   { folder: 'uniform', name: 'Uniform', route: '/products?category=uniform', images: UNIFORM_IMAGES },
-  { folder: 'jeans', name: 'Jeans', route: '/products?category=jeans', images: JEANS_IMAGES },
   { folder: 'Accessories', name: 'Accessories', route: '/products?category=accessories', images: ACCESSORIES_IMAGES },
 ];
 
