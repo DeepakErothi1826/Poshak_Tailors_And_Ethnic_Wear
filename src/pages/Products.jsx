@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import kurtaHero from '../Image/hero_kurta.jpg';
 
-const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Modi Jacket', 'Indo-Western', 'Shirt', 'Vestcoat', 'Payjama', 'Formal Paint', 'Safari', 'Uniform', 'Accessories', 'Women Blazer', 'Women Suit', 'Women Vestcoat', 'Jodhpuri'];
+const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Modi Jacket', 'Indo-Western', 'Shirt', 'Vestcoat', 'Payjama', 'Formal Paint', 'Safari', 'Uniform', 'Accessories', 'Women Blazer', 'Women Suit', 'Women Vestcoat', 'Jodhpuri', 'Fabric Collections'];
 
 const CATEGORY_MAP = {
   'suit': 'Suit',
@@ -26,7 +26,8 @@ const CATEGORY_MAP = {
   'women-blazer': 'Women Blazer',
   'women-suit': 'Women Suit',
   'women-vestcoat': 'Women Vestcoat',
-  'jodhpuri': 'Jodhpuri'
+  'jodhpuri': 'Jodhpuri',
+  'fabric-collections': 'Fabric Collections'
 };
 
 const REVERSE_CATEGORY_MAP = {
@@ -47,7 +48,8 @@ const REVERSE_CATEGORY_MAP = {
   'Women Blazer': 'women-blazer',
   'Women Suit': 'women-suit',
   'Women Vestcoat': 'women-vestcoat',
-  'Jodhpuri': 'jodhpuri'
+  'Jodhpuri': 'jodhpuri',
+  'Fabric Collections': 'fabric-collections'
 };
 
 const FOLDER_NAME_MAP = {
@@ -68,7 +70,8 @@ const FOLDER_NAME_MAP = {
   'Women Blazer': 'Women Blazer',
   'Women Suit': 'Women Suit',
   'Women Vestcoat': 'Women Vestcoat',
-  'Jodhpuri': 'Jodhpuri'
+  'Jodhpuri': 'Jodhpuri',
+  'Fabric Collections': 'Fabric'
 };
 
 const allImageFiles = import.meta.glob('../Image/**/*.{jpg,jpeg,png,webp}', { eager: true });
@@ -117,7 +120,8 @@ function generateProductName(category, index, imagePath) {
     'Women Blazer': ['Elegant Office', 'Premium Designer', 'Classic Formal', 'Slim Fit', 'Modern Cut', 'Wedding Guest', 'Party Wear', 'Casual Blazer'],
     'Women Suit': ['Formal Office', 'Premium Designer', 'Classic Two-Piece', 'Wedding Guest', 'Party Suit', 'Modern Cut', 'Elegant Workwear'],
     'Women Vestcoat': ['Designer Waistcoat', 'Premium', 'Classic', 'Modern', 'Formal', 'Party Wear', 'Elegant'],
-    'Jodhpuri': ['Royal Jodhpuri', 'Wedding Groom', 'Traditional', 'Embroidered', 'Premium Silk', 'Designer', 'Classic', 'Regal']
+    'Jodhpuri': ['Royal Jodhpuri', 'Wedding Groom', 'Traditional', 'Embroidered', 'Premium Silk', 'Designer', 'Classic', 'Regal'],
+    'Fabric Collections': ['Premium Cotton', 'Silk Blend', 'Linen', 'Wool', 'Chanderi', 'Benarasi', 'Khadi', 'Jacquard', 'Embroidery', 'Designer Fabric']
   };
   
   const prefix = prefixes[category] ? prefixes[category][index % prefixes[category].length] : category;
