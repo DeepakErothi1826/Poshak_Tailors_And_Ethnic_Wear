@@ -71,7 +71,7 @@ const FOLDER_NAME_MAP = {
   'Women Suit': 'Women Suit',
   'Women Vestcoat': 'Women Vestcoat',
   'Jodhpuri': 'Jodhpuri',
-  'Fabric Collections': 'Fabric'
+  'Fabric Collections': 'fabrics'
 };
 
 const allImageFiles = import.meta.glob('../Image/**/*.{jpg,jpeg,png,webp}', { eager: true });
@@ -122,7 +122,7 @@ function generateProductName(category, index, imagePath) {
     'Women Suit': ['Formal Office', 'Premium Designer', 'Classic Two-Piece', 'Wedding Guest', 'Party Suit', 'Modern Cut', 'Elegant Workwear'],
     'Women Vestcoat': ['Designer Waistcoat', 'Premium', 'Classic', 'Modern', 'Formal', 'Party Wear', 'Elegant'],
     'Jodhpuri': ['Royal Jodhpuri', 'Wedding Groom', 'Traditional', 'Embroidered', 'Premium Silk', 'Designer', 'Classic', 'Regal'],
-    'Fabric Collections': ['Premium Cotton', 'Silk Blend', 'Linen', 'Wool', 'Chanderi', 'Benarasi', 'Khadi', 'Jacquard', 'Embroidery', 'Designer Fabric']
+    'Fabric Collections': ["Siyaram's Premium", "D&J Italian", "EMEF Luxury", "Arvind Premium", "Cadini Cotton", "Reid & Taylor", "Raymond Classic", "T-R Fabrics", "SORT Shirting", "Italian Import", "Traid Quality", "Premium Wool", "Silk Blend", "Linen Pure"]
   };
   
   const prefix = prefixes[category] ? prefixes[category][index % prefixes[category].length] : category;
