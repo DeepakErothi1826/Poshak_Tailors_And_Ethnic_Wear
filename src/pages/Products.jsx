@@ -67,7 +67,7 @@ const FOLDER_NAME_MAP = {
   'Safari': 'Safari suit',
   'Uniform': 'uniform',
   'Accessories': 'Accessories',
-  'Women Blazer': 'Women Blazer',
+  'Women Blazer': 'womens_blazer',
   'Women Suit': 'Women Suit',
   'Women Vestcoat': 'Women Vestcoat',
   'Jodhpuri': 'Jodhpuri',
