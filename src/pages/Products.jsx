@@ -69,12 +69,12 @@ const FOLDER_NAME_MAP = {
   'Accessories': 'Accessories',
   'Women Blazer': 'womens_blazer',
   'Women Suit': 'womens_suit',
-  'Women Vestcoat': 'Women Vestcoat',
+  'Women Vestcoat': 'women_vescote',
   'Jodhpuri': 'Jodhpuri',
   'Fabric Collections': 'fabrics'
 };
 
-const allImageFiles = import.meta.glob('../Image/{Sherwani,Suit,kurta,Blazer,Modi jacket,Pathani,indo-Western,Shirt,Jacket,Payjama,formal paint,Safari suit,uniform,Accessories,womens_blazer,womens_suit,Women Vestcoat,Jodhpuri,fabrics}/**/*.{jpg,jpeg,png,webp}', { eager: true });
+const allImageFiles = import.meta.glob('../Image/{Sherwani,Suit,kurta,Blazer,Modi jacket,Pathani,indo-Western,Shirt,Jacket,Payjama,formal paint,Safari suit,uniform,Accessories,womens_blazer,womens_suit,women_vescote,Jodhpuri,fabrics}/**/*.{jpg,jpeg,png,webp}', { eager: true });
 
 const isValidImageFile = (path) => {
   const fileName = path.split('/').pop();
