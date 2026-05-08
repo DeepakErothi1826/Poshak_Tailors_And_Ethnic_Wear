@@ -90,13 +90,13 @@ const product = ALL_PRODUCTS_DATA.find(p => p.id === id);
               transition={{ duration: 0.5 }}
               className="aspect-[4/5] bg-[#e6e4e3] rounded-[20px] sm:rounded-[32px] overflow-hidden w-full relative h-[300px] sm:h-[450px] md:h-[550px] lg:h-[600px] max-sm:mt-4"
             >
-              <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
+              <img src={product.image} alt={product.name} className="w-full h-full object-contain" />
               
               {/* Overlay Thumbnails inside the main div at the bottom, matching mockup */}
               <div className="absolute bottom-3 sm:bottom-6 left-3 sm:left-6 right-3 sm:right-6 flex gap-2 sm:gap-4">
                 {[1, 2, 3].map((num) => (
                   <div key={num} className="w-16 sm:w-20 md:w-24 h-16 sm:h-20 md:h-24 rounded-xl sm:rounded-2xl bg-white/20 backdrop-blur-md overflow-hidden border border-white/40 cursor-pointer shadow-sm hover:border-white transition-colors">
-                    <img src={product.image} alt="Thumbnail view" className="w-full h-full object-cover" style={{ objectPosition: `50% ${num * 20}%` }} />
+                    <img src={product.image} alt="Thumbnail view" className="w-full h-full object-contain" />
                   </div>
                 ))}
               </div>
