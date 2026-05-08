@@ -60,7 +60,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=gyaneshwarudasi@gmail.com" target="_blank" rel="noopener noreferrer" className="text-xs md:text-sm break-all hover:text-gray-300">gyaneshwarudasi@gmail.com</a>
+                <a href="mailto:gyaneshwarudasi@gmail.com" className="text-xs md:text-sm break-all hover:text-gray-300">gyaneshwarudasi@gmail.com</a>
               </li>
             </ul>
           </div>
