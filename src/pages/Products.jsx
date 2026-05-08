@@ -70,11 +70,11 @@ const FOLDER_NAME_MAP = {
   'Women Blazer': 'womens_blazer',
   'Women Suit': 'womens_suit',
   'Women Vestcoat': 'women_vescote',
-  'Jodhpuri': 'Jodhpuri',
+  'Jodhpuri': 'jodhpuri',
   'Fabric Collections': 'fabrics'
 };
 
-const allImageFiles = import.meta.glob('../Image/{Sherwani,Suit,kurta,Blazer,Modi jacket,Pathani,indo-Western,Shirt,Jacket,Payjama,formal paint,Safari suit,uniform,Accessories,womens_blazer,womens_suit,women_vescote,Jodhpuri,fabrics}/**/*.{jpg,jpeg,png,webp}', { eager: true });
+const allImageFiles = import.meta.glob('../Image/{Sherwani,Suit,kurta,Blazer,Modi jacket,Pathani,indo-Western,Shirt,Jacket,Payjama,formal paint,Safari suit,uniform,Accessories,womens_blazer,womens_suit,women_vescote,jodhpuri,fabrics}/**/*.{jpg,jpeg,png,webp}', { eager: true });
 
 const isValidImageFile = (path) => {
   const fileName = path.split('/').pop();
