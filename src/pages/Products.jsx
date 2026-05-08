@@ -92,10 +92,10 @@ function getImagesForCategory(category) {
   const folderName = FOLDER_NAME_MAP[category];
   if (!folderName) return [];
   
-  const folderPath = `../Image/${folderName}/`;
+  const folderPath = `../Image/${folderName}`;
   
   return Object.keys(allImageFiles)
-    .filter(path => path.startsWith(folderPath) && isValidImageFile(path))
+    .filter(path => path.startsWith(folderPath + '/') && isValidImageFile(path))
     .map(path => getImageUrl(path))
     .filter(Boolean);
 }
