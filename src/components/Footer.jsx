@@ -60,7 +60,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span className="text-xs md:text-sm break-all">poshaktailor1995@gmail.com</span>
+                <span className="text-xs md:text-sm break-all">gyaneshwarudasi@gmail.com</span>
               </li>
             </ul>
           </div>
