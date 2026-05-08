@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import kurtaHero from '../Image/hero_kurta.jpg';
 
-const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Modi Jacket', 'Indo-Western', 'Shirt', 'Vestcoat', 'Payjama', 'Formal Paint', 'Safari', 'Uniform', 'Accessories', 'Women Blazer', 'Women Suit', 'Women Vestcoat', 'Jodhpuri', 'Fabric Collections'];
+const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Modi Jacket', 'Indo-Western', 'Shirt', 'Vestcoat', 'Payjama', 'Formal Paint', 'Safari', 'Uniform', 'Accessories', 'Women Blazer', 'Women Suit', 'Women Vestcoat', 'Jodhpuri'];
 
 const CATEGORY_MAP = {
   'suit': 'Suit',
