@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import kurtaHero from '../Image/hero_kurta.jpg';
 
-const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Modi Jacket', 'Indo-Western', 'Shirt', 'Vestcoat', 'Payjama', 'Formal Paint', 'Safari', 'Uniform', 'Accessories', 'Women Blazer', 'Women Suit', 'Women Vestcoat', 'Jodhpuri'];
+const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Modi Jacket', 'Indo-Western', 'Shirt', 'Vestcoat', 'Payjama', 'Formal Paint', 'Safari', 'Uniform', 'Accessories', 'Women Blazer', 'Women Suit', 'Women Vestcoat', 'Jodhpuri', 'Fabric Collections'];
 
 const CATEGORY_MAP = {
   'suit': 'Suit',
@@ -71,7 +71,7 @@ const FOLDER_NAME_MAP = {
   'Women Suit': 'womens_suit',
   'Women Vestcoat': 'women_vescote',
   'Jodhpuri': 'jodhpuri',
-  'Fabric Collections': 'fabrics'
+  'Fabric Collections': 'none'
 };
 
 const allImageFiles = import.meta.glob('../Image/{Sherwani,Suit,kurta,Blazer,Modi jacket,Pathani,indo-Western,Shirt,Jacket,Payjama,formal paint,Safari suit,uniform,Accessories,womens_blazer,womens_suit,women_vescote,jodhpuri,fabrics}/**/*.{jpg,jpeg,png,webp}', { eager: true });
