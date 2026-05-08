@@ -273,6 +273,62 @@ import accessories13 from '../Image/Accessories/suit.jpg';
 const ACCESSORIES_IMAGES = [accessories1, accessories2, accessories3, accessories4, accessories5, accessories6, accessories7, accessories8, accessories9, accessories10, accessories11, accessories12, accessories13];
 
 // ============================================
+// WOMENS BLAZER IMAGES - All from womens_blazer folder
+// ============================================
+import womensBlazer1 from '../Image/womens_blazer/download (96).jpg';
+import womensBlazer2 from '../Image/womens_blazer/download (97).jpg';
+import womensBlazer3 from '../Image/womens_blazer/download (98).jpg';
+import womensBlazer4 from '../Image/womens_blazer/black blazer casual womens.jpg';
+import womensBlazer5 from '../Image/womens_blazer/Cozy Winter Home Decor on a Budget.jpg';
+
+const WOMENS_BLAZER_IMAGES = [womensBlazer1, womensBlazer2, womensBlazer3, womensBlazer4, womensBlazer5];
+
+// ============================================
+// WOMENS SUIT IMAGES - All from womens_suit folder
+// ============================================
+import womensSuit1 from '../Image/womens_suit/19 Elegant Business Outfits for Women.jpg';
+import womensSuit2 from '../Image/womens_suit/28 Sleek Formal Outfits for Women Leaving A Lasting Impression Everywhere.jpg';
+import womensSuit3 from '../Image/womens_suit/Camel Blazer, Matching Vest & Midi Skirt with Caramel Heels.jpg';
+import womensSuit4 from '../Image/womens_suit/Ivanka Trump hosts a human trafficking summit at the White House.jpg';
+import womensSuit5 from '../Image/womens_suit/Justdavina San Francisco.jpg';
+import womensSuit6 from '../Image/womens_suit/This European Power Suit Is Redefining Modern Luxury Street Style.jpg';
+
+const WOMENS_SUIT_IMAGES = [womensSuit1, womensSuit2, womensSuit3, womensSuit4, womensSuit5, womensSuit6];
+
+// ============================================
+// WOMENS VESCOATE IMAGES - All from women_vescote folder
+// ============================================
+import womenVescote1 from '../Image/women_vescote/CORPORATE CHIC.jpg';
+import womenVescote2 from '../Image/women_vescote/WOMAN REFINED.jpg';
+import womenVescote3 from '../Image/women_vescote/Power Walk in Peach Elegance.jpg';
+import womenVescote4 from '../Image/women_vescote/download (91).jpg';
+import womenVescote5 from '../Image/women_vescote/download (92).jpg';
+
+const WOMENS_VESCOTE_IMAGES = [womenVescote1, womenVescote2, womenVescote3, womenVescote4, womenVescote5];
+
+// ============================================
+// JODHPURI IMAGES - All from jodhpuri folder
+// ============================================
+import jodhpuri1 from '../Image/jodhpuri/download (91).jpg';
+import jodhpuri2 from '../Image/jodhpuri/download (92).jpg';
+import jodhpuri3 from '../Image/jodhpuri/download (93).jpg';
+import jodhpuri4 from '../Image/jodhpuri/download (94).jpg';
+import jodhpuri5 from '../Image/jodhpuri/download (95).jpg';
+
+const JODHPURI_IMAGES = [jodhpuri1, jodhpuri2, jodhpuri3, jodhpuri4, jodhpuri5];
+
+// ============================================
+// FABRICS IMAGES - All from fabrics folder
+// ============================================
+import fabrics1 from '../Image/fabrics/download - 2026-05-05T170308.154.jpg';
+import fabrics2 from '../Image/fabrics/download - 2026-05-05T170905.317.jpg';
+import fabrics3 from '../Image/fabrics/A Journey Through Artistry and Innovation.jpg';
+import fabrics4 from '../Image/fabrics/-raymond -menswear_.jpg';
+import fabrics5 from '../Image/fabrics/07081126266.jpg';
+
+const FABRICS_IMAGES = [fabrics1, fabrics2, fabrics3, fabrics4, fabrics5];
+
+// ============================================
 // CATEGORY CONFIGURATION - Each category uses images from its own folder
 // ============================================
 const CATEGORY_CONFIG = [
@@ -290,6 +346,11 @@ const CATEGORY_CONFIG = [
   { folder: 'Safari suit', name: 'Safari', route: '/products?category=safari', images: SAFARI_IMAGES },
   { folder: 'uniform', name: 'Uniform', route: '/products?category=uniform', images: UNIFORM_IMAGES },
   { folder: 'Accessories', name: 'Accessories', route: '/products?category=accessories', images: ACCESSORIES_IMAGES },
+  { folder: 'womens_blazer', name: 'Women Blazer', route: '/products?category=women-blazer', images: WOMENS_BLAZER_IMAGES },
+  { folder: 'womens_suit', name: 'Women Suit', route: '/products?category=women-suit', images: WOMENS_SUIT_IMAGES },
+  { folder: 'women_vescote', name: 'Women Vestcoat', route: '/products?category=women-vestcoat', images: WOMENS_VESCOTE_IMAGES },
+  { folder: 'jodhpuri', name: 'Jodhpuri', route: '/products?category=jodhpuri', images: JODHPURI_IMAGES },
+  { folder: 'fabrics', name: 'Fabric Collections', route: '/products?category=fabric-collections', images: FABRICS_IMAGES },
 ];
 
 // ============================================
