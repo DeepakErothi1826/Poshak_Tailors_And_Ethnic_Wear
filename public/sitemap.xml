@@ -1,33 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Homepage -->
   <url>
-    <loc>https://poshaktailor.com/</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+
+  <!-- Products Page -->
   <url>
-    <loc>https://poshaktailor.com/products</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/products</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
+
+  <!-- Product Categories -->
   <url>
-    <loc>https://poshaktailor.com/fabrics</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/products?category=suit</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://poshaktailor.com/about</loc>
-    <lastmod>2026-04-29</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/products?category=sherwani</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/products?category=pathani</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/products?category=kurta</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/products?category=blazer</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/products?category=modi-jacket</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/products?category=indo-western</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/products?category=shirt</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://poshaktailor.com/contact</loc>
-    <lastmod>2026-04-29</lastmod>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/products?category=jacket</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/products?category=jodhpuri</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/products?category=carnival-outfit</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/products?category=payjama</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/products?category=formal-paint</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/products?category=safari</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/products?category=uniform</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/products?category=accessories</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/products?category=women-blazer</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/products?category=women-suit</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/products?category=women-vestcoat</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/products?category=fabric-collections</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/about</loc>
+    <lastmod>2026-05-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- Fabrics Page -->
+  <url>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/fabrics</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/contact</loc>
+    <lastmod>2026-05-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

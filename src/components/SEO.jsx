@@ -1,5 +1,7 @@
 import { useEffect } from 'react';
 
+const BASE_URL = 'https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/';
+
 export default function SEO({ 
   title, 
   description, 
@@ -10,173 +12,142 @@ export default function SEO({
   type = 'website'
 }) {
   useEffect(() => {
-    document.title = title ? `${title} | Poshak Tailors` : 'Poshak Tailors And Ethnic Wear - Premium Bespoke Tailoring in Raipur';
+    const currentUrl = url || `${BASE_URL}`;
     
-    // Meta description
-    let metaDesc = document.querySelector('meta[name="description"]');
-    if (!metaDesc) {
-      metaDesc = document.createElement('meta');
-      metaDesc.name = 'description';
-      document.head.appendChild(metaDesc);
-    }
-    metaDesc.content = description || 'Premier bespoke tailoring and ethnic wear in Raipur, Chhattisgarh. Expert crafting of sherwanis, suits, kurtas, and wedding wear since 1995.';
+    document.title = title ? `${title} | Poshak Tailors` : 'Poshak Tailors And Ethnic Wear - Premium Bespoke Tailoring in Raipur, Chhattisgarh';
     
-    // Keywords
-    let metaKeywords = document.querySelector('meta[name="keywords"]');
-    if (!metaKeywords) {
-      metaKeywords = document.createElement('meta');
-      metaKeywords.name = 'keywords';
-      document.head.appendChild(metaKeywords);
-    }
-    metaKeywords.content = keywords || 'Poshak Tailors, ethnic wear, bespoke tailoring, sherwani, suit, kurta, wedding wear, Raipur, Chhattisgarh, menswear, tailor, Groom wear, wedding sherwani';
-    
-    // Canonical URL
+    const metaTags = [
+      { name: 'description', content: description || 'Premier bespoke tailoring and ethnic wear in Raipur, Chhattisgarh since 1993. Expert crafting of sherwanis, suits, kurtas, blazers, and wedding wear.' },
+      { name: 'keywords', content: keywords || 'Poshak Tailors, ethnic wear, bespoke tailoring, sherwani, suit, kurta, wedding wear, Raipur, Chhattisgarh, menswear, party wear, formal suits, Indo-Western, Jodhpuri, Bandhgala, blazer, pathani, Modi jacket' },
+      { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
+      { name: 'author', content: 'Poshak Tailors And Ethnic Wear' },
+      { name: 'language', content: 'English' },
+      { name: 'revisit-after', content: '7 days' },
+      { name: 'geo.region', content: 'IN-CT' },
+      { name: 'geo.placename', content: 'Raipur, Chhattisgarh, India' },
+      { name: 'geo.position', content: '21.249964;81.642598' },
+      { name: 'ICBM', content: '21.249964, 81.642598' },
+      { name: 'theme-color', content: '#000000' },
+      { name: 'format-detection', content: 'telephone=yes' },
+      { property: 'og:type', content: type },
+      { property: 'og:url', content: currentUrl },
+      { property: 'og:title', content: title || 'Poshak Tailors And Ethnic Wear - Premium Bespoke Tailoring' },
+      { property: 'og:description', content: description || 'Premier bespoke tailoring and ethnic wear in Raipur, Chhattisgarh.' },
+      { property: 'og:image', content: image || `${BASE_URL}logo.png` },
+      { property: 'og:image:width', content: '512' },
+      { property: 'og:image:height', content: '512' },
+      { property: 'og:site_name', content: 'Poshak Tailors And Ethnic Wear' },
+      { property: 'og:locale', content: 'en_IN' },
+      { property: 'og:see_also', content: 'https://www.facebook.com/people/Poshak-tailor/100064060421507/' },
+      { property: 'og:see_also', content: 'https://www.instagram.com/poshak_tailor' },
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:url', content: currentUrl },
+      { name: 'twitter:title', content: title || 'Poshak Tailors And Ethnic Wear - Premium Bespoke Tailoring' },
+      { name: 'twitter:description', content: description || 'Premier bespoke tailoring and ethnic wear in Raipur, Chhattisgarh.' },
+      { name: 'twitter:image', content: image || `${BASE_URL}logo.png` },
+      { name: 'twitter:creator', content: '@poshaktailors' },
+      { name: 'twitter:site', content: '@poshaktailors' }
+    ];
+
+    metaTags.forEach(({ name, property, content }) => {
+      const selector = name ? `meta[name="${name}"]` : `meta[property="${property}"]`;
+      let meta = document.querySelector(selector);
+      
+      if (!meta) {
+        meta = document.createElement('meta');
+        if (name) meta.name = name;
+        if (property) meta.setAttribute('property', property);
+        document.head.appendChild(meta);
+      }
+      meta.content = content;
+    });
+
     let canonical = document.querySelector('link[rel="canonical"]');
     if (!canonical) {
       canonical = document.createElement('link');
       canonical.rel = 'canonical';
       document.head.appendChild(canonical);
     }
-    canonical.href = url || 'https://poshaktailors.com/';
-    
-    // Robots
-    let robots = document.querySelector('meta[name="robots"]');
-    if (!robots) {
-      robots = document.createElement('meta');
-      robots.name = 'robots';
-      document.head.appendChild(robots);
-    }
-    robots.content = 'index, follow';
-    
-    // Open Graph - Title
-    let ogTitle = document.querySelector('meta[property="og:title"]');
-    if (!ogTitle) {
-      ogTitle = document.createElement('meta');
-      ogTitle.property = 'og:title';
-      document.head.appendChild(ogTitle);
-    }
-    ogTitle.content = title || 'Poshak Tailors And Ethnic Wear';
-    
-    // Open Graph - Description
-    let ogDesc = document.querySelector('meta[property="og:description"]');
-    if (!ogDesc) {
-      ogDesc = document.createElement('meta');
-      ogDesc.property = 'og:description';
-      document.head.appendChild(ogDesc);
-    }
-    ogDesc.content = description || 'Premier bespoke tailoring and ethnic wear in Raipur, Chhattisgarh. Expert crafting of sherwanis, suits, kurtas, and wedding wear.';
-    
-    // Open Graph - URL
-    let ogUrl = document.querySelector('meta[property="og:url"]');
-    if (!ogUrl) {
-      ogUrl = document.createElement('meta');
-      ogUrl.property = 'og:url';
-      document.head.appendChild(ogUrl);
-    }
-    ogUrl.content = url || 'https://poshaktailors.com/';
-    
-    // Open Graph - Image
-    let ogImage = document.querySelector('meta[property="og:image"]');
-    if (!ogImage) {
-      ogImage = document.createElement('meta');
-      ogImage.property = 'og:image';
-      document.head.appendChild(ogImage);
-    }
-    ogImage.content = image || 'https://poshaktailors.com/assets/hero1.png';
-    
-    // Open Graph - Type
-    let ogType = document.querySelector('meta[property="og:type"]');
-    if (!ogType) {
-      ogType = document.createElement('meta');
-      ogType.property = 'og:type';
-      document.head.appendChild(ogType);
-    }
-    ogType.content = type;
-    
-    // Open Graph - Site Name
-    let ogSiteName = document.querySelector('meta[property="og:site_name"]');
-    if (!ogSiteName) {
-      ogSiteName = document.createElement('meta');
-      ogSiteName.property = 'og:site_name';
-      document.head.appendChild(ogSiteName);
-    }
-    ogSiteName.content = 'Poshak Tailors';
-    
-    // Twitter Card
-    let twitterCard = document.querySelector('meta[name="twitter:card"]');
-    if (!twitterCard) {
-      twitterCard = document.createElement('meta');
-      twitterCard.name = 'twitter:card';
-      document.head.appendChild(twitterCard);
-    }
-    twitterCard.content = 'summary_large_image';
-    
-    let twitterTitle = document.querySelector('meta[name="twitter:title"]');
-    if (!twitterTitle) {
-      twitterTitle = document.createElement('meta');
-      twitterTitle.name = 'twitter:title';
-      document.head.appendChild(twitterTitle);
-    }
-    twitterTitle.content = title || 'Poshak Tailors And Ethnic Wear';
-    
-    let twitterDesc = document.querySelector('meta[name="twitter:description"]');
-    if (!twitterDesc) {
-      twitterDesc = document.createElement('meta');
-      twitterDesc.name = 'twitter:description';
-      document.head.appendChild(twitterDesc);
-    }
-    twitterDesc.content = description || 'Premier bespoke tailoring and ethnic wear in Raipur, Chhattisgarh.';
-    
-    let twitterImage = document.querySelector('meta[name="twitter:image"]');
-    if (!twitterImage) {
-      twitterImage = document.createElement('meta');
-      twitterImage.name = 'twitter:image';
-      document.head.appendChild(twitterImage);
-    }
-    twitterImage.content = image || 'https://poshaktailors.com/assets/hero1.png';
-    
-    // Theme Color
-    let themeColor = document.querySelector('meta[name="theme-color"]');
-    if (!themeColor) {
-      themeColor = document.createElement('meta');
-      themeColor.name = 'theme-color';
-      document.head.appendChild(themeColor);
-    }
-    themeColor.content = '#000000';
-    
-    // JSON-LD Structured Data
-    let existingScript = document.querySelector('script[type="application/ld+json"]');
-    if (existingScript) {
-      existingScript.remove();
-    }
-    
-    const defaultSchema = {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Poshak Tailors And Ethnic Wear",
-      "description": "Premier bespoke tailoring and ethnic wear in Raipur, Chhattisgarh",
-      "url": "https://poshaktailors.com/",
-      "telephone": "+91-1234567890",
-      "email": "info@poshaktailors.com",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Raipur",
-        "addressRegion": "Chhattisgarh",
-        "addressCountry": "IN"
+    canonical.href = currentUrl;
+
+    const defaultSchemas = [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Poshak Tailors And Ethnic Wear",
+        "alternateName": "Poshak Tailors",
+        "url": BASE_URL,
+        "logo": `${BASE_URL}logo.png`,
+        "description": "Premier bespoke tailoring and ethnic wear in Raipur, Chhattisgarh since 1993.",
+        "foundingDate": "1993",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+91-9827165995",
+          "contactType": "customer service",
+          "availableLanguage": ["English", "Hindi"]
+        },
+        "sameAs": [
+          "https://www.facebook.com/people/Poshak-tailor/100064060421507/",
+          "https://www.instagram.com/poshak_tailor"
+        ]
       },
-      "openingHours": "Mon-Sat 09:00-20:00",
-      "priceRange": "₹₹₹",
-      "image": "https://poshaktailors.com/assets/hero1.png",
-      "sameAs": [
-        "https://www.facebook.com/poshaktailors",
-        "https://www.instagram.com/poshaktailors"
-      ]
-    };
-    
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.textContent = JSON.stringify(schema || defaultSchema);
-    document.head.appendChild(script);
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Poshak Tailors And Ethnic Wear",
+        "image": `${BASE_URL}logo.png`,
+        "priceRange": "₹₹₹",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Shop No.9, Surana Market, Behind City Center Mall, Pandri",
+          "addressLocality": "Raipur",
+          "addressRegion": "Chhattisgarh",
+          "postalCode": "492001",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 21.249964080112462,
+          "longitude": 81.64259837599026
+        },
+        "telephone": "+919827165995",
+        "email": "gyaneshwarudasi@gmail.com",
+        "openingHours": "Mo-Sa 10:00-20:00",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "500"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Poshak Tailors And Ethnic Wear",
+        "url": BASE_URL,
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": `${BASE_URL}products?search={search_term_string}`,
+          "query-input": "required name=search_term_string"
+        }
+      }
+    ];
+
+    const existingScripts = document.querySelectorAll('script[type="application/ld+json"]');
+    existingScripts.forEach(script => script.remove());
+
+    defaultSchemas.forEach(schemaData => {
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.textContent = JSON.stringify(schemaData);
+      document.head.appendChild(script);
+    });
+
+    if (schema) {
+      const customSchema = document.createElement('script');
+      customSchema.type = 'application/ld+json';
+      customSchema.textContent = JSON.stringify(schema);
+      document.head.appendChild(customSchema);
+    }
 
   }, [title, description, keywords, image, url, schema, type]);
 
