@@ -10,11 +10,14 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    setLoading(false);
+    const { name, email, phone, message } = formData;
+    const subject = encodeURIComponent(`New Inquiry from ${name}`);
+    const body = encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`
+    );
+    window.location.href = `mailto:gyaneshwarudasi@gmail.com?subject=${subject}&body=${body}`;
     setSubmitted(true);
     setFormData({ name: '', email: '', phone: '', message: '' });
     setTimeout(() => setSubmitted(false), 5000);
