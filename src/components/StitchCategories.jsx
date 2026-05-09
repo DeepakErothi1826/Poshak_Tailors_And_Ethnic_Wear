@@ -329,6 +329,38 @@ import fabrics5 from '../Image/fabrics/07081126266.jpg';
 const FABRICS_IMAGES = [fabrics1, fabrics2, fabrics3, fabrics4, fabrics5];
 
 // ============================================
+// CARNIVAL OUTFIT IMAGES - All from carnival_outfit folder
+// ============================================
+import carnival1 from '../Image/carnival_outfit/download (91).jpg';
+import carnival2 from '../Image/carnival_outfit/download (92).jpg';
+import carnival3 from '../Image/carnival_outfit/download (93).jpg';
+import carnival4 from '../Image/carnival_outfit/download (94).jpg';
+import carnival5 from '../Image/carnival_outfit/download (95).jpg';
+import carnival6 from '../Image/carnival_outfit/download (96).jpg';
+import carnival7 from '../Image/carnival_outfit/download (97).jpg';
+import carnival8 from '../Image/carnival_outfit/download (98).jpg';
+import carnival9 from '../Image/carnival_outfit/download (99).jpg';
+import carnival10 from '../Image/carnival_outfit/download (100).jpg';
+import carnival11 from '../Image/carnival_outfit/download - 2026-05-09T114506.129.jpg';
+import carnival12 from '../Image/carnival_outfit/download - 2026-05-09T114513.815.jpg';
+import carnival13 from '../Image/carnival_outfit/download - 2026-05-09T114534.538.jpg';
+import carnival14 from '../Image/carnival_outfit/download - 2026-05-09T114540.569.jpg';
+import carnival15 from '../Image/carnival_outfit/download - 2026-05-09T114650.654.jpg';
+import carnival16 from '../Image/carnival_outfit/download - 2026-05-09T114709.786.jpg';
+import carnival17 from '../Image/carnival_outfit/Men suit.jpg';
+import carnival18 from '../Image/carnival_outfit/Summer Pink  Sherwani Set.jpg';
+import carnival19 from '../Image/carnival_outfit/royal classical bandgala set.jpg';
+import carnival20 from '../Image/carnival_outfit/Sage Green Velvet Floral Printed Jacket Set by Varun Bahl Men at Pernia\'s Pop Up Shop 2026.jpg';
+import carnival21 from '../Image/carnival_outfit/Green Matka Silk Hand Embroidered Groom Bandhgala Set by Sahil Kochhar Men at Pernia\'s Pop Up Shop 2026.jpg';
+import carnival22 from '../Image/carnival_outfit/Ice Blue Jacket and Shirt.jpg';
+import carnival23 from '../Image/carnival_outfit/Lime Bandhgala Set with Floral Embroidery.jpg';
+import carnival24 from '../Image/carnival_outfit/Shop Best Bomber Jackets For Men Online In India.jpg';
+import carnival25 from '../Image/carnival_outfit/Buy Black Velvet, Lining Resham Embroidered Tuxedo For Men by Rohit Bal Online at Aza Fashions_.jpg';
+import carnival26 from '../Image/carnival_outfit/Buy Black Rayon Embroidery Zari Thread Blazer Set For Men by Prateek Munjal Online at Aza Fashions_.jpg';
+
+const CARNIVAL_OUTFIT_IMAGES = [carnival1, carnival2, carnival3, carnival4, carnival5, carnival6, carnival7, carnival8, carnival9, carnival10, carnival11, carnival12, carnival13, carnival14, carnival15, carnival16, carnival17, carnival18, carnival19, carnival20, carnival21, carnival22, carnival23, carnival24, carnival25, carnival26];
+
+// ============================================
 // CATEGORY CONFIGURATION - Each category uses images from its own folder
 // ============================================
 const CATEGORY_CONFIG = [
@@ -351,6 +383,7 @@ const CATEGORY_CONFIG = [
   { folder: 'women_vescote', name: 'Women Vestcoat', route: '/products?category=women-vestcoat', images: WOMENS_VESCOTE_IMAGES },
   { folder: 'jodhpuri', name: 'Jodhpuri', route: '/products?category=jodhpuri', images: JODHPURI_IMAGES },
   { folder: 'fabrics', name: 'Fabric Collections', route: '/products?category=fabric-collections', images: FABRICS_IMAGES },
+  { folder: 'carnival_outfit', name: 'Carnival Outfit', route: '/products?category=carnival-outfit', images: CARNIVAL_OUTFIT_IMAGES },
 ];
 
 // ============================================
@@ -460,7 +493,7 @@ export default function StitchCategories() {
         </motion.div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 sm:gap-4">
-          {isLoading ? Array.from({ length: 14 }).map((_, i) => <CategorySkeleton key={i} />) : CATEGORY_CONFIG.map((category, index) => <CategoryCard key={category.folder} category={category} index={index} />)}
+          {isLoading ? Array.from({ length: 19 }).map((_, i) => <CategorySkeleton key={i} />) : CATEGORY_CONFIG.map((category, index) => <CategoryCard key={category.folder} category={category} index={index} />)}
         </div>
 
         <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.2, duration: 0.6 }} className="text-center mt-10">
