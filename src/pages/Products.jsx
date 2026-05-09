@@ -77,11 +77,13 @@ const FOLDER_NAME_MAP = {
   'Carnival Outfit': 'carnival_outfit'
 };
 
-const allImageFiles = import.meta.glob('../Image/{Sherwani,Suit,kurta,Blazer,Modi jacket,Pathani,indo-Western,Shirt,Jacket,Payjama,formal paint,Safari suit,uniform,Accessories,womens_blazer,womens_suit,women_vescote,jodhpuri,fabrics_collections,carnival_outfit}/**/*.{jpg,jpeg,png,webp}', { eager: true });
+const allImageFiles = import.meta.glob('../Image/{Sherwani,Suit,kurta,Blazer,Modi jacket,Pathani,indo-Western,Shirt,Jacket,Payjama,formal paint,Safari suit,uniform,Accessories,womens_blazer,womens_suit,women_vescote,jodhpuri,fabrics_collections}/**/*.{jpg,jpeg,png,webp}', { eager: true });
+
+const carnivalImages = import.meta.glob('../Image/carnival_outfit/**/*.{jpg,jpeg,png,webp}', { eager: true });
 
 const isValidImageFile = (path) => {
   const fileName = path.split('/').pop();
-  const invalidChars = ['#', '😈', '👔', '•'];
+  const invalidChars = ['#'];
   return !invalidChars.some(char => fileName.includes(char));
 };
 
@@ -94,6 +96,13 @@ const getImageUrl = (path) => {
 function getImagesForCategory(category) {
   const folderName = FOLDER_NAME_MAP[category];
   if (!folderName) return [];
+  
+  if (category === 'Carnival Outfit') {
+    return Object.keys(carnivalImages)
+      .filter(path => isValidImageFile(path))
+      .map(path => carnivalImages[path]?.default || carnivalImages[path])
+      .filter(Boolean);
+  }
   
   const folderPath = `../Image/${folderName}`;
   
