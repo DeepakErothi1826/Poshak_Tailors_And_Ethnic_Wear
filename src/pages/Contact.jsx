@@ -28,7 +28,7 @@ export default function Contact() {
   };
 
   const contactInfo = [
-    { icon: MapPin, title: 'Visit Our Store', details: ['Poshak Tailor & Ethnic Wear', 'Shop No.9, Surana Market, Behind City Center Mall', <a href="https://www.google.com/maps/place/Poshak+Tailor/@21.2554006,81.641478,17z/data=!3m1!4b1!4m6!3m5!1s0x3a28ddedcf3a4583:0x6fad31cd11e6e0d2!8m2!3d21.2554007!4d81.6463489!16s%2Fg%2F11tc128_jz?hl=en&entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" className="underline hover:text-black">Pandri, Raipur, C.G. - 492001</a>] },
+    { icon: MapPin, title: 'Visit Our Store', details: ['Poshak Tailor & Ethnic Wear', 'Shop No.9, Surana Market, Behind City Center Mall', <a href="https://www.google.com/maps/search/?api=1&query=Poshak+Tailor+And+Ethnic+Wear+Shop+No.9+Surana+Market+Pandri+Raipur" target="_blank" rel="noopener noreferrer" className="underline hover:text-black">Pandri, Raipur, C.G. - 492001</a>] },
     { icon: Phone, title: 'Call Us', details: ['+91 98271 65995', '+91 98930 00970', '+91 95892 81400', '+91 70006 59096'] },
     { icon: Mail, title: 'Email Us', details: [<a href="mailto:gyaneshwarudasi@gmail.com" className="underline hover:text-black">gyaneshwarudasi@gmail.com</a>] },
     { icon: Clock, title: 'Store Hours', details: ['Mon - Sat: 12:00 PM - 9:45 PM', 'Sunday: 12:00 PM - 4:00 PM'] },
@@ -201,7 +201,7 @@ export default function Contact() {
                 We invite you to experience the art of bespoke tailoring at our showroom.
               </p>
               <a 
-                href="https://www.google.com/maps/place/Poshak+Tailor/@21.2554006,81.641478,17z/data=!3m1!4b1!4m6!3m5!1s0x3a28ddedcf3a4583:0x6fad31cd11e6e0d2!8m2!3d21.2554007!4d81.6463489!16s%2Fg%2F11tc128_jz?hl=en&entry=ttu&g_ep=EgoyMDI2MDQyOC4wIKXMDSoASAFQAw%3D%3D" 
+                href="https://www.google.com/maps/search/?api=1&query=Poshak+Tailor+And+Ethnic+Wear+Shop+No.9+Surana+Market+Pandri+Raipur" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-block mt-4 bg-black text-white px-6 py-3 uppercase text-sm font-bold tracking-widest hover:bg-gray-800 transition-colors"
@@ -211,14 +211,14 @@ export default function Contact() {
             </div>
             <div className="aspect-video md:aspect-[2/1] bg-gray-200">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.5429645229643!2d81.64259837599026!3d21.249964080112462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dda565a0c8b3%3A0xeab5add7ba8ff8da!2zUGFuZHJpLCBSYWlwdXIsIENoaGF0dGlzZ2FyaA!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3718.5429645229643!2d81.64259837599026!3d21.249964080112462!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28ddedcf3a4583%3A0x6fad31cd11e6e0d2!2sPoshak+Tailor!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen="allowfullscreen"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Store Location"
+                title="Poshak Tailor & Ethnic Wear - Shop No.9, Surana Market, Pandri, Raipur"
               />
             </div>
           </div>
