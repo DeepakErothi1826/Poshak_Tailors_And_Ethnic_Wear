@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 
 const InstagramIcon = () => (
   <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
@@ -58,6 +58,13 @@ export default function Footer() {
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <a href="mailto:gyaneshwarudasi@gmail.com" className="text-xs md:text-sm hover:text-white underline">gyaneshwarudasi@gmail.com</a>
+              </li>
+              <li className="flex items-start gap-2">
+                <Clock className="w-4 h-4 mt-0.5 flex-shrink-0" />
+                <div className="flex flex-col text-xs md:text-sm">
+                  <span>Mon-Sat: 10:00 AM - 8:00 PM</span>
+                  <span>Sunday: Closed</span>
+                </div>
               </li>
             </ul>
           </div>
