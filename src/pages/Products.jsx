@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import SEO from '../components/SEO';
 import kurtaHero from '../Image/hero_kurta.jpg';
 
-const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Modi Jacket', 'Indo-Western', 'Shirt', 'Vestcoat', 'Payjama', 'Formal Paint', 'Safari', 'Uniform', 'Accessories', 'Women Blazer', 'Women Suit', 'Women Vestcoat', 'Jodhpuri', 'Fabric Collections'];
+const CATEGORIES = ['All', 'Suit', 'Sherwani', 'Pathani', 'Kurta', 'Blazer', 'Modi Jacket', 'Indo-Western', 'Shirt', 'Vestcoat', 'Payjama', 'Formal Paint', 'Safari', 'Uniform', 'Accessories', 'Women Blazer', 'Women Suit', 'Women Vestcoat', 'Jodhpuri', 'Fabric Collections', 'Carnival Outfit'];
 
 const CATEGORY_MAP = {
   'suit': 'Suit',
@@ -27,7 +27,8 @@ const CATEGORY_MAP = {
   'women-suit': 'Women Suit',
   'women-vestcoat': 'Women Vestcoat',
   'jodhpuri': 'Jodhpuri',
-  'fabric-collections': 'Fabric Collections'
+  'fabric-collections': 'Fabric Collections',
+  'carnival-outfit': 'Carnival Outfit'
 };
 
 const REVERSE_CATEGORY_MAP = {
@@ -49,7 +50,8 @@ const REVERSE_CATEGORY_MAP = {
   'Women Suit': 'women-suit',
   'Women Vestcoat': 'women-vestcoat',
   'Jodhpuri': 'jodhpuri',
-  'Fabric Collections': 'fabric-collections'
+  'Fabric Collections': 'fabric-collections',
+  'Carnival Outfit': 'carnival-outfit'
 };
 
 const FOLDER_NAME_MAP = {
@@ -71,10 +73,11 @@ const FOLDER_NAME_MAP = {
   'Women Suit': 'womens_suit',
   'Women Vestcoat': 'women_vescote',
   'Jodhpuri': 'jodhpuri',
-  'Fabric Collections': 'fabrics_collections'
+  'Fabric Collections': 'fabrics_collections',
+  'Carnival Outfit': 'carnival_outfit'
 };
 
-const allImageFiles = import.meta.glob('../Image/{Sherwani,Suit,kurta,Blazer,Modi jacket,Pathani,indo-Western,Shirt,Jacket,Payjama,formal paint,Safari suit,uniform,Accessories,womens_blazer,womens_suit,women_vescote,jodhpuri,fabrics_collections}/**/*.{jpg,jpeg,png,webp}', { eager: true });
+const allImageFiles = import.meta.glob('../Image/{Sherwani,Suit,kurta,Blazer,Modi jacket,Pathani,indo-Western,Shirt,Jacket,Payjama,formal paint,Safari suit,uniform,Accessories,womens_blazer,womens_suit,women_vescote,jodhpuri,fabrics_collections,carnival_outfit}/**/*.{jpg,jpeg,png,webp}', { eager: true });
 
 const isValidImageFile = (path) => {
   const fileName = path.split('/').pop();
@@ -122,7 +125,8 @@ function generateProductName(category, index, imagePath) {
     'Women Suit': ['Formal Office', 'Premium Designer', 'Classic Two-Piece', 'Wedding Guest', 'Party Suit', 'Modern Cut', 'Elegant Workwear'],
     'Women Vestcoat': ['Designer Waistcoat', 'Premium', 'Classic', 'Modern', 'Formal', 'Party Wear', 'Elegant'],
     'Jodhpuri': ['Royal Jodhpuri', 'Wedding Groom', 'Traditional', 'Embroidered', 'Premium Silk', 'Designer', 'Classic', 'Regal'],
-    'Fabric Collections': ["Siyaram's Premium", "D&J Italian", "EMEF Luxury", "Arvind Premium", "Cadini Cotton", "Reid & Taylor", "Raymond Classic", "T-R Fabrics", "SORT Shirting", "Italian Import", "Traid Quality", "Premium Wool", "Silk Blend", "Linen Pure"]
+    'Fabric Collections': ["Siyaram's Premium", "D&J Italian", "EMEF Luxury", "Arvind Premium", "Cadini Cotton", "Reid & Taylor", "Raymond Classic", "T-R Fabrics", "SORT Shirting", "Italian Import", "Traid Quality", "Premium Wool", "Silk Blend", "Linen Pure"],
+    'Carnival Outfit': ['Festive Special', 'Carnival Ready', 'Festival Wear', 'Fair Fashion', 'Celebration Outfit', 'Party Carnival', 'Traditional Fest', 'Grand Finale']
   };
   
   const prefix = prefixes[category] ? prefixes[category][index % prefixes[category].length] : category;
