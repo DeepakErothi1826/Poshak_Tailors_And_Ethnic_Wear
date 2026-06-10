@@ -108,6 +108,7 @@ function getImagesForCategory(category) {
   
   return Object.keys(allImageFiles)
     .filter(path => path.startsWith(folderPath + '/') && isValidImageFile(path))
+    .sort((a, b) => b.localeCompare(a))
     .map(path => getImageUrl(path))
     .filter(Boolean);
 }
