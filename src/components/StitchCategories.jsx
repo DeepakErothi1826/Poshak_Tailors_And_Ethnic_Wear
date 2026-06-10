@@ -118,7 +118,7 @@ import kurta3 from '../Image/kurta/download (93).jpg';
 import kurta4 from '../Image/kurta/download (94).jpg';
 import kurta5 from '../Image/kurta/download (95).jpg';
 import kurta6 from '../Image/kurta/download (96).jpg';
-import kurta7 from '../Image/kurta/download (97).jpg';
+import kurta7 from '../Image/kurta/download (98).jpg';
 import kurta8 from '../Image/kurta/download (98).jpg';
 
 const KURTA_IMAGES = [kurta1, kurta2, kurta3, kurta4, kurta5, kurta6, kurta7, kurta8];

@@ -25,7 +25,7 @@ import serviceImg1 from '../Image/kurta/download (92).jpg';
 import serviceImg2 from '../Image/kurta/download (93).jpg';
 import serviceImg3 from '../Image/kurta/download (95).jpg';
 import serviceImg4 from '../Image/kurta/download (96).jpg';
-import ctaImg from '../Image/kurta/download (97).jpg';
+import ctaImg from '../Image/kurta/download (98).jpg';
 import gallery1 from '../Image/Sherwani/sherwani_28.jpg';
 import gallery2 from '../Image/Sherwani/sherwani_29.jpg';
 import gallery3 from '../Image/Sherwani/sherwani_30.jpg';
