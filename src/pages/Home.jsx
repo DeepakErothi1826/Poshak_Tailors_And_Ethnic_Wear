@@ -90,9 +90,9 @@ export default function Home() {
   return (
     <>
     <SEO 
-      title="Poshak Tailors And Ethnic Wear | Best Bespoke Suits & Ethnic Wear"
-      description="Expert crafting of sherwanis, suits, kurtas, wedding wear, blazers, and bespoke tailoring since 1995. We do not just sew fabrics; we sculpt them to your silhouette."
-      keywords="Poshak Tailors, ethnic wear, bespoke tailoring, sherwani, suit, kurta, wedding wear, Raipur, Chhattisgarh, menswear, party wear, formal suits, Indo-Western, Jodhpuri suit, Bandhgala"
+      title="Top Tailors in Raipur | Best Mens Tailor for Suits, Sherwani & Ethnic Wear - Poshak Tailors"
+      description="Poshak Tailors is the top-rated tailor in Raipur for mens bespoke suits, sherwanis, kurtas, blazers & wedding wear. 30+ years of expert tailoring in Pandri, Raipur. Book your consultation today."
+      keywords="top tailors in Raipur, best tailor in Raipur for mens, tailor near Pandri Raipur, bespoke tailor Raipur, sherwani tailor Raipur, suit tailor Raipur, wedding wear Raipur, ethnic wear Raipur"
     />
 <div className="w-full bg-white">
 {/* Hero Section */}
@@ -120,7 +120,7 @@ export default function Home() {
         >
           {HERO_SLIDES[currentSlide].isBrandSlide === true ? (
             <>
-              <img src={poshakLogo} alt="Poshak" className="h-24 sm:h-32 md:h-40 lg:h-48 w-auto mb-4 sm:mb-6 rounded-full bg-white p-2 sm:p-4 shadow-2xl" />
+              <img src={poshakLogo} alt="Poshak Tailors Raipur - Best Tailor in Raipur for Mens Suits and Sherwani" className="h-24 sm:h-32 md:h-40 lg:h-48 w-auto mb-4 sm:mb-6 rounded-full bg-white p-2 sm:p-4 shadow-2xl" />
               <p className="text-xs sm:text-sm md:text-base font-black text-white uppercase tracking-wider mb-1 sm:mb-2">
                 {HERO_SLIDES[currentSlide].subtitle}
               </p>
@@ -228,7 +228,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
               <h2 className="text-4xl font-black uppercase tracking-tighter">The Art of <br /> Tailoring</h2>
-              <p className="text-gray-600 leading-relaxed max-w-md">Every garment at Poshak Tailors undergoes a rigorous journey of perfection. From the initial consultation and measurement mapping to the final exquisite hand-finishings. We do not just sew fabrics; we sculpt them to your silhouette.</p>
+              <p className="text-gray-600 leading-relaxed max-w-md">Every garment at Poshak Tailors in Raipur undergoes a rigorous journey of perfection. From the initial consultation and measurement mapping at our Pandri showroom to the final exquisite hand-finishings. We do not just sew fabrics; we sculpt them to your silhouette.</p>
               <div className="space-y-6">
                 {[
                   { title: "Consultation", desc: "Understanding your persona and selecting global premium fabrics." },
@@ -246,7 +246,7 @@ export default function Home() {
               </div>
             </div>
             <div className="aspect-[4/5] bg-gray-100 overflow-hidden relative">
-              <img src={craftImg} alt="Tailoring Craft" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
+              <img src={craftImg} alt="Bespoke Tailoring in Raipur - Expert Craftsmanship by Poshak Tailors" className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" />
             </div>
           </div>
         </div>
@@ -302,7 +302,7 @@ export default function Home() {
       {/* Brand Story / Parallax Block */}
       <section className="relative h-[60vh] w-full flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0 w-full h-full opacity-40">
-          <img src={heritageImg} alt="Tailoring Heritage" className="w-full h-full object-cover" />
+          <img src={heritageImg} alt="Best Tailor in Raipur - Poshak Tailors Tailoring Heritage" className="w-full h-full object-cover" />
         </div>
         <div className="relative z-10 text-center text-white px-4 max-w-3xl">
           <h2 className="text-sm uppercase tracking-[0.5em] mb-6">Our Heritage</h2>
@@ -341,7 +341,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tighter mb-4">Why Choose Poshak</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">Three decades of excellence in bespoke tailoring and ethnic wear.</p>
+            <p className="text-gray-400 max-w-2xl mx-auto">Three decades of excellence in bespoke tailoring and ethnic wear in Raipur, Chhattisgarh.</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -373,8 +373,8 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-16 flex justify-between items-end">
             <div>
-              <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tighter mb-2">Our Services</h2>
-              <p className="text-gray-500 max-w-md">Comprehensive tailoring solutions for every need.</p>
+              <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tighter mb-2">Tailoring Services in Raipur</h2>
+              <p className="text-gray-500 max-w-md">Premier bespoke tailoring services in Pandri, Raipur for mens suits, sherwanis, kurtas and wedding wear.</p>
             </div>
             <Link to="/products" className="hidden md:inline-flex items-center gap-2 uppercase tracking-widest text-xs font-bold border-b-2 border-black pb-1 hover:text-gray-600 hover:border-gray-600 transition-colors">
               View All <ArrowRight className="w-4 h-4" />
@@ -434,8 +434,8 @@ export default function Home() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tighter mb-4">Our Work</h2>
-            <p className="text-gray-500 max-w-2xl mx-auto">A glimpse of our bespoke creations crafted for discerning clientele.</p>
+          <h2 className="text-3xl md:text-4xl font-black uppercase tracking-tighter mb-4">Our Work in Raipur</h2>
+          <p className="text-gray-500 max-w-2xl mx-auto">A glimpse of our bespoke creations crafted for discerning clientele in Raipur, Chhattisgarh.</p>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">

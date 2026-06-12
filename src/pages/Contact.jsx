@@ -37,9 +37,9 @@ export default function Contact() {
   return (
     <>
       <SEO 
-        title="Contact Us | Poshak Tailors And Ethnic Wear - Get in Touch"
-        description="Visit Poshak Tailors And Ethnic Wear in Raipur or call us for bespoke tailoring. Expert sherwanis, suits, kurtas, blazers, and wedding wear. Available Mon-Sat 10 AM to 8 PM."
-        keywords="contact poshak tailors, tailor near me, bespoke tailoring contact, raipur tailor shop, appointment booking"
+        title="Contact Best Tailor in Raipur | Poshak Tailors - Pandri, Raipur"
+        description="Contact Poshak Tailors - the top-rated tailor in Raipur for mens bespoke suits, sherwanis, kurtas & wedding wear. Visit our showroom in Pandri, Raipur or call +91 98271 65995."
+        keywords="contact poshak tailors, tailor near Pandri Raipur, best tailor in Raipur contact, raipur tailor shop address, bespoke tailoring appointment Raipur"
       />
       <div className="w-full bg-white text-black min-h-screen">
         {/* Hero Section */}

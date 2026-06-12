@@ -23,9 +23,9 @@ export default function About() {
   return (
     <>
     <SEO 
-      title="About Us | Poshak Tailors And Ethnic Wear - Bespoke Tailoring Since 1995"
-      description="Learn about Poshak Tailors And Ethnic Wear - premier bespoke tailoring in Raipur, Chhattisgarh since 1995. Expert crafting of sherwanis, suits, kurtas, and wedding wear with 'GOD MAKES MAN WE MAKE GENTLEMAN' philosophy."
-      keywords="about Poshak Tailors, bespoke tailoring Raipur, wedding wear since 1995, ethnic wear Chhattisgarh, sherwani expert, tailor shop Raipur"
+      title="About Us - Best Tailor in Raipur for Mens Suits, Sherwani & Ethnic Wear - Poshak Tailors"
+      description="Poshak Tailors is the most trusted tailor in Raipur for mens bespoke suits, sherwanis, kurtas, blazers and wedding wear since 1995. Located in Pandri, Raipur. 'GOD MAKES MAN WE MAKE GENTLEMAN'."
+      keywords="about Poshak Tailors, bespoke tailoring Raipur, best tailor in Raipur for mens, tailor shop Pandri Raipur, wedding wear since 1995, ethnic wear Chhattisgarh, sherwani expert Raipur"
       schema={aboutSchema}
     />
     <div className="w-full bg-white">
@@ -61,7 +61,7 @@ export default function About() {
         >
           <h2 className="text-3xl font-black uppercase tracking-tighter">A Legacy of Tailoring</h2>
           <p className="text-lg font-light leading-relaxed text-gray-600">
-            Poshak Tailors And Ethnic Wear represents thirty years of uncompromising quality and craftsmanship. What started as a modest atelier in Raipur's bustling textile markets has evolved into a premier destination for bespoke menswear and elite ethnic fashion.
+            Poshak Tailors And Ethnic Wear represents thirty years of uncompromising quality and craftsmanship. What started as a modest atelier in Raipur's bustling textile markets has evolved into the premier destination for bespoke menswear and elite ethnic fashion. We are widely recognized as the best tailor in Raipur for mens suits, sherwanis, and wedding wear.
           </p>
           <p className="text-lg font-light leading-relaxed text-gray-600">
             For decades, our artisans have passed down their meticulous skills, threading needles through time to create garments that do more than just fit perfectly—they tell a story. Every suit, every sherwani is a testament to our dedication to the art of the perfect drape.

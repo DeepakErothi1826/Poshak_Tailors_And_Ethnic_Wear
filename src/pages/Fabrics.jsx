@@ -146,9 +146,9 @@ export default function Fabrics() {
   return (
     <>
     <SEO 
-      title="Fabric Collections | Premium Fabrics - Siyaram, Arvind, Raymond & More - Poshak Tailors"
-      description="Explore our premium fabric collections from top brands like Siyaram, Arvind, Raymond, Cadini, EMEF, and Italian fabrics. Perfect for bespoke suits, sherwanis, and ethnic wear at Poshak Tailors."
-      keywords="premium fabrics, suiting fabric, shirting fabric, siyaram, arvind, raymond, italian fabric, wool, linen, cotton, tailor fabric, raipur"
+      title="Premium Fabric Collection Raipur | Siyaram, Arvind, Raymond - Poshak Tailors"
+      description="Poshak Tailors in Raipur offers premium fabrics from Siyaram, Arvind, Raymond, Cadini, EMEF, and Italian mills. Best fabric selection for bespoke suits, sherwanis & kurtas in Raipur."
+      keywords="fabric store Raipur, premium fabrics Raipur, suiting fabric Raipur, shirting fabric Raipur, siyaram Raipur, arvind Raipur, raymond Raipur, tailor fabric Raipur"
     />
     <div className="w-full bg-white">
       {/* Hero */}

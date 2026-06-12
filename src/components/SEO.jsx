@@ -15,10 +15,10 @@ export default function SEO({
   useEffect(() => {
     const currentUrl = url || `${BASE_URL}`;
     
-    document.title = title || `${SITE_NAME} | Best Bespoke Suits & Ethnic Wear`;
+    document.title = title || `Top Tailors in Raipur | Best Mens Tailor for Suits, Sherwani & Ethnic Wear - ${SITE_NAME}`;
     
     const pageTitle = title || `${SITE_NAME} | Best Bespoke Suits & Ethnic Wear`;
-    const pageDescription = description || 'Expert crafting of sherwanis, suits, kurtas, wedding wear, blazers, and bespoke tailoring since 1995. We do not just sew fabrics; we sculpt them to your silhouette.';
+    const pageDescription = description || 'Poshak Tailors is the top-rated tailor in Raipur for mens bespoke suits, sherwanis, kurtas, blazers & wedding wear. 30+ years of expert tailoring in Pandri, Raipur. Book now.';
     const defaultKeywords = 'Poshak Tailors, ethnic wear, bespoke tailoring, sherwani, suit, kurta, wedding wear, Raipur, Chhattisgarh, menswear, party wear, formal suits, Indo-Western, Jodhpuri, Bandhgala, blazer, pathani, Modi jacket';
 
     const metaTags = [

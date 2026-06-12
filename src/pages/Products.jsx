@@ -190,9 +190,9 @@ export default function Products() {
   return (
     <>
     <SEO 
-      title="Premium Menswear Collection | Bespoke Suits, Sherwani, Kurta - Poshak Tailors"
-      description="Explore our premium collection of bespoke suits, sherwanis, kurtas, blazers, pathani suits, and Indo-Western wear. Handcrafted wedding groom wear by Poshak Tailors in Raipur, Chhattisgarh."
-      keywords="groom wear, menswear collection, bespoke suits, sherwani, kurta, blazer, pathani suit, Indo-Western, wedding collection, groom outfit, Raipur"
+      title="Mens Collection Raipur | Bespoke Suits, Sherwani, Kurta - Poshak Tailors"
+      description="Browse the finest menswear collection in Raipur by Poshak Tailors. Premium bespoke suits, wedding sherwanis, kurtas, blazers & Indo-Western wear. Handcrafted in Pandri, Raipur."
+      keywords="menswear collection Raipur, bespoke suits Raipur, sherwani Raipur, tailor near me Raipur, wedding collection Raipur, groom outfit Raipur, kurta Raipur"
     />
     <div className="w-full bg-white">
       <section className="relative h-[50vh] sm:h-[60vh] w-full flex items-center justify-center overflow-hidden">

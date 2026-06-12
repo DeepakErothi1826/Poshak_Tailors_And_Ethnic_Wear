@@ -63,9 +63,9 @@ const product = ALL_PRODUCTS_DATA.find(p => p.id === id);
   return (
     <>
     <SEO 
-      title={`${product.name} | Poshak Tailors And Ethnic Wear`}
-      description={`Buy premium ${product.category} - ${product.name}. Handcrafted by Poshak Tailors in Raipur. Free shipping across India. Expert bespoke tailoring and ethnic wear since 1995.`}
-      keywords={`${product.name}, ${product.category}, Poshak Tailors, bespoke ${product.category.toLowerCase()}, wedding wear, Raipur, Chhattisgarh`}
+      title={`${product.name} | Best Tailor in Raipur - Poshak Tailors`}
+      description={`${product.name} - premium ${product.category} crafted by Poshak Tailors, the best tailor in Raipur. Handcrafted bespoke ${product.category.toLowerCase()} in our Pandri, Raipur showroom. Free shipping India.`}
+      keywords={`${product.name}, ${product.category}, best tailor Raipur, bespoke ${product.category.toLowerCase()} Raipur, wedding wear Raipur, Poshak Tailors`}
       image={product.image}
       type="product"
       schema={productSchema}
