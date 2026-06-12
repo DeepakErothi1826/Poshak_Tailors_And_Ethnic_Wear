@@ -146,8 +146,8 @@ export default function Fabrics() {
   return (
     <>
     <SEO 
-      title="Fabric Collections | Premium Fabrics - Siyaram, Arvind, Raymond & More"
-      description="Explore our premium fabric collections from top brands like Siyaram, Arvind, Raymond, Cadini, EMEF, and Italian fabrics. Perfect for bespoke suits, sherwanis, and ethnic wear."
+      title="Fabric Collections | Premium Fabrics - Siyaram, Arvind, Raymond & More - Poshak Tailors"
+      description="Explore our premium fabric collections from top brands like Siyaram, Arvind, Raymond, Cadini, EMEF, and Italian fabrics. Perfect for bespoke suits, sherwanis, and ethnic wear at Poshak Tailors."
       keywords="premium fabrics, suiting fabric, shirting fabric, siyaram, arvind, raymond, italian fabric, wool, linen, cotton, tailor fabric, raipur"
     />
     <div className="w-full bg-white">

@@ -38,7 +38,7 @@ export default function Contact() {
     <>
       <SEO 
         title="Contact Us | Poshak Tailors And Ethnic Wear - Get in Touch"
-        description="Contact Poshak Tailors And Ethnic Wear in Raipur. Visit our showroom or call us for bespoke tailoring services. We're available Mon-Sat 10 AM to 8 PM."
+        description="Visit Poshak Tailors And Ethnic Wear in Raipur or call us for bespoke tailoring. Expert sherwanis, suits, kurtas, blazers, and wedding wear. Available Mon-Sat 10 AM to 8 PM."
         keywords="contact poshak tailors, tailor near me, bespoke tailoring contact, raipur tailor shop, appointment booking"
       />
       <div className="w-full bg-white text-black min-h-screen">

@@ -18,9 +18,16 @@ Disallow: /private/
 # Allow all search engines
 User-agent: Googlebot
 Allow: /
+Disallow: /api/
+Disallow: /private/
+
+User-agent: Googlebot-Image
+Allow: /
 
 User-agent: Bingbot
 Allow: /
+Disallow: /api/
+Disallow: /private/
 
 User-agent: Yahoo-slurp
 Allow: /

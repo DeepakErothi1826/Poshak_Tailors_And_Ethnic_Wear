@@ -23,10 +23,9 @@ export default function About() {
   return (
     <>
     <SEO 
-      title="About Us | Poshak Tailors - Bespoke Tailoring Since 1995"
-      description="Learn about Poshak Tailors & Ethnic Wear - premier bespoke tailoring in Raipur, Chhattisgarh since 1995. Expert crafting of sherwanis, suits, kurtas, and wedding wear with 'GOD MAKES MAN WE MAKE GENTLEMAN' philosophy."
+      title="About Us | Poshak Tailors And Ethnic Wear - Bespoke Tailoring Since 1995"
+      description="Learn about Poshak Tailors And Ethnic Wear - premier bespoke tailoring in Raipur, Chhattisgarh since 1995. Expert crafting of sherwanis, suits, kurtas, and wedding wear with 'GOD MAKES MAN WE MAKE GENTLEMAN' philosophy."
       keywords="about Poshak Tailors, bespoke tailoring Raipur, wedding wear since 1995, ethnic wear Chhattisgarh, sherwani expert, tailor shop Raipur"
-      url="https://poshaktailors.com/about"
       schema={aboutSchema}
     />
     <div className="w-full bg-white">

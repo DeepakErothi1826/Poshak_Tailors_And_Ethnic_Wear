@@ -1,10 +1,51 @@
+# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
 
-Sitemap: https://poshaktailors.com/sitemap.xml
+# Sitemap
+Sitemap: https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/sitemap.xml
 
+# Crawl-delay for polite crawling
+Crawl-delay: 1
+
+# Allow search engines to index all pages
+Disallow:
+
+# Block access to sensitive files (if any)
+Disallow: /api/
+Disallow: /private/
+
+# Allow all search engines
 User-agent: Googlebot
+Allow: /
+Disallow: /api/
+Disallow: /private/
+
+User-agent: Googlebot-Image
 Allow: /
 
 User-agent: Bingbot
+Allow: /
+Disallow: /api/
+Disallow: /private/
+
+User-agent: Yahoo-slurp
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Sogou
+Allow: /
+
+User-agent: Exabot
+Allow: /
+
+User-agent: facebot
+Allow: /
+
+User-agent: Applebot
 Allow: /

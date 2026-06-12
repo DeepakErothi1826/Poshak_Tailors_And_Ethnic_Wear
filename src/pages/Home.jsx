@@ -90,8 +90,8 @@ export default function Home() {
   return (
     <>
     <SEO 
-      title="Poshak Tailors And Ethnic Wear | Best Bespoke Suits & Sherwani in Raipur"
-      description="Premier bespoke tailoring and ethnic wear in Raipur, Chhattisgarh. Expert crafting of sherwanis, suits, kurtas, and wedding wear since 1995. Free shipping across India."
+      title="Poshak Tailors And Ethnic Wear | Best Bespoke Suits & Ethnic Wear"
+      description="Expert crafting of sherwanis, suits, kurtas, wedding wear, blazers, and bespoke tailoring since 1995. We do not just sew fabrics; we sculpt them to your silhouette."
       keywords="Poshak Tailors, ethnic wear, bespoke tailoring, sherwani, suit, kurta, wedding wear, Raipur, Chhattisgarh, menswear, party wear, formal suits, Indo-Western, Jodhpuri suit, Bandhgala"
     />
 <div className="w-full bg-white">

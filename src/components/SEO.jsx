@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 
 const BASE_URL = 'https://deepakerothi1826.github.io/Poshak_Tailors_And_Ethnic_Wear/';
+const SITE_NAME = 'Poshak Tailors And Ethnic Wear';
 
 export default function SEO({ 
   title, 
@@ -14,13 +15,19 @@ export default function SEO({
   useEffect(() => {
     const currentUrl = url || `${BASE_URL}`;
     
-    document.title = title ? `${title} | Poshak Tailors` : 'Poshak Tailors And Ethnic Wear - Premium Bespoke Tailoring in Raipur, Chhattisgarh';
+    document.title = title || `${SITE_NAME} | Best Bespoke Suits & Ethnic Wear`;
     
+    const pageTitle = title || `${SITE_NAME} | Best Bespoke Suits & Ethnic Wear`;
+    const pageDescription = description || 'Expert crafting of sherwanis, suits, kurtas, wedding wear, blazers, and bespoke tailoring since 1995. We do not just sew fabrics; we sculpt them to your silhouette.';
+    const defaultKeywords = 'Poshak Tailors, ethnic wear, bespoke tailoring, sherwani, suit, kurta, wedding wear, Raipur, Chhattisgarh, menswear, party wear, formal suits, Indo-Western, Jodhpuri, Bandhgala, blazer, pathani, Modi jacket';
+
     const metaTags = [
-      { name: 'description', content: description || 'Premier bespoke tailoring and ethnic wear in Raipur, Chhattisgarh since 1993. Expert crafting of sherwanis, suits, kurtas, blazers, and wedding wear.' },
-      { name: 'keywords', content: keywords || 'Poshak Tailors, ethnic wear, bespoke tailoring, sherwani, suit, kurta, wedding wear, Raipur, Chhattisgarh, menswear, party wear, formal suits, Indo-Western, Jodhpuri, Bandhgala, blazer, pathani, Modi jacket' },
+      { name: 'description', content: pageDescription },
+      { name: 'keywords', content: keywords || defaultKeywords },
       { name: 'robots', content: 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' },
-      { name: 'author', content: 'Poshak Tailors And Ethnic Wear' },
+      { name: 'author', content: SITE_NAME },
+      { name: 'application-name', content: SITE_NAME },
+      { name: 'apple-mobile-web-app-title', content: SITE_NAME },
       { name: 'language', content: 'English' },
       { name: 'revisit-after', content: '7 days' },
       { name: 'geo.region', content: 'IN-CT' },
@@ -31,20 +38,22 @@ export default function SEO({
       { name: 'format-detection', content: 'telephone=yes' },
       { property: 'og:type', content: type },
       { property: 'og:url', content: currentUrl },
-      { property: 'og:title', content: title || 'Poshak Tailors And Ethnic Wear - Premium Bespoke Tailoring' },
-      { property: 'og:description', content: description || 'Premier bespoke tailoring and ethnic wear in Raipur, Chhattisgarh.' },
+      { property: 'og:title', content: pageTitle },
+      { property: 'og:description', content: pageDescription },
       { property: 'og:image', content: image || `${BASE_URL}logo.png` },
       { property: 'og:image:width', content: '512' },
       { property: 'og:image:height', content: '512' },
-      { property: 'og:site_name', content: 'Poshak Tailors And Ethnic Wear' },
+      { property: 'og:image:alt', content: `${SITE_NAME} Logo` },
+      { property: 'og:site_name', content: SITE_NAME },
       { property: 'og:locale', content: 'en_IN' },
       { property: 'og:see_also', content: 'https://www.facebook.com/people/Poshak-tailor/100064060421507/' },
       { property: 'og:see_also', content: 'https://www.instagram.com/poshak_tailor' },
       { name: 'twitter:card', content: 'summary_large_image' },
       { name: 'twitter:url', content: currentUrl },
-      { name: 'twitter:title', content: title || 'Poshak Tailors And Ethnic Wear - Premium Bespoke Tailoring' },
-      { name: 'twitter:description', content: description || 'Premier bespoke tailoring and ethnic wear in Raipur, Chhattisgarh.' },
+      { name: 'twitter:title', content: pageTitle },
+      { name: 'twitter:description', content: pageDescription },
       { name: 'twitter:image', content: image || `${BASE_URL}logo.png` },
+      { name: 'twitter:image:alt', content: `${SITE_NAME} Logo` },
       { name: 'twitter:creator', content: '@poshaktailors' },
       { name: 'twitter:site', content: '@poshaktailors' }
     ];
@@ -74,12 +83,13 @@ export default function SEO({
       {
         "@context": "https://schema.org",
         "@type": "Organization",
-        "name": "Poshak Tailors And Ethnic Wear",
+        "name": SITE_NAME,
         "alternateName": "Poshak Tailors",
         "url": BASE_URL,
         "logo": `${BASE_URL}logo.png`,
-        "description": "Premier bespoke tailoring and ethnic wear in Raipur, Chhattisgarh since 1993.",
-        "foundingDate": "1993",
+        "description": "Expert crafting of sherwanis, suits, kurtas, wedding wear, blazers, and bespoke tailoring since 1995.",
+        "foundingDate": "1995",
+        "slogan": "God Makes Man, We Make Gentleman",
         "contactPoint": {
           "@type": "ContactPoint",
           "telephone": "+91-9827165995",
@@ -94,9 +104,13 @@ export default function SEO({
       {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        "name": "Poshak Tailors And Ethnic Wear",
+        "name": SITE_NAME,
+        "@id": BASE_URL,
         "image": `${BASE_URL}logo.png`,
+        "url": BASE_URL,
         "priceRange": "₹₹₹",
+        "telephone": "+919827165995",
+        "email": "gyaneshwarudasi@gmail.com",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "Shop No.9, Surana Market, Behind City Center Mall, Pandri",
@@ -110,44 +124,63 @@ export default function SEO({
           "latitude": 21.249964080112462,
           "longitude": 81.64259837599026
         },
-        "telephone": "+919827165995",
-        "email": "gyaneshwarudasi@gmail.com",
-        "openingHours": "Mo-Sa 10:00-20:00",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "10:00",
+            "closes": "20:00"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Sunday",
+            "opens": "12:00",
+            "closes": "16:00"
+          }
+        ],
         "aggregateRating": {
           "@type": "AggregateRating",
           "ratingValue": "4.9",
-          "reviewCount": "500"
+          "reviewCount": "500+",
+          "bestRating": "5",
+          "worstRating": "1"
         }
       },
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
-        "name": "Poshak Tailors And Ethnic Wear",
+        "name": SITE_NAME,
+        "alternateName": "Poshak Tailors",
         "url": BASE_URL,
+        "description": "Expert crafting of sherwanis, suits, kurtas, wedding wear, blazers, and bespoke tailoring since 1995.",
+        "inLanguage": "en-IN",
         "potentialAction": {
           "@type": "SearchAction",
-          "target": `${BASE_URL}products?search={search_term_string}`,
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": `${BASE_URL}products?search={search_term_string}`
+          },
           "query-input": "required name=search_term_string"
         }
       }
     ];
 
-    const existingScripts = document.querySelectorAll('script[type="application/ld+json"]');
-    existingScripts.forEach(script => script.remove());
-
-    defaultSchemas.forEach(schemaData => {
-      const script = document.createElement('script');
-      script.type = 'application/ld+json';
-      script.textContent = JSON.stringify(schemaData);
-      document.head.appendChild(script);
-    });
-
-    if (schema) {
-      const customSchema = document.createElement('script');
-      customSchema.type = 'application/ld+json';
-      customSchema.textContent = JSON.stringify(schema);
-      document.head.appendChild(customSchema);
+    const seoScriptId = 'seo-schema';
+    const existingScript = document.getElementById(seoScriptId);
+    if (existingScript) {
+      existingScript.remove();
     }
+
+    const combinedSchema = [...defaultSchemas];
+    if (schema) {
+      combinedSchema.push(schema);
+    }
+
+    const containerScript = document.createElement('script');
+    containerScript.id = seoScriptId;
+    containerScript.type = 'application/ld+json';
+    containerScript.textContent = JSON.stringify(combinedSchema);
+    document.head.appendChild(containerScript);
 
   }, [title, description, keywords, image, url, schema, type]);
 
